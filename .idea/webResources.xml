@@ -8,8 +8,8 @@
             <path value="file://$PROJECT_DIR$/src" />
             <path value="file://$PROJECT_DIR$/css" />
             <path value="file://$PROJECT_DIR$/font" />
-            <path value="file://$PROJECT_DIR$/img" />
             <path value="file://$PROJECT_DIR$/js" />
+            <path value="file://$PROJECT_DIR$/img" />
           </resourceRoots>
         </entryData>
       </entry>
