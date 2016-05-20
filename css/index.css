@@ -1,3 +1,32 @@
-p {
-    color: red;
+body {
+    margin: 0px;
+}
+
+#intro {
+    margin: 0px;
+    display: flex;
+}
+
+.zug {
+    margin: 0px;
+}
+
+#left_door {
+    width: 50vw;
+    height: 100vh;
+    background-image: url("door_left.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    position: fixed;
+}
+
+#right_door {
+    width: 50vw;
+    height: 100vh;
+    background-image: url("door_right.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    position: fixed;
 }
