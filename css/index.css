@@ -30,3 +30,21 @@ body {
     background-position: left;
     position: fixed;
 }
+
+/*
+ * Fonts
+ */
+/* db sans comb regular*/
+@font-face {
+    font-family: 'db1';
+    src: url('../font/DB1.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*db sans regular*/
+@font-face {
+    font-family: 'db2';
+    src: url('../font/DB2.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
