@@ -1,14 +1,14 @@
 body {
-    margin: 0px;
+    margin: 0;
 }
 
 #intro {
-    margin: 0px;
+    margin: 0;
     display: flex;
 }
 
 .zug {
-    margin: 0px;
+    margin: 0;
 }
 
 #left_door {
@@ -29,6 +29,16 @@ body {
     background-size: contain;
     background-position: left;
     position: fixed;
+}
+#haupt_charakter {
+    width: 100px;
+    height: 500px;
+    background-image: url("charakter_entwurf2-01.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed;
+    background-position: center;
+    z-index: -1;
 }
 
 /*
