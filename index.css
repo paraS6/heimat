@@ -14,7 +14,7 @@ body {
 #left_door {
     width: 50vw;
     height: 100vh;
-    background-image: url("door_left.svg");
+    background-image: url("img/Intro/tuer_links_graffiti.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
@@ -24,7 +24,7 @@ body {
 #right_door {
     width: 50vw;
     height: 100vh;
-    background-image: url("door_right.svg");
+    background-image: url("img/Intro/tuer_rechts_graffiti.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
