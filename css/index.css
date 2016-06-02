@@ -2,19 +2,28 @@ body {
     margin: 0;
 }
 
-#intro {
+#s1_intro {
     margin: 0;
     display: flex;
 }
 
 .zug {
     margin: 0;
+    width: 500vw;
+    height: 100vh;
+    left: -396vw;
+    background-image: url("bahn_ohne_tuer-01.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed;
 }
 
 #left_door {
-    width: 50vw;
-    height: 100vh;
-    background-image: url("door_left.svg");
+    width: 47vw;
+    height: 79vh;
+    top: 13vh;
+    left: 400vw;
+    background-image: url("tuer_links_graffiti-01.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
@@ -22,23 +31,15 @@ body {
 }
 
 #right_door {
-    width: 50vw;
-    height: 100vh;
-    background-image: url("door_right.svg");
+    width: 47vw;
+    height: 79vh;
+    top: 13vh;
+    right: 56vw;
+    background-image: url("tuer_rechts_graffiti-01.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
     position: fixed;
-}
-#haupt_charakter {
-    width: 100px;
-    height: 500px;
-    background-image: url("charakter_entwurf2-01.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: fixed;
-    background-position: center;
-    z-index: -1;
 }
 
 /*

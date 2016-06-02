@@ -7,27 +7,26 @@
     <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
-    <div id="intro">
-        <div class="zug"></div>
-        <div id="left_door"
-             data-0="transform:translateX(0vw);"
-             data-500="transform:translateX(-50vw);"
-             data-1000="transform:translateX(0vw)">
-        </div>
-        <div id="right_door"
-             data-0="transform:translateX(50vw);"
-             data-500="transform:translateX(100vw);"
-             data-1000="transform:translateX(50vw)">
-        </div>
-        <div id="haupt_charakter"
-            data-0="transform:translateX(50vw)"
-            data-500="transform:translateX(50vw);"
-            data-1000="transform:translateX(50vw)">
-        </div>
+<div id="s1_intro" class="zug"
+     data-7500="transform:translateX(0vw)"
+     data-12500="transform:translateX(251.5vw); opacity: 1;"
+     data-15000="opacity: 0;">
+    <div id="left_door"
+         data-0="transform:translateX(0vw);"
+         data-2500="transform:translateX(-13.5vw);"
+         data-5000="transform:translateX(-13.5vw);"
+         data-7500="transform:translateX(0vw);">
     </div>
-    <script type="text/javascript" src="js/skrollr.min.js"></script>
-    <script>
-        var s = skrollr.init();
-    </script>
+    <div id="right_door"
+         data-0="transform:translateX(50vw);"
+         data-2500="transform:translateX(63.5vw);"
+         data-5000="transform:translateX(63.5vw);"
+         data-7500="transform:translateX(50vw);">
+    </div>
+</div>
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+<script>
+    var s = skrollr.init();
+</script>
 </body>
 </html>
