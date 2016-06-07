@@ -2,44 +2,48 @@ body {
     margin: 0;
 }
 
-#s1_intro {
-    margin: 0;
-    display: flex;
-}
-
-.zug {
-    margin: 0;
+.viewport{
     width: 500vw;
     height: 100vh;
-    left: -396vw;
-    background-image: url("bahn_ohne_tuer-01.png");
-    background-repeat: no-repeat;
-    background-size: contain;
     position: fixed;
 }
 
-#left_door {
+#zug {
+    margin: 0;
+    width: 500vw;
+    height: 100vh;
+    background-image: url("bahn_ohne_tuer-01.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
+#left_door div{
     width: 47vw;
-    height: 79vh;
-    top: 13vh;
-    left: 400vw;
+    height: 41vw;
+    margin-top: 6vw;
     background-image: url("tuer_links_graffiti-01.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
-    position: fixed;
+    position: absolute;
 }
 
-#right_door {
+#right_door div{
+    margin-top: 6vw;
     width: 47vw;
-    height: 79vh;
-    top: 13vh;
-    right: 56vw;
+    height: 41vw;
     background-image: url("tuer_rechts_graffiti-01.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
-    position: fixed;
+    position: absolute;
+}
+
+#right_door, #left_door{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
 }
 
 /*
