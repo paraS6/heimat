@@ -79,10 +79,10 @@ body {
 }
 
 #s2_bahn_innen{
-    width: 2000vw;
+    width: 500vw;
     height: 100vh;
-    background-image: url(Szene2/Bahn/Bahn_innen.svg);
-    background-repeat: repeat-x;
+    background-image: url(Szene2/Bahn/Bahn_innen.png);
+    background-repeat: no-repeat;
     background-size: contain;
     margin: 0;
     padding: 0;
