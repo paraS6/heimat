@@ -11,7 +11,7 @@ body {
 #zug {
     margin: 0;
     width: 500vw;
-    height: 100vh;
+    height: 100vw;
     background-image: url("bahn_ohne_tuer-01.png");
     background-repeat: no-repeat;
     background-size: contain;
