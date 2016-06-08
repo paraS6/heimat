@@ -16,6 +16,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     position: fixed;
+    z-index: 1;
 }
 
 #left_door {
@@ -58,4 +59,103 @@ body {
     src: url('../font/DB2.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+}
+
+
+#s2_hintergrund {
+    width: 2000vw;
+    height: 100vh;
+    background-image: url(Szene2/Hintergrund/hintergrund_entwurf_blanko-.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+    z-index: -10;
+    position: fixed;
+}
+
+#s2_bahn_innen{
+    width: 2000vw;
+    height: 100vh;
+    background-image: url(Szene2/Bahn/Bahn_innen.svg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+    z-index: -9;
+    position: fixed;
+
+}
+#s2_protagonist{
+    width: 30vw;
+    height: 70vh;
+    background-image: url(Szene2/Personen/hauptcharakter.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+    position: fixed;
+    top: 28vh;
+    right: -220vw;
+}
+
+#s2_frau1{
+    width: 25vw;
+    height: 60vh;
+    background-image: url(Szene2/Personen/frau1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: fixed;
+    top: 37vh;
+    left: 35vw;
+
+}
+
+#s2_frau2{
+    width: 25vw;
+    height: 60vh;
+    background-image: url(Szene2/Personen/richBitch1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: fixed;
+    top: 27vh;
+    left: 5vw;
+
+}
+
+#s2_mann_handy1{
+    width: 25vw;
+    height: 55vh;
+    background-image: url(Szene2/Personen/handy_sitzen_student2_rechts.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: fixed;
+    top: 30vh;
+    right: -25vw;
+}
+
+#s2_mann_handy2{
+    width: 25vw;
+    height: 55vh;
+    background-image: url(Szene2/Personen/handy2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: fixed;
+    top: 30vh;
+    right: -65vw;
+}
+
+#s2_mann_zeche{
+    width: 25vw;
+    height: 55vh;
+    background-image: url(Szene2/Personen/zeche_sitzen1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: fixed;
+    top: 30vh;
+    left: 85vw;
 }

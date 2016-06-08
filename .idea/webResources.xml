@@ -10,6 +10,11 @@
             <path value="file://$PROJECT_DIR$/font" />
             <path value="file://$PROJECT_DIR$/js" />
             <path value="file://$PROJECT_DIR$/img" />
+            <path value="file://$PROJECT_DIR$/img/Szene2" />
+            <path value="file://$PROJECT_DIR$/img/Szene2/Bahn" />
+            <path value="file://$PROJECT_DIR$/img/Szene2/Details" />
+            <path value="file://$PROJECT_DIR$/img/Szene2/Hintergrund" />
+            <path value="file://$PROJECT_DIR$/img/Szene2/Personen" />
           </resourceRoots>
         </entryData>
       </entry>
