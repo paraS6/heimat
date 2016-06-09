@@ -2,45 +2,165 @@ body {
     margin: 0;
 }
 
-#s1_intro {
-    margin: 0;
-    display: flex;
+
+.viewport{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
 }
 
-.zug {
+.container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+/**
+*
+*Intro
+*
+**/
+
+#zug {
     margin: 0;
     width: 500vw;
-    height: 100vh;
-    left: -396vw;
+    height: 100vw;
     background-image: url("bahn_ohne_tuer-01.png");
     background-repeat: no-repeat;
     background-size: contain;
-    position: fixed;
-    z-index: 1;
+    position: absolute;
 }
 
-#left_door {
+#left_door div{
     width: 47vw;
-    height: 79vh;
-    top: 13vh;
-    left: 400vw;
+    height: 41vw;
+    margin-top: 6vw;
     background-image: url("tuer_links_graffiti-01.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
-    position: fixed;
+    position: absolute;
 }
 
-#right_door {
+#right_door div{
+    margin-top: 6vw;
     width: 47vw;
-    height: 79vh;
-    top: 13vh;
-    right: 56vw;
+    height: 41vw;
     background-image: url("tuer_rechts_graffiti-01.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
-    position: fixed;
+    position: absolute;
+}
+
+#right_door, #left_door{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/**
+*
+*Szene2
+*
+**/
+
+
+#s2_hintergrund{
+    width: 500vw;
+    height: 50vw;
+    background-image: url(Szene2/Hintergrund/hintergrund_entwurf.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+#s2_bahn_innen{
+    width: 500vw;
+    height: 100vw;
+    background-image: url(Szene2/Bahn/Bahn_innen.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+
+}
+#s2_protagonist div{
+    width: 30vw;
+    height: 70vw;
+    background-image: url(Szene2/Personen/hauptcharakter.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+    position: absolute;
+    top: 28vh;
+    right: -220vw;
+}
+
+#s2_frau1 div{
+    width: 25vw;
+    height: 60vw;
+    background-image: url(Szene2/Personen/frau1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 37vh;
+    left: 35vw;
+
+}
+
+#s2_frau2 div{
+    width: 25vw;
+    height: 60vw;
+    background-image: url(Szene2/Personen/richBitch1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 27vh;
+    left: 5vw;
+
+}
+
+#s2_mann_handy1 div{
+    width: 25vw;
+    height: 55vw;
+    background-image: url(Szene2/Personen/handy_sitzen_student2_rechts.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 30vh;
+    right: -25vw;
+}
+
+#s2_mann_handy2 div{
+    width: 25vw;
+    height: 55vw;
+    background-image: url(Szene2/Personen/handy2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 30vh;
+    right: -65vw;
+}
+
+#s2_mann_zeche div{
+    width: 25vw;
+    height: 55vw;
+    background-image: url(Szene2/Personen/zeche_sitzen1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 30vh;
+    left: 85vw;
 }
 
 /*
@@ -59,103 +179,4 @@ body {
     src: url('../font/DB2.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
-}
-
-
-#s2_hintergrund {
-    width: 2000vw;
-    height: 100vh;
-    background-image: url(Szene2/Hintergrund/hintergrund_entwurf_blanko-.jpg);
-    background-repeat: repeat-x;
-    background-size: contain;
-    margin: 0;
-    padding: 0;
-    z-index: -10;
-    position: fixed;
-}
-
-#s2_bahn_innen{
-    width: 2000vw;
-    height: 100vh;
-    background-image: url(Szene2/Bahn/Bahn_innen.svg);
-    background-repeat: repeat-x;
-    background-size: contain;
-    margin: 0;
-    padding: 0;
-    z-index: -9;
-    position: fixed;
-
-}
-#s2_protagonist{
-    width: 30vw;
-    height: 70vh;
-    background-image: url(Szene2/Personen/hauptcharakter.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: -1;
-    position: fixed;
-    top: 28vh;
-    right: -220vw;
-}
-
-#s2_frau1{
-    width: 25vw;
-    height: 60vh;
-    background-image: url(Szene2/Personen/frau1.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-Index: -8;
-    position: fixed;
-    top: 37vh;
-    left: 35vw;
-
-}
-
-#s2_frau2{
-    width: 25vw;
-    height: 60vh;
-    background-image: url(Szene2/Personen/richBitch1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-Index: -8;
-    position: fixed;
-    top: 27vh;
-    left: 5vw;
-
-}
-
-#s2_mann_handy1{
-    width: 25vw;
-    height: 55vh;
-    background-image: url(Szene2/Personen/handy_sitzen_student2_rechts.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-Index: -8;
-    position: fixed;
-    top: 30vh;
-    right: -25vw;
-}
-
-#s2_mann_handy2{
-    width: 25vw;
-    height: 55vh;
-    background-image: url(Szene2/Personen/handy2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-Index: -8;
-    position: fixed;
-    top: 30vh;
-    right: -65vw;
-}
-
-#s2_mann_zeche{
-    width: 25vw;
-    height: 55vh;
-    background-image: url(Szene2/Personen/zeche_sitzen1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-Index: -8;
-    position: fixed;
-    top: 30vh;
-    left: 85vw;
 }
