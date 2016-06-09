@@ -68,7 +68,7 @@ body {
 
 
 #s2_hintergrund{
-    width: 500vw;
+    width: 480vw;
     height: 50vw;
     background-image: url(Szene2/Hintergrund/hintergrund_entwurf.png);
     background-repeat: no-repeat;
@@ -79,7 +79,7 @@ body {
 }
 
 #s2_bahn_innen{
-    width: 500vw;
+    width: 480vw;
     height: 100vw;
     background-image: url(Szene2/Bahn/bahn_innen_alina-01.png);
     background-repeat: no-repeat;
@@ -127,41 +127,7 @@ body {
 
 }
 
-#s2_mann_handy1 div{
-    width: 25vw;
-    height: 55vw;
-    background-image: url(Szene2/Personen/handy_sitzen_student2_rechts.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-Index: -8;
-    position: absolute;
-    top: 30vh;
-    right: -25vw;
-}
 
-#s2_mann_handy2 div{
-    width: 25vw;
-    height: 55vw;
-    background-image: url(Szene2/Personen/handy2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-Index: -8;
-    position: absolute;
-    top: 30vh;
-    right: -65vw;
-}
-
-#s2_mann_zeche div{
-    width: 25vw;
-    height: 55vw;
-    background-image: url(Szene2/Personen/zeche_sitzen1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-Index: -8;
-    position: absolute;
-    top: 30vh;
-    left: 85vw;
-}
 
 /*
  * Fonts
