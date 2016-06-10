@@ -16,6 +16,48 @@ body {
 }
 
 /**
+    Navigationsleiste
+**/
+
+#scrollnav {
+    background-image: url(menue_test-01.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 50vw;
+    left: 25vw;
+    top: 1vw;
+    z-index: 10;
+}
+
+#scrollnav div {
+    display: inline-block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 1vw;
+    margin-top: 0.25vw;
+    margin-left: 0.3vw;
+}
+
+#scrollnav a {
+    display: inline-block;
+    width: 2.25vw;
+    height: 2.25vw;
+    border-radius: 2vw;
+    margin-top: 0.25vw;
+    margin-left: 0.25vw;
+    text-decoration: none;
+}
+
+#scrollnav a:not(:first-child) {
+    margin-left: 5.075vw;
+}
+
+#scrollnav a:hover div {
+    background-color: red !important;
+}
+
+/**
 *
 *Intro
 *
