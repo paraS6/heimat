@@ -117,10 +117,45 @@ body {
     margin: 0;
     padding: 0;
     position: absolute;
+    z-Index: -11;
+}
+
+.schilder{
+    width: 20vw;
+    height: 10vw;
+    z-Index: -10;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
+#s2_schild_essen{
+    background-image: url(Szene2/Hintergrund/bahnhof_schild_essen-01.png);
+    top: 20vw;
+    left: 28vw;
+}
+
+
+#s2_schild_ddorf{
+    background-image: url(Szene2/Hintergrund/bahnhof_schild_text_ddorf-01.png);
+    top: 20vw;
+    left: 120vw;
+}
+
+#s2_schild_leverkusen{
+    background-image: url(Szene2/Hintergrund/bahnhof_schild_leverkusen-01.png);
+    top: 20vw;
+    left: 180vw;
+}
+
+#s2_schild_koeln {
+    background-image: url(Szene2/Hintergrund/bahnhof_schild_text_koeln-01.png);
+    top: 20vw;
+    left: 240vw;
 }
 
 #s2_bahn_innen{
-    width: 480vw;
+    width: 500vw;
     height: 100vw;
     background-image: url(Szene2/Bahn/bahn_innen_alina-01.png);
     background-repeat: no-repeat;
@@ -128,8 +163,10 @@ body {
     margin: 0;
     padding: 0;
     position: absolute;
+    z-Index: -9;
 
 }
+
 #s2_protagonist div{
     width: 30vw;
     height: 70vw;
@@ -139,7 +176,7 @@ body {
     z-index: -8;
     position: absolute;
     top: 26vh;
-    right: -331vw;
+    right: -330vw;
 }
 
 /*
@@ -234,8 +271,8 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 13vh;
-    left: 180vw;
+    top: 15vh;
+    left: 182vw;
 
 
 }
@@ -250,7 +287,7 @@ mit skrollr auf der x-Achse positioniert
     z-Index: -8;
     position: absolute;
     top: 28vh;
-    left: 275vw;
+    left: 280vw;
 
 }
 
@@ -262,8 +299,8 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 13vh;
-    left: 300vw;
+    top: 15vh;
+    left: 320vw;
 
 
 }
@@ -277,8 +314,8 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 28vh;
-    left: 367vw;
+    top: 33vh;
+    left: 340vw;
 }
 
 
