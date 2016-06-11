@@ -101,7 +101,6 @@ body {
     height: 100vh;
 }
 
-
 /**
 *
 *Szene2
@@ -110,7 +109,7 @@ body {
 
 
 #s2_hintergrund{
-    width: 500vw;
+    width: 480vw;
     height: 50vw;
     background-image: url(Szene2/Hintergrund/hintergrund_entwurf.png);
     background-repeat: no-repeat;
@@ -121,9 +120,9 @@ body {
 }
 
 #s2_bahn_innen{
-    width: 500vw;
+    width: 480vw;
     height: 100vw;
-    background-image: url(Szene2/Bahn/Bahn_innen.png);
+    background-image: url(Szene2/Bahn/bahn_innen_alina-01.png);
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0;
@@ -137,72 +136,187 @@ body {
     background-image: url(Szene2/Personen/hauptcharakter.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: -1;
+    z-index: -8;
     position: absolute;
-    top: 28vh;
-    right: -220vw;
+    top: 26vh;
+    right: -331vw;
 }
 
+/*
 #s2_frau1 div{
     width: 25vw;
-    height: 60vw;
-    background-image: url(Szene2/Personen/frau1.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-Index: -8;
-    position: absolute;
-    top: 37vh;
-    left: 35vw;
-
-}
-
-#s2_frau2 div{
-    width: 25vw;
-    height: 60vw;
+    height: 37vw;
     background-image: url(Szene2/Personen/richBitch1.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 27vh;
-    left: 5vw;
 
+    top: 37vh;
+    /*
+    left: 35vw;*/
+/*
 }
+*/
 
-#s2_mann_handy1 div{
+/*
+vordere Reihen bewegen sich  minimal schneller als hintere Reihen
+vorder Reihe: translateX(-265vw);
+mitllere Reihe: translateX(-255vw);
+hintere Reihe: translateX(-250vw);
+*/
+
+/*
+Mann: width:25vw; height: 38vw; top: 23vh;
+Mann steht quasi in der hintere Reihe; ganzer Körper sichtbar
+mit skrollr auf der x-Achse positioniert
+*/
+#s2_mannZeche div{
     width: 25vw;
-    height: 55vw;
-    background-image: url(Szene2/Personen/handy_sitzen_student2_rechts.png);
+    height: 38vw;
+    background-image: url(Szene2/Personen/zeche1.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 30vh;
-    right: -25vw;
+    top: 23vh;
+
+
 }
 
-#s2_mann_handy2 div{
+#s2_mannRuhrpott div{
     width: 25vw;
-    height: 55vw;
-    background-image: url(Szene2/Personen/handy2.png);
+    height: 37vw;
+    background-image: url(Szene2/Personen/ruhrpott1.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 30vh;
-    right: -65vw;
+    top: 14vh;
+
+
 }
 
-#s2_mann_zeche div{
+
+#s2_reicheFrau div{
     width: 25vw;
-    height: 55vw;
-    background-image: url(Szene2/Personen/zeche_sitzen1.png);
+    height: 40vw;
+    background-image: url(Szene2/Personen/richBitch1.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-Index: -8;
     position: absolute;
+
+    top: 38vh;
+    left: 168vw;
+
+}
+
+
+#s2_reicherMann1 div{
+    width: 25vw;
+    height: 38vw;
+    background-image: url(Szene2/Personen/mann_ddorf_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 23vh;
+    left: 136vw;
+
+}
+
+#s2_reicherMann2 div{
+    width: 25vw;
+    height: 33vw;
+    background-image: url(Szene2/Personen/richGuy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 13vh;
+    left: 180vw;
+
+
+}
+
+
+#s2_Jeck1 div{
+    width: 25vw;
+    height: 50vw;
+    background-image: url(Szene2/Personen/Jan.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 28vh;
+    left: 275vw;
+
+}
+
+#s2_Jeck2 div{
+    width: 25vw;
+    height: 33vw;
+    background-image: url(Szene2/Personen/fussballfan_fc_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 13vh;
+    left: 300vw;
+
+
+}
+
+
+#s2_frauMusik div{
+    width: 25vw;
+    height: 30vw;
+    background-image: url(Szene2/Personen/musik_frau_sitzen.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 28vh;
+    left: 367vw;
+}
+
+
+#s2_blase1 div{
+    width: 5vw;
+    height: 3vw;
+    background-image: url(Szene2/Details/kleineBlase.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -7;
+    position: absolute;
     top: 30vh;
-    left: 85vw;
+    right: -308vw;
+
+}
+
+#s2_blase2 div{
+    width: 5vw;
+    height: 4vw;
+    background-image: url(Szene2/Details/kleineBlase.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -7;
+    position: absolute;
+    top: 25vh;
+    right: -311vw;
+}
+
+#s2_blase3 div {
+    width: 50%;
+    height: 50%;
+    background-image: url(Szene2/Details/blase2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -7;
+    position: absolute;
+    top: 10vh;
+    right: -300vw;
 }
 
 /*
