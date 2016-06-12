@@ -139,7 +139,7 @@ body {
 #s2_schild_ddorf{
     background-image: url(Szene2/Hintergrund/bahnhof_schild_text_ddorf-01.png);
     top: 20vw;
-    left: 120vw;
+    left: 124vw;
 }
 
 #s2_schild_leverkusen{
@@ -151,7 +151,7 @@ body {
 #s2_schild_koeln {
     background-image: url(Szene2/Hintergrund/bahnhof_schild_text_koeln-01.png);
     top: 20vw;
-    left: 240vw;
+    left: 225vw;
 }
 
 #s2_bahn_innen{
@@ -230,8 +230,18 @@ mit skrollr auf der x-Achse positioniert
     z-Index: -8;
     position: absolute;
     top: 14vh;
+}
 
-
+#s2_bierFlasche div{
+    width: 4vw;
+    height: 4vw;
+    background-image: url(Szene2/Details/bier.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 51vh;
+    left: 105vw;
 }
 
 
@@ -277,6 +287,34 @@ mit skrollr auf der x-Achse positioniert
 
 }
 
+
+
+#s2_becher div{
+    width: 3vw;
+    height: 3vw;
+    background-image: url(Szene2/Details/coffee.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 53vh;
+    left: 222vw;
+
+}
+
+
+#s2_funFact div{
+    width: 30vw;
+    height: 30vw;
+    background-image: url(Szene2/Details/s2_funFact.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 10vh;
+    left: 233vw;
+
+}
 
 #s2_Jeck1 div{
     width: 25vw;
@@ -353,7 +391,7 @@ mit skrollr auf der x-Achse positioniert
     z-Index: -7;
     position: absolute;
     top: 10vh;
-    right: -300vw;
+    right: -310vw;
 }
 
 /*
