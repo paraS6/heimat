@@ -393,6 +393,174 @@ mit skrollr auf der x-Achse positioniert
     top: 10vh;
     right: -310vw;
 }
+#s3_bahnhof{
+    display: flex;
+    background-image: url("img/Szene3/bahnhof_derendorf-01.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: -5;
+    width: 200vw;
+    height: 60vw;
+}
+#s3_werbung_1{
+    display: flex;
+    background-image: url("img/Szene3/werbung_1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: -4;
+    width: 22.5vw;
+    height: 26vw;
+    top: 11.6vw;
+    left: 7vw;
+}
+#muteButton{
+    position: absolute;
+}
+#unMuteButton{
+    left: 2.5vw;
+    position: absolute;
+}
+.s3_zug {
+    margin: 0;
+}
+#s3_haupt_charakter {
+    width: 20vw;
+    height: 15vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    background-position: center;
+    z-index: -1;
+    top: 22vw;
+    left: 44vw;
+}
+#s3_oma{
+    width: 10vw;
+    height: 10vw;
+    background-image: url("img/Szene3/oma.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    background-position: center;
+    z-index: -1;
+    top: 25vw;
+    left: 70vw;
+}
+#s3_mann_1{
+    width: 20vw;
+    height: 12vw;
+    background-image: url("img/Szene3/mann_1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    background-position: center;
+    z-index: -1;
+    top: 20vw;
+    left: 20vw;
+}
+#s3_frau_1{
+    width: 20vw;
+    height: 15vw;
+    background-image: url("img/Szene3/frau1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    background-position: center;
+    z-index: -1;
+    top: 22vw;
+    left: 43vw;
+}
+#s3_zug_vorne {
+    width: 150vw;
+    height: 100vw;
+    background-image: url("img/Szene3/Bahn_vorne.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 13vw;
+    position: absolute;
+    left: 0vw;
+}
+#s3_zug_hinten{
+    width: 150vw;
+    height: 100vw;
+    background-image: url("img/Szene3/Bahn_ende.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 7.5vw;
+    position: absolute;
+}
+#s3_uhr{
+    background-image: url("img/Szene3/bahnhofsuhr-01.svg");
+    width: 10vw;
+    height: 10vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 89.3vw;
+    top: 8.8vw;
+    position: absolute;
+}
+#s3_uhr_punkt{
+    background-image: url(img/Szene3/bahnhofsuhr_punkt-01.svg);
+    width: 10vw;
+    height: 10vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 89.3vw;
+    top: 8.8vw;
+    position: fixed;
+    z-index: 5;
+}
+#s3_se_zeiger{
+    background-image: url(img/Szene3/bahnhofsuhr_sekunde-01.svg);
+    width: 10vw;
+    height: 10vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 89.3vw;
+    top: 8.8vw;
+    position: fixed;
+    z-index: 4;
+}
+#s3_kl_zeiger{
+    background-image: url("img/Szene3/bahnhofsuhr_stunde-01.svg");
+    width: 10vw;
+    height: 10vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 89.3vw;
+    top: 8.8vw;
+    position: fixed;
+    z-index: 2;
+}
+#s3_gr_zeiger{
+    background-image: url("img/Szene3/bahnhofsuhr_minute-01.svg");
+    width: 10vw;
+    height: 10vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 89.3vw;
+    top: 8.8vw;
+    position: fixed;
+    z-index: 3;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rev_rotate {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 
 /*
  * Fonts

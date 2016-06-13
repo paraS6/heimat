@@ -53,6 +53,10 @@
     </div>
 
 
+    <script type="text/javascript" src="js/sound.js"></script>
+
+
+
 
     <div id="s1_intro"
          class="viewport"
@@ -238,6 +242,87 @@
                  data-48500 = "width:1000vw; height: 900vw"
                  data-49000 = "width:1500vw; height: 1300vw">-->
             <div></div>
+        </section>
+    </div>
+    <div id=s3 class="viewport"
+         data-0="display: none"
+         data-42000 = "display: block"
+    >
+        <audio id="nameAudio" preload="auto">
+            <source src="audio/Hit%20The%20Road%20Jack@Berlin%20U-Bahn%20U2.mp3">
+        </audio>
+        <div id="muteButton" onclick="muteAudio()">
+            <input type="button" name="muteAudio" value="Off">
+        </div>
+        <div id="unMuteButton" onclick="unMuteAudio()">
+            <input type="button" name="unMuteAudio" value="On">
+        </div>
+        <section id="s3_bahnhof"
+            data-48500="transform:translateX(0vw)"
+            data-49500="transform:translateX(-100vw)">
+            <div id="s3_werbung_1">
+            </div>
+            <div id="s3_uhr">
+                <div id="s3_gr_zeiger"
+                     data-42000="animation: 2s linear infinite"
+                     data-45000="animation: rev_rotate 2s linear infinite"
+                     data-48000="animation: 2s linear infinite">
+                </div>
+                <div id="s3_kl_zeiger"
+                     data-42000="animation: 4s linear infinite"
+                     data-45000="animation: rotate 4s linear infinite"
+                     data-48000="animation: 4s linear infinite">
+                </div>
+                <div id="s3_se_zeiger"
+                     data-42000="animation: 1s linear infinite"
+                     data-45000="animation: rotate 1s linear infinite"
+                     data-48000="animation: 1s linear infinite">
+                </div>
+                <div id="s3_uhr_punkt">
+                </div>
+            </div>
+            <div id="s3_haupt_charakter"
+                 data-42000="display:none;
+                            background-image: url(img/Szene3/hauptcharakter.svg);"
+                 data-43500="display:block"
+                 data-46000="background-image: url(img/Szene3/hauptcharakter_uhr.svg)"
+                 data-47000="background-image: url(img/Szene3/hauptcharakter.svg)"
+                 data-48500="display:none">
+            </div>
+            <div id="s3_oma"
+                 data-42000="display:block"
+                 data-43500="display:block"
+                 data-48500="display:none">
+            </div>
+            <div id="s3_mann_1"
+                 data-42000="display:none"
+                 data-43500="display:block">
+            </div>
+            <div id="s3_frau_1"
+                 data-42000="display:block"
+                 data-43500="display:none">
+            </div>
+        </section>
+        <section class="s3_zug">
+            <div id="s3_zug_vorne"
+                 data-42000="transform:translateX(-150vw); width: 150vw; height: 100vw; top: 6.2vw; left: 0vw;"
+                 data-43000="transform:translateX(-60vw)"
+                 data-43500="transform:translateX(-60vw)"
+                 data-44500="transform:translateX(150vw)"
+                 data-45000="transform:translateX(150vw)"
+                 data-45001="transform:translateX(-150vw)"
+                 data-47000="transform:translateX(-150vw)"
+                 data-48000="transform:translateX(-60vw)"
+                 data-48500="transform:translateX(-60vw)"
+                 data-49500="width: 330vw; height: 190vw; top: -33vw; left: -28vw">
+            </div>
+            <div id="s3_zug_hinten"
+                 data-42000="transform:translateX(-300vw)"
+                 data-43000="transform:translateX(-210vw)"
+                 data-43500="transform:translateX(-210vw)"
+                 data-44500="transform:translateX(0vw)"
+                 data-45000="transform:translateX(150vw)">
+            </div>
         </section>
     </div>
 </main>
