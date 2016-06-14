@@ -26,15 +26,6 @@ body{
     z-index:-4;
 }
 
-#s5_sterne {
-
-    width: 200vw;
-    height: 100vw;
-    background-image: url(img/sterne.gif);
-    position: absolute;
-    z-index:-3;
-    background-repeat: repeat;
-}
 
 #s5_hintergrund_landschaft{
     width: 200vw;
@@ -113,7 +104,7 @@ body{
 #s5_sonne {
     width: 10vw;
     height: 10vw;
-    background-image: url(img/sonne.svg);
+    background-image: url(img/sonne-01.png);
     position: absolute;
     background-size: contain;
     background-repeat: no-repeat;
@@ -156,7 +147,7 @@ body{
     margin-top:3vw;
     width:200vw;
     height: 15vw;
-    background-image: url(img/hintergrund_wolken.svg);
+    background-image: url(img/hintergrund_wolken-01.png);
     background-repeat: repeat-x;
     background-size: contain;
     position: absolute;
