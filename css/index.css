@@ -222,26 +222,10 @@ body {
     background-size: contain;
     z-index: -8;
     position: absolute;
-    top: 26vh;
-    right: -330vw;
+    top: 15vw;
+   /* right: -330vw;*/
 }
 
-/*
-#s2_frau1 div{
-    width: 25vw;
-    height: 37vw;
-    background-image: url(Szene2/Personen/richBitch1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-Index: -8;
-    position: absolute;
-
-    top: 37vh;
-    /*
-    left: 35vw;*/
-/*
-}
-*/
 
 /*
 vordere Reihen bewegen sich  minimal schneller als hintere Reihen
@@ -263,7 +247,7 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 23vh;
+    top: 16vh;
 
 
 }
@@ -276,7 +260,7 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 14vh;
+    top: 6vw;
 }
 
 #s2_bierFlasche div{
@@ -287,8 +271,8 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 51vh;
-    left: 105vw;
+    top: 25vw;
+    /*left: 105vw;*/
 }
 
 
@@ -301,8 +285,8 @@ mit skrollr auf der x-Achse positioniert
     z-Index: -8;
     position: absolute;
 
-    top: 38vh;
-    left: 168vw;
+    top: 20vw;
+   /* left: 168vw;*/
 
 }
 
@@ -315,8 +299,8 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 23vh;
-    left: 136vw;
+    top: 10vw;
+   /* left: 136vw;*/
 
 }
 
@@ -328,8 +312,8 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 15vh;
-    left: 182vw;
+    top: 8vw;
+    /*left: 182vw;*/
 
 
 }
@@ -344,8 +328,8 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 53vh;
-    left: 222vw;
+    top: 26vw;
+    /*left: 222vw;*/
 
 }
 
@@ -371,8 +355,8 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 28vh;
-    left: 280vw;
+    top: 15vw;
+   /* left: 280vw;*/
 
 }
 
@@ -384,8 +368,8 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 15vh;
-    left: 320vw;
+    top: 8vw;
+    /*left: 320vw;*/
 
 
 }
@@ -399,8 +383,8 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 33vh;
-    left: 340vw;
+    top: 17vw;
+    /*left: 340vw;*/
 }
 
 
@@ -412,7 +396,7 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -7;
     position: absolute;
-    top: 30vh;
+    top: 16vw;
     right: -308vw;
 
 }
@@ -425,7 +409,7 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -7;
     position: absolute;
-    top: 25vh;
+    top: 13vw;
     right: -311vw;
 }
 
@@ -438,7 +422,7 @@ mit skrollr auf der x-Achse positioniert
     z-Index: -7;
     position: absolute;
     top: 10vh;
-    right: -310vw;
+    right: -308vw;
 }
 #s3_bahnhof{
     display: flex;
