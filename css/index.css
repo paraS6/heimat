@@ -303,16 +303,16 @@ mit skrollr auf der x-Achse positioniert
 }
 
 
-#s2_funFact div{
+#s2_funFact{
     width: 30vw;
     height: 30vw;
     background-image: url(Szene2/Details/s2_funFact.png);
     background-repeat: no-repeat;
     background-size: contain;
-    z-Index: -8;
+    z-Index: 1;
     position: absolute;
-    top: 10vh;
-    left: 233vw;
+    background-position: center;
+    left: 35vw;
 
 }
 
