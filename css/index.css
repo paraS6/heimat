@@ -20,41 +20,88 @@ body {
 **/
 
 #scrollnav {
+    background-color: white;
     background-image: url(menue_test-01.svg);
     background-size: contain;
     background-repeat: no-repeat;
     position: fixed;
     width: 50vw;
+    height: 3vw;
+    border-radius: 1vw;
+    opacity: 0.8;
     left: 25vw;
     top: 1vw;
     z-index: 10;
 }
 
-#scrollnav div {
-    display: inline-block;
-    width: 1.5vw;
-    height: 1.5vw;
-    border-radius: 1vw;
-    margin-top: 0.25vw;
-    margin-left: 0.3vw;
-}
-
 #scrollnav a {
-    display: inline-block;
+    float: left;
     width: 2.25vw;
     height: 2.25vw;
     border-radius: 2vw;
     margin-top: 0.25vw;
-    margin-left: 0.25vw;
     text-decoration: none;
 }
 
+#scrollnav a div {
+    float: left;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 1vw;
+    margin-top: 0.4vw;
+    margin-left: 0.375vw;
+}
+
+#scrollnav a:first-child {
+    margin-left: 0.55vw;
+}
+
 #scrollnav a:not(:first-child) {
-    margin-left: 5.075vw;
+    margin-left: 6.13vw;
 }
 
 #scrollnav a:hover div {
     background-color: red !important;
+}
+
+#scrollnav .scrollnav_name {
+    display: none;
+}
+
+#scrollnav a:hover + .scrollnav_name {
+    display: block;
+    float: left;
+    transform: rotate(-45deg);
+}
+
+#scrollnav a:hover + #scrollnav_name_intro {
+    margin-top: 3vw;
+    margin-left: -2.5vw;
+}
+
+#scrollnav a:hover + #scrollnav_name_pendler {
+    margin-top: 3.5vw;
+    margin-left: -3.25vw;
+}
+
+#scrollnav a:hover + #scrollnav_name_bahnhof {
+    margin-top: 3.7vw;
+    margin-left: -3.5vw;
+}
+
+#scrollnav a:hover + #scrollnav_name_fahrgaeste {
+    margin-top: 3.75vw;
+    margin-left: -4.25vw;
+}
+
+#scrollnav a:hover + #scrollnav_name_nachtfahrt {
+    margin-top: 3.75vw;
+    margin-left: -4vw;
+}
+
+#scrollnav a:hover + #scrollnav_name_outro {
+    margin-top: 3.2vw;
+    margin-left: -2.75vw;
 }
 
 /**
@@ -395,7 +442,7 @@ mit skrollr auf der x-Achse positioniert
 }
 #s3_bahnhof{
     display: flex;
-    background-image: url("img/Szene3/bahnhof_derendorf-01.png");
+    background-image: url("Szene3/bahnhof_derendorf-01.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -405,7 +452,7 @@ mit skrollr auf der x-Achse positioniert
 }
 #s3_werbung_1{
     display: flex;
-    background-image: url("img/Szene3/werbung_1.svg");
+    background-image: url("Szene3/werbung_1.svg");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -439,7 +486,7 @@ mit skrollr auf der x-Achse positioniert
 #s3_oma{
     width: 10vw;
     height: 10vw;
-    background-image: url("img/Szene3/oma.svg");
+    background-image: url("Szene3/oma.svg");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -451,7 +498,7 @@ mit skrollr auf der x-Achse positioniert
 #s3_mann_1{
     width: 20vw;
     height: 12vw;
-    background-image: url("img/Szene3/mann_1.svg");
+    background-image: url("Szene3/mann_1.svg");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -463,7 +510,7 @@ mit skrollr auf der x-Achse positioniert
 #s3_frau_1{
     width: 20vw;
     height: 15vw;
-    background-image: url("img/Szene3/frau1.svg");
+    background-image: url("Szene3/frau1.svg");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -475,24 +522,24 @@ mit skrollr auf der x-Achse positioniert
 #s3_zug_vorne {
     width: 150vw;
     height: 100vw;
-    background-image: url("img/Szene3/Bahn_vorne.svg");
+    background-image: url("Szene3/Bahn_vorne.svg");
     background-repeat: no-repeat;
     background-size: contain;
     top: 13vw;
     position: absolute;
-    left: 0vw;
+    left: 0;
 }
 #s3_zug_hinten{
     width: 150vw;
     height: 100vw;
-    background-image: url("img/Szene3/Bahn_ende.svg");
+    background-image: url("Szene3/Bahn_ende.svg");
     background-repeat: no-repeat;
     background-size: contain;
     top: 7.5vw;
     position: absolute;
 }
 #s3_uhr{
-    background-image: url("img/Szene3/bahnhofsuhr-01.svg");
+    background-image: url("Szene3/bahnhofsuhr-01.svg");
     width: 10vw;
     height: 10vw;
     background-repeat: no-repeat;
@@ -502,7 +549,7 @@ mit skrollr auf der x-Achse positioniert
     position: absolute;
 }
 #s3_uhr_punkt{
-    background-image: url(img/Szene3/bahnhofsuhr_punkt-01.svg);
+    background-image: url("Szene3/bahnhofsuhr_punkt-01.svg");
     width: 10vw;
     height: 10vw;
     background-repeat: no-repeat;
@@ -513,7 +560,7 @@ mit skrollr auf der x-Achse positioniert
     z-index: 5;
 }
 #s3_se_zeiger{
-    background-image: url(img/Szene3/bahnhofsuhr_sekunde-01.svg);
+    background-image: url("Szene3/bahnhofsuhr_sekunde-01.svg");
     width: 10vw;
     height: 10vw;
     background-repeat: no-repeat;
@@ -524,7 +571,7 @@ mit skrollr auf der x-Achse positioniert
     z-index: 4;
 }
 #s3_kl_zeiger{
-    background-image: url("img/Szene3/bahnhofsuhr_stunde-01.svg");
+    background-image: url("Szene3/bahnhofsuhr_stunde-01.svg");
     width: 10vw;
     height: 10vw;
     background-repeat: no-repeat;
@@ -535,7 +582,7 @@ mit skrollr auf der x-Achse positioniert
     z-index: 2;
 }
 #s3_gr_zeiger{
-    background-image: url("img/Szene3/bahnhofsuhr_minute-01.svg");
+    background-image: url("Szene3/bahnhofsuhr_minute-01.svg");
     width: 10vw;
     height: 10vw;
     background-repeat: no-repeat;
