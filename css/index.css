@@ -562,6 +562,385 @@ mit skrollr auf der x-Achse positioniert
     }
 }
 
+
+body {
+    margin: 0;
+}
+
+
+.viewport{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    transform: translateZ(0);
+}
+
+.container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/**
+*
+* Szene4
+*
+**/
+
+
+#s4_hintergrund{
+    width: 480vw;
+    height: 50vw;
+    background-image: url(Szene4/hintergrund_jan_lang.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: -100;
+}
+
+#s4_bahn_innen {
+    width: 500vw;
+    height: 100vw;
+    background-image: url(Szene4/bahn_innen_jan-01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+    z-index: -12;
+}
+
+#s4_bahn {
+    width: 500vw;
+    height: 100vw;
+    top: -30vw;
+    background-image: url(Szene4/Bahn_mitte.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 100;
+}
+
+#s4_baum_1  {
+    width: 100vw;
+    height: 40vw;
+    top: 5vw;
+    background-image: url(Szene4/baum-01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: -50;
+}
+
+#s4_wald {
+    width: 100vw;
+    height: 50vw;
+    top: 6vw;
+    background-image: url(Szene4/wald-01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: -51;
+}
+
+
+#s4_tunnel_licht {
+    height: 100vw;
+    width: 5000vw;
+    position: absolute;
+    z-index: -15;
+    background-color: black;
+}
+
+#s4_tunnel {
+    height: 50vw;
+    width: 400vw;
+    top: 5vw;
+    position: absolute;
+    z-index: -16;
+    background-image: url(Szene4/tunnel-01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#s4_layer_licht_blitz {
+    height: 100vw;
+    width: 300vw;
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+}
+
+
+
+
+*/
+
+/**
+*
+*
+**/
+/*
+vordere Reihen bewegen sich  minimal schneller als hintere Reihen
+vorder Reihe: translateX(-265vw);
+mitllere Reihe: translateX(-255vw);
+hintere Reihe: translateX(-250vw);
+*/
+
+/*
+Mann: width:25vw; height: 38vw; top: 23vh;
+Mann steht quasi in der hintere Reihe; ganzer Körper sichtbar
+mit skrollr auf der x-Achse positioniert
+*/
+
+#s4_fan_1 {
+    width: 25vw;
+    height: 38vw;
+    background-image: url(Szene4/Fußballfans/fussballfan_fc_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -3;
+    position: absolute;
+    top: 23vh;
+}
+
+#s4_fan_2{
+    width: 25vw;
+    height: 37vw;
+    background-image: url(Szene4/Fußballfans/fussballfan_fc_2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -9;
+    position: absolute;
+    top: 22vh;
+}
+
+#s4_fan_3 {
+    width: 25vw;
+    height: 35vw;
+    background-image: url(Szene4/Fußballfans/fussballfan_bvb_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 22vh;
+}
+
+#s4_fan_4 {
+    width: 25vw;
+    height: 39vw;
+    background-image: url(Szene4/Fußballfans/fussballfan_f95_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 24vh;
+}
+
+#s4_fan_5 {
+    width: 25vw;
+    height: 41vw;
+    background-image: url(Szene4/Fußballfans/fussballfan_b04_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 22vh;
+}
+
+#s4_band_1 {
+    width: 45vw;
+    height: 50vw;
+    background-image: url(Szene4/Band/band_rasseln.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 23vh;
+}
+
+#s4_band_2 {
+    width: 45vw;
+    height: 53vw;
+    background-image: url(Szene4/Band/band_gitarre.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -6;
+    position: absolute;
+    top: 22vh;
+}
+
+#s4_band_2_arm {
+    width: 10vw;
+    height: 10vw;
+    background-image: url(Szene4/Band/band_gitarre_arm.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -5;
+    top:21.3vw;
+    left:14.1vw;
+    position: absolute;
+}
+
+@keyframes gitar_1 {
+    0% {
+
+        transform: rotate(-8deg);
+    }
+    25% {
+        transform: rotate(8deg);
+    }
+
+    50% {
+
+        transform: rotate(-8deg);
+    }
+    75% {
+        transform: rotate(8deg);
+    }
+
+    100% {
+
+        transform: rotate(-8deg);
+    }
+}
+
+#s4_band_3 {
+    width: 45vw;
+    height: 50vw;
+    background-image: url(Szene4/Band/band_trompete.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -9;
+    position: absolute;
+    top: 22vh;
+}
+
+#s4_jan{
+    width: 25vw;
+    height: 36vw;
+    background-image: url(Szene4/Köln/Jan.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 29vh;
+}
+
+#s4_mann_1{
+    width: 25vw;
+    height: 31vw;
+    background-image: url(Szene4/Köln/mann_ddorf_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 20vh;
+}
+
+#s4_mann_2{
+    width: 25vw;
+    height: 33vw;
+    background-image: url(Szene4/ruhrpott/ruhrpott1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -7;
+    position: absolute;
+    top: 21vh;
+}
+
+#s4_mann_3{
+    width: 25vw;
+    height: 39vw;
+    background-image: url(Szene4/mann_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -3;
+    position: absolute;
+    top: 24vh;
+}
+
+#s4_frau_1{
+    width: 25vw;
+    height: 32vw;
+    background-image: url(Szene4/frau1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -3;
+    position: absolute;
+    top: 30vh;
+}
+
+#s4_frau_2{
+    width: 25vw;
+    height: 32vw;
+    background-image: url(Szene4/frau3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -3;
+    position: absolute;
+    top: 31vh;
+}
+
+#s4_tim{
+    width: 25vw;
+    height: 42vw;
+    background-image: url(Szene4/hauptcharakter.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -3;
+    position: absolute;
+    top: 26vh;
+}
+
+
+.funfact{
+    width: 30vw;
+    height: 30vw;
+    background-image: url(Szene4/fun_fact2-01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: 5000;
+    position: absolute;
+    left: 35vw;
+    transform: rotate(7deg);
+}
+
+.funfact_text {
+    width: 21.5vw;
+    height: 25vw;
+    margin-left: 3.2vw;
+    margin-top: 4vw;
+    font-family: "DB Sans";
+    font-size: 1.5vw;
+    line-height: 2.25vw;
+}
+
+
+/*
+ * Fonts
+ */
+/* db sans comb regular*/
+@font-face {
+    font-family: 'db1';
+    src: url('../font/DB1.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*db sans regular*/
+@font-face {
+    font-family: 'db2';
+    src: url('../font/DB2.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 /*
  * Fonts
  */
