@@ -589,6 +589,7 @@ body {
 **/
 
 
+
 #s4_hintergrund{
     width: 480vw;
     height: 50vw;
@@ -678,7 +679,7 @@ body {
 
 
 
-*/
+
 
 /**
 *
@@ -703,20 +704,20 @@ mit skrollr auf der x-Achse positioniert
     background-image: url(Szene4/Fußballfans/fussballfan_fc_1.png);
     background-repeat: no-repeat;
     background-size: contain;
-    z-Index: -3;
+    z-Index: -6;
     position: absolute;
-    top: 23vh;
+    top: 12vw;
 }
 
 #s4_fan_2{
     width: 25vw;
-    height: 37vw;
+    height: 39vw;
     background-image: url(Szene4/Fußballfans/fussballfan_fc_2.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-Index: -9;
     position: absolute;
-    top: 22vh;
+    top: 11vw;
 }
 
 #s4_fan_3 {
@@ -727,7 +728,7 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 22vh;
+    top: 11vw;
 }
 
 #s4_fan_4 {
@@ -736,9 +737,9 @@ mit skrollr auf der x-Achse positioniert
     background-image: url(Szene4/Fußballfans/fussballfan_f95_1.png);
     background-repeat: no-repeat;
     background-size: contain;
-    z-Index: -8;
+    z-Index: -4;
     position: absolute;
-    top: 24vh;
+    top: 13vw;
 }
 
 #s4_fan_5 {
@@ -749,18 +750,52 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 22vh;
+    top: 12vw;
+}
+
+#s4_fan_6 {
+    width: 25vw;
+    height: 41vw;
+    background-image: url(Szene4/Fußballfans/fussballfan_bvb_2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -2;
+    position: absolute;
+    top: 13vw;
+}
+
+#s4_fan_7 {
+    width: 25vw;
+    height: 38vw;
+    background-image: url(Szene4/Fußballfans/fussballfan_f95_2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 13vw;
 }
 
 #s4_band_1 {
     width: 45vw;
     height: 50vw;
-    background-image: url(Szene4/Band/band_rasseln.png);
+    background-image: url(Szene4/Band/band_rasseln1.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 23vh;
+    top: 12vw;
+}
+
+#s4_band_1_arm_l{
+    width: 10vw;
+    height: 10vw;
+    background-image: url(Szene4/Band/band_gitarre_arm.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -5;
+    top:21.3vw;
+    left:14.1vw;
+    position: absolute;
 }
 
 #s4_band_2 {
@@ -771,7 +806,7 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -6;
     position: absolute;
-    top: 22vh;
+    top: 11vw;
 }
 
 #s4_band_2_arm {
@@ -812,12 +847,47 @@ mit skrollr auf der x-Achse positioniert
 #s4_band_3 {
     width: 45vw;
     height: 50vw;
-    background-image: url(Szene4/Band/band_trompete.png);
+    background-image: url(Szene4/Band/band_trompete1.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-Index: -9;
     position: absolute;
-    top: 22vh;
+    top: 11vw;
+}
+
+#s4_band_3_arm {
+    width: 12vw;
+    height: 12vw;
+    background-image: url(Szene4/Band/trompete.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -5;
+    top:9vw;
+    left:19.2vw;
+    position: absolute;
+}
+
+@keyframes tromp_1 {
+    0% {
+
+        transform: rotate(-4deg);
+    }
+    25% {
+        transform: rotate(4deg);
+    }
+
+    50% {
+
+        transform: rotate(-4deg);
+    }
+    75% {
+        transform: rotate(4deg);
+    }
+
+    100% {
+
+        transform: rotate(-4deg);
+    }
 }
 
 #s4_jan{
@@ -828,7 +898,7 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 29vh;
+    top: 16vw;
 }
 
 #s4_mann_1{
@@ -839,7 +909,7 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 20vh;
+    top: 10vw;
 }
 
 #s4_mann_2{
@@ -850,7 +920,7 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -7;
     position: absolute;
-    top: 21vh;
+    top: 11vw;
 }
 
 #s4_mann_3{
@@ -861,7 +931,18 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -3;
     position: absolute;
-    top: 24vh;
+    top: 13vw;
+}
+
+#s4_frau_3{
+    width: 25vw;
+    height: 33vw;
+    background-image: url(Szene4/düsseldorf/richBitch1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -9;
+    position: absolute;
+    top: 15vw;
 }
 
 #s4_frau_1{
@@ -872,7 +953,7 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -3;
     position: absolute;
-    top: 30vh;
+    top: 15vw;
 }
 
 #s4_frau_2{
@@ -883,18 +964,29 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -3;
     position: absolute;
-    top: 31vh;
+    top: 17vw;
 }
 
 #s4_tim{
     width: 25vw;
-    height: 42vw;
-    background-image: url(Szene4/hauptcharakter.png);
+    height: 44vw;
+    background-image: url(Szene4/Szene4_Tim_genervt.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-Index: -3;
     position: absolute;
-    top: 26vh;
+    top: 14vw;
+}
+
+#s4_tim_tunnel{
+    width: 25vw;
+    height: 44vw;
+    background-image: url(Szene4/Szene4_Tim_Tummel.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: 5000;
+    position: absolute;
+    top: 14vw;
 }
 
 
@@ -907,18 +999,20 @@ mit skrollr auf der x-Achse positioniert
     z-Index: 5000;
     position: absolute;
     left: 35vw;
-    transform: rotate(7deg);
+
 }
 
 .funfact_text {
     width: 21.5vw;
     height: 25vw;
-    margin-left: 3.2vw;
-    margin-top: 4vw;
+    margin-left: 3.3vw;
+    margin-top: 4.2vw;
     font-family: "DB Sans";
     font-size: 1.5vw;
     line-height: 2.25vw;
 }
+
+
 
 
 /*

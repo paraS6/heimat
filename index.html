@@ -8,6 +8,7 @@
 </head>
 <body>
 <main>
+    <!--
     <div id="scrollnav">
         <a href="#s1_intro" data-menu-top="0">
             <div id="nav_s1_intro"
@@ -154,7 +155,7 @@
                  data-35000 = "transform: translateX(-255vw);">
             <div></div>
         </section>
-        -->
+
         <section class="container" id=s2_mannZeche
                  data-17000 = "transform: translateX(5vw);opacity:1"
                  data-35000 = "transform: translateX(-250vw);">
@@ -240,7 +241,9 @@
                  data-37400 = "width:200vw; height: 180vw"
                  data-48000 = "width: 400vw; height: 380vw"
                  data-48500 = "width:1000vw; height: 900vw"
-                 data-49000 = "width:1500vw; height: 1300vw">-->
+                 data-49000 = "width:1500vw; height: 1300vw">
+
+                 >
             <div></div>
         </section>
     </div>
@@ -325,11 +328,11 @@
             </div>
         </section>
     </div>
-
+--->
 
     <div class="viewport" id="s4_nervigefahrgaeste"
          data-0 = "display: block; transform: translateX(0vw);"
-         data-30000 = "transform: translateX(-100vw); display: none;"
+         data-40000 = "transform: translateX(-100vw); display: none;"
     >
 
         <section id="bahn_effekte">
@@ -493,15 +496,9 @@
 
         <section id="s4_personen">
 
-            <div class="container" id="s4_tim"
-                 data-0 = "transform: translateX(0vw); opacity:1"
-                 data-27000 = "transform: translateX(-265vw);"
-            >
-            </div>
-
-            <div class="container" id=s4_fan_1
-                 data-0 = "transform: translateX(82vw);"
-                 data-27000 = "transform: translateX(-178vw);"
+              <div class="container" id="s4_fan_1"
+                 data-0 = "transform: translateX(84vw);"
+                 data-27000 = "transform: translateX(-180vw);"
             >
                 <div></div>
             </div>
@@ -534,11 +531,26 @@
                 <div></div>
             </div>
 
+            <div class="container" id=s4_fan_6
+                 data-0 = "transform: translateX(132vw);"
+                 data-27000 = "transform: translateX(-128vw);"
+            >
+                <div></div>
+            </div>
+
+            <div class="container" id=s4_fan_7
+                 data-0 = "transform: translateX(148vw);"
+                 data-27000 = "transform: translateX(-112vw);"
+            >
+                <div></div>
+            </div>
+
             <div class="container" id=s4_band_1
                  data-0 = "transform: translateX(176vw);"
                  data-27000 = "transform: translateX(-84vw);"
             >
-                <div></div>
+                <div id="s4_band_1_arm_l"></div>
+                <div id="s4_band_1_arm_r"></div>
             </div>
 
             <div class="container" id=s4_band_2
@@ -554,15 +566,11 @@
                  data-0 = "transform: translateX(180vw);"
                  data-27000 = "transform: translateX(-80vw);"
             >
-                <div></div>
+                <div id="s4_band_3_arm"
+                     data-0="animation: tromp_1 3s linear infinite; transform-origin: 10vw 20%;"
+                ></div>
             </div>
 
-            <div class="container" id=s4_band_3
-                 data-0 = "transform: translateX(180vw);"
-                 data-27000 = "transform: translateX(-80vw);"
-            >
-                <div></div>
-            </div>
 
             <div class="container" id=s4_jan
                  data-0 = "transform: translateX(255vw);"
@@ -592,6 +600,13 @@
                 <div></div>
             </div>
 
+            <div class="container" id=s4_frau_3
+                 data-0 = "transform: translateX(272vw);"
+                 data-27000 = "transform: translateX(11vw);"
+            >
+                <div></div>
+            </div>
+
             <div class="container" id=s4_frau_1
                  data-0 = "transform: translateX(340vw);"
                  data-27000 = "transform: translateX(80vw);"
@@ -613,28 +628,39 @@
                 <div></div>
             </div>
 
+            <div class="container" id=s4_tim_tunnel
+                 data-0="transform: translateX(380vw); display:none;"
+                 data-27000="transform: translateX(120vw); display:none;"
+                 data-28700="transform: translateX(120vw); display:block; opacity:0"
+                 data-28900="opacity:1";
+                 data-35000="transform: translateX(120vw);"
+                 data-40000="transform: translateX(70vw);"
+            >
+                <div></div>
+            </div>
+
 
         </section>
 
     </div>
 
     <!--s4_funfact -->
-    <section class="viewport"
-    >
+    <section class="viewport">
 
         <div class="funfact"
-             data-12000 = "transform: translateY(130vw); display:block;"
-             data-17000 = "transform: translateY(30vw);  display:block;"
-             data-22000 = "transform: translateY(30vw); display:block;"
-             data-26000 = "transform: translateY(130vw); display:none;"
+             data-12000 = "transform: translateY(130vw) rotate(0deg);display:block;"
+             data-15000 = "transform: translateY(50vw) rotate(0deg);"
+             data-17000 = "transform: translateY(35vw) rotate(-10deg);"
+             data-20000 = "transform: translateY(35vw) rotate(-10deg);"
+             data-22000 = "transform: translateY(35vw) rotate(-10deg);"
+             data-24000 = "transform: translateY(50vw) rotate(0deg);"
+             data-24001 = "display:none;"
         >
             <div class="funfact_text"><p>Durch die Erneuerung der Züge hat die S6 seit 2015 eine Klimaanlage – die Toiletten wurden jedoch vergessen.</p></div>
         </div>
 
 
     </section>
-
-
 
 
 
