@@ -114,7 +114,6 @@ body {
     margin: 0;
     width: 500vw;
     height: 100vw;
-    background-image: url("bahn_ohne_tuer-01.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -509,7 +508,7 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     top: 13vw;
     position: absolute;
-    left: 0vw;
+    left: 0;
 }
 #s3_uhr{
     background-image: url("Szene3/bahnhofsuhr-01.svg");
