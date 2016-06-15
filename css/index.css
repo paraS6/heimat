@@ -436,7 +436,7 @@ mit skrollr auf der x-Achse positioniert
 }
 #s3_werbung_1{
     display: flex;
-    background-image: url("Szene3/werbung_1.svg");
+    background-image: url("Szene3/werbung-01.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -482,7 +482,7 @@ mit skrollr auf der x-Achse positioniert
 #s3_mann_1{
     width: 20vw;
     height: 12vw;
-    background-image: url("Szene3/mann_1.svg");
+    background-image: url("Szene3/mann_1.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -494,7 +494,7 @@ mit skrollr auf der x-Achse positioniert
 #s3_frau_1{
     width: 20vw;
     height: 15vw;
-    background-image: url("Szene3/frau1.svg");
+    background-image: url("Szene3/frau1.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -504,23 +504,12 @@ mit skrollr auf der x-Achse positioniert
     left: 43vw;
 }
 #s3_zug_vorne {
-    width: 150vw;
-    height: 100vw;
-    background-image: url("Szene3/Bahn_vorne.svg");
+    background-image: url("Szene3/bahn_hinten_vorne-01.png");
     background-repeat: no-repeat;
     background-size: contain;
     top: 13vw;
     position: absolute;
-    left: 0;
-}
-#s3_zug_hinten{
-    width: 150vw;
-    height: 100vw;
-    background-image: url("Szene3/Bahn_ende.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    top: 7.5vw;
-    position: absolute;
+    left: 0vw;
 }
 #s3_uhr{
     background-image: url("Szene3/bahnhofsuhr-01.svg");
