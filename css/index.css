@@ -999,7 +999,6 @@ mit skrollr auf der x-Achse positioniert
     z-Index: 5000;
     position: absolute;
     left: 35vw;
-
 }
 
 .funfact_text {
@@ -1011,9 +1010,6 @@ mit skrollr auf der x-Achse positioniert
     font-size: 1.5vw;
     line-height: 2.25vw;
 }
-
-
-
 
 /*
  * Fonts
