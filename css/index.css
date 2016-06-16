@@ -445,6 +445,21 @@ mit skrollr auf der x-Achse positioniert
     top: 11.6vw;
     left: 7vw;
 }
+#s3_funfact{
+    background-image: url("Szene3/szene_3_fun_fact-01.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: -3;
+    width: 20.5vw;
+    height: 14vw;
+    top: 11.6vw;
+    left: 7vw;
+    font-family: "DB Sans";
+    font-size: 1.5vw;
+    line-height: 2.25vw;
+    padding: 1vw 0vw 0vw 2vw;
+}
 #muteButton{
     position: absolute;
 }
