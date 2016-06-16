@@ -486,6 +486,19 @@ mit skrollr auf der x-Achse positioniert
 #s3_haupt_charakter {
     width: 20vw;
     height: 15vw;
+    background-image: url(Szene3/hauptcharakter.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    background-position: center;
+    z-index: -1;
+    top: 22vw;
+    left: 44vw;
+}
+#s3_haupt_charakter_uhr {
+    width: 20vw;
+    height: 15vw;
+    background-image: url(Szene3/hauptcharakter_uhr.png);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
