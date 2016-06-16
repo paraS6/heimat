@@ -598,3 +598,9 @@ mit skrollr auf der x-Achse positioniert
     font-weight: normal;
     font-style: normal;
 }
+
+@media (max-width:1315px) {
+    body {
+        background-image: url("hintergrund_alina-01.png");
+    }
+}
