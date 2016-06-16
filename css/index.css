@@ -213,16 +213,29 @@ body {
 
 }
 
-#s2_protagonist div{
+#s2_protagonist_neutral div{
     width: 30vw;
     height: 70vw;
-    background-image: url(Szene2/Personen/hauptcharakter.svg);
+    background-image: url(Szene2/Personen/Szene2_Tim_neutral.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -7;
+    position: absolute;
+    top: 15vw;
+    /* right: -330vw;*/
+}
+
+
+#s2_protagonist_muede div{
+    width: 30vw;
+    height: 70vw;
+    background-image: url(Szene2/Personen/Szene2_Tim_muede.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-index: -8;
     position: absolute;
     top: 15vw;
-   /* right: -330vw;*/
+    /* right: -330vw;*/
 }
 
 
@@ -1044,8 +1057,9 @@ mit skrollr auf der x-Achse positioniert
     font-style: normal;
 }
 
+/*
 @media (max-width:1315px) {
     body {
         background-image: url("hintergrund_alina-01.png");
     }
-}
+}*/
