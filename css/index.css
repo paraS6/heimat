@@ -9,6 +9,7 @@ body {
     position: fixed;
 }
 
+
 .container{
     position: absolute;
     width: 100vw;
@@ -789,12 +790,12 @@ mit skrollr auf der x-Achse positioniert
 #s4_band_1_arm_l{
     width: 10vw;
     height: 10vw;
-    background-image: url(Szene4/Band/band_gitarre_arm.png);
+    background-image: url(Szene4/Band/band_rasseln_l.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-Index: -5;
-    top:21.3vw;
-    left:14.1vw;
+    top:7.3vw;
+    left:2.1vw;
     position: absolute;
 }
 
@@ -807,6 +808,14 @@ mit skrollr auf der x-Achse positioniert
     z-Index: -6;
     position: absolute;
     top: 11vw;
+}
+
+#s4_band_2_arm_l{
+
+ }
+
+#s4_band_2_arm_l{
+
 }
 
 #s4_band_2_arm {
@@ -1047,4 +1056,17 @@ mit skrollr auf der x-Achse positioniert
     src: url('../font/DB2.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+}
+
+@media only screen and (max-aspect-ratio: 17/9) {
+
+    #mq {
+        display:block;
+        background-color: black;
+        height: 180vw;
+        width: 100vw;
+        top:52vw;
+        position: fixed;
+        z-index: 1000;
+    }
 }
