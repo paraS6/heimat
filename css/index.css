@@ -1031,6 +1031,10 @@ mit skrollr auf der x-Achse positioniert
 
 /* Szene 5 */
 
+#s5_nachtfahrt{
+    z-index: 5;
+}
+
 #s5_hintergrund_himmel_hell {
     background-size: contain;
     width: 200vw;
@@ -1048,6 +1052,15 @@ mit skrollr auf der x-Achse positioniert
     background-image: url(Szene5/himmel_dunkelheit-01.png);
     position: absolute;
     z-index:-4;
+}
+
+#s5_sterne {
+    width: 200vw;
+    height: 100vw;
+    /*background-image: url(img/sterne.gif);*/
+    position: absolute;
+    z-index:-3;
+    background-repeat: repeat;
 }
 
 
@@ -1171,7 +1184,7 @@ mit skrollr auf der x-Achse positioniert
     width:200vw;
     height: 15vw;
     background-image: url(Szene5/hintergrund_wolken-01.png);
-    background-repeat: repeat-x;
+    /*background-repeat: repeat-x;*/
     background-size: contain;
     position: absolute;
     z-index: 2;
@@ -1219,6 +1232,62 @@ mit skrollr auf der x-Achse positioniert
     font-family: "DB Sans";
     font-size: 1.5vw;
     line-height: 2.25vw;
+}
+
+/** Outro **/
+
+#outro{
+    background-image: url(imgOutro/nachthimmel.png);
+    width: 100vw;
+    height: 300vh;
+    background-size: cover;
+    z-index: -4;
+}
+
+#outro_jana1 div{
+    background-image: url(imgOutro/outro_jana1.png);
+
+}
+#outro_jana2 div{
+    background-image: url(imgOutro/outro_jana2.png);
+
+}
+#outro_jana3 div{
+    background-image: url(imgOutro/outro_jana3.png);
+
+}
+#outro_jana4 div{
+    background-image: url(imgOutro/outro_jana4.png);
+
+}
+#outro_jana5 div{
+    background-image: url(imgOutro/outro_jana5.png);
+
+}
+#outro_jana6 div{
+    background-image: url(imgOutro/outro_jana6.png);
+
+}
+#outro_jana7 div{
+    background-image: url(imgOutro/outro_jana7.png);
+
+}
+#outro_jana8 div{
+    background-image: url(imgOutro/outro_jana8.png);
+
+}
+#outro_janalinien div{
+    background-image: url(imgOutro/outro_janalinien.png);
+}
+
+.sterne, .sterne div{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    top:5vh;
 }
 
 /*

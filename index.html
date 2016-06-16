@@ -679,7 +679,12 @@
 
 <!-- Szene 5 -->
 
-    <div class="viewport" id="s5_nachtfahrt" data-0="display:none" data-90000="display:block">
+    <div class="viewport"
+         id="s5_nachtfahrt"
+         data-0="display:none"
+         data-90000="display:block"
+         data-96000="transform:translateY(0vh)"
+         data-98000="transform:translateY(100vh); display:none">
         <div id="s5_hintergrund_himmel_hell">
         </div>
         <div id="s5_hintergrund_himmel_dunkel"
@@ -690,40 +695,41 @@
         <div id="s5_hintergrund_landschaft"
              data-90000="transform:translateX(0vw)"
              data-90800="transform:translateX(0vw)"
-             data-96000="transform:translateX(-170vw)">
+             data-95000="transform:translateX(-170vw)">
         </div>
 
         <div id="s5_hintergrund_du"
              data-90000="transform:translateX(0vw)"
              data-90800="transform:translateX(0vw)"
-             data-96000="transform:translateX(-170vw)">
+             data-95000="transform:translateX(-170vw)">
         </div>
         <div id="s5_hintergrund_zeche_zoll"
              data-90000="transform:translateX(19vw)"
              data-90800="transform:translateX(19vw)"
-             data-96000="transform:translateX(-150vw)">
+             data-95000="transform:translateX(-150vw)">
         </div>
         <div id="s5_hintergrund_skyline_ddorf"
              data-90000="transform:translateX(39vw)"
              data-90800="transform:translateX(39vw)"
-             data-96000="transform:translateX(-131vw)">
+             data-95000="transform:translateX(-131vw)">
         </div>
         <div id="s5_hintergrund_skyline_lev"
-             data-90000="transform:translateX(0vw);left:118vw"
-             data-90800="transform:translateX(0vw)"
-             data-96000="transform:translateX(-170vw)">
+             data-90000="transform:translateX(119vw)"
+             data-90800="transform:translateX(119vw)"
+             data-95000="transform:translateX(-51vw)">
         </div>
 
         <div id="s5_hintergrund_skyline_koeln"
-             data-90000="transform:translateX(0vw);left:132vw"
-             data-90800="transform:translateX(0vw)"
-             data-96000="transform:translateX(-170vw)">
+             data-90000="transform:translateX(133vw)"
+             data-90800="transform:translateX(133vw)"
+             data-95000="transform:translateX(-37vw)">
         </div>
 
 
         <div id="s5_bahn"
              data-90000="transform:translateX(-150vw)"
-             data-90800="transform:translateX(-50vw)">
+             data-95000="transform:translateX(-50vw)">
+             <!--data-96000="transform: translateX(-100vw)">-->
 
         </div>
 
@@ -753,18 +759,76 @@
              data-95000="transform:translateX(-70vw);opacity:0.2">
         </div>
         <div id="bruecke"
-             data-90000="transform:translateX(0vw);left:171vw"
-             data-90800="transform:translateX(0vw)"
-             data-96000="transform:translateX(-170vw)"
+             data-90000="transform:translateX(170vw)"
+             data-90800="transform:translateX(170vw)"
+             data-95000="transform:translateX(0vw)"
         >
         </div>
         <div id="koeln_rechts"
-             data-90000="transform:translateX(0vw);left:232vw"
-             data-90800="transform:translateX(0vw)"
-             data-96000="transform:translateX(-170vw)">
+             data-90000="transform:translateX(233vw)"
+             data-90800="transform:translateX(233vw)"
+             data-95000="transform:translateX(63vw)">
         </div>
 
 
+    </div>
+
+    <!--Outro-->
+
+    <div class="viewport" id="s6_outro"
+         data-0="display: none" data-96000="display: block">
+        <div id="outro"
+             data-96000="transform:translateY(-300vh)"
+             data-98000="transform: tranlateY(-150vh)"
+             data-100000="transform:translateY(0vh)"></div>
+
+
+        <section class="sterne" id="outro_jana1"
+                 data-99000="opacity: 0.5; transform:translate(-100vw,0vw);"
+                 data-112000=" opacity:1; transform:translate(0vw,0vw);">
+            <div></div>
+        </section>
+        <section class="sterne" id="outro_jana2"
+                 data-99000="opacity: 0.5; transform:translate(175vw,50vw);"
+                 data-112000=" opacity:1; transform:translate(0vw,0vw);">
+            <div></div>
+        </section>
+        <section class="sterne" id="outro_jana3"
+                 data-99000="opacity: 0.5;transform:translate(100vw,0vw);"
+                 data-112000="opacity:1; transform:translate(0vw,0vw);">
+            <div></div>
+        </section>
+        <section class="sterne" id="outro_jana4"
+                 data-99000="opacity: 0.5; transform:translate(100vw,0vw);"
+                 data-112000=" opacity:1; transform:translate(0vw,0vw);">
+            <div></div>
+        </section>
+        <section class="sterne" id="outro_jana5"
+                 data-99000="opacity: 0.5; transform:translate(-175vw,0vw);"
+                 data-112000=" opacity:1; transform:translate(0vw,0vw);">
+            <div></div>
+        </section>
+        <section class="sterne" id="outro_jana6"
+                 data-99000="opacity: 0.5; transform:translate(100vw,-50vw);"
+                 data-112000=" opacity:1; transform:translate(0vw,0vw);">
+            <div></div>
+        </section>
+        <section class="sterne" id="outro_jana7"
+                 data-99000="opacity: 0.5; transform:translate(100vw,75vw);"
+                 data-112000=" opacity:1; transform:translate(0vw,0vw);">
+            <div></div>
+        </section>
+        <section class="sterne" id="outro_jana8"
+                 data-99000="opacity: 0.5; transform:translate(-100vw,75vw);"
+                 data-112000=" opacity:1; transform:translate(0vw,0vw);">
+            <div></div>
+        </section>
+
+        <section class="sterne" id="outro_janalinien"
+                 data-112000="opacity: 0;"
+                 data-113000=" opacity:0.5;">
+            <div></div>
+        </section>
     </div>
 
 </main>
