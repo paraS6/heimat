@@ -28,8 +28,8 @@ body{
 
 
 #s5_hintergrund_landschaft{
-    width: 200vw;
-    height: 45vw;
+    width: 350vw;
+    height: 52vw;
     background-image: url(img/hintergrund-01.png);
     background-size: contain;
     z-index: -2;
@@ -81,9 +81,9 @@ body{
 }
 
 #s5_hintergrund_skyline_koeln{
-    margin-top:5.6vw;
-    width: 80vw;
-    height: 100vw;
+    margin-top:-0.3vw;
+    width: 40vw;
+    height: 50vw;
     background-size: contain;
     position: absolute;
     background-repeat: no-repeat;
@@ -111,9 +111,8 @@ body{
     z-index:-4;
 }
 #s5_tunnel{
-    margin-top: 25vw;
-    width: 6vw;
-    height: 20vw;
+    width: 65vw;
+    height: 50vw;
     background-image: url(img/tunnel-01.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -153,5 +152,28 @@ body{
     position: absolute;
     z-index: 2;
 }
+
+#bruecke {
+        margin-top: 11vw;
+    width:80vw;
+    height: 40vw;
+    background-image: url(img/hohenzollernbruecke-01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 2;
+}
+
+#koeln_rechts {
+        margin-top: 12vw;
+    width:30vw;
+    height: 40vw;
+    background-image: url(img/skyline_koeln-01_rechts.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 2;
+}
+    
 
 
