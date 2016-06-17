@@ -15,93 +15,138 @@ body {
     height: 100vh;
 }
 
+#muteButton,#unMuteButton{
+    cursor: pointer;
+    position: fixed;
+}
+
+#muteButton input, #unMuteButton input{
+    cursor: pointer;
+    background-repeat: no-repeat;
+    width: 2.25vw;
+    height: 2.25vw;
+    border: 0;
+    outline: none;
+    background-size: contain;
+    background-color: transparent;
+    display: block;
+    margin: 0.375vw;
+    margin-left: 2vw;
+}
+#unMuteButton input{
+    background-image: url(soundaus.png);
+}
+#muteButton input{
+    background-image: url(soundan.png);
+}
+
 /**
     Navigationsleiste
 **/
 
-#scrollnav {
-    background-color: white;
-    background-image: url(menue_test-01.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: fixed;
-    width: 50vw;
+nav{
+    width: 56vw;
     height: 3vw;
-    border-radius: 1vw;
-    opacity: 0.8;
-    left: 25vw;
-    top: 1vw;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #000000;
+    background: white;
+    position: fixed;
+    top:0;
     z-index: 10;
+    left: 22vw;
+    opacity: 0.3;
 }
 
-#scrollnav a {
-    float: left;
+nav #linie{
+    position: absolute;
+    width: 48vw;
+    height: 0.5vw;
+    border-radius: 25px;
+    background: black;
+    margin: 1.25vw;
+    margin-left: 6.25vw;
+}
+nav #pfeil{
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-left: 52vw;
+    margin-top: 0.3vw;
+    border-style: solid;
+    border-width: 1.25vw 0 1.25vw 3vw;
+    border-color: transparent transparent transparent #000000;
+}
+
+nav .ring {
     width: 2.25vw;
     height: 2.25vw;
+    background: black;
     border-radius: 2vw;
-    margin-top: 0.25vw;
-    text-decoration: none;
+    margin: 0.375vw;
+    position: absolute;
 }
 
-#scrollnav a div {
-    float: left;
-    width: 1.5vw;
-    height: 1.5vw;
-    border-radius: 1vw;
-    margin-top: 0.4vw;
-    margin-left: 0.375vw;
+nav .innen{
+    width: 1.25vw;
+    height: 1.25vw;
+    background: white ;
+    border-radius: 2vw;
+    margin: 0.5vw;
+    position: absolute;
+}
+.innen:hover{
+    background: red !important;
 }
 
-#scrollnav a:first-child {
-    margin-left: 0.55vw;
+#ring1{
+    margin-left: 6vw;
 }
 
-#scrollnav a:not(:first-child) {
-    margin-left: 6.13vw;
+#ring2{
+    margin-left: 14vw;
 }
 
-#scrollnav a:hover div {
-    background-color: red !important;
+#ring3{
+    margin-left: 22vw;
+}
+#ring4{
+    margin-left: 30vw;
+}
+#ring5{
+    margin-left: 38vw;
+}
+#ring6{
+    margin-left: 46vw;
 }
 
-#scrollnav .scrollnav_name {
+.nav_name, .nav_name div{
+    position: absolute;
+    z-index: 9;
+    margin-left: 1vw;
+    margin-top: 4vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    padding-top: 0.2vw;
+    text-align: left;
+    width: 15vw;
+    border-radius: 2vw;
     display: none;
 }
 
-#scrollnav a:hover + .scrollnav_name {
+.nav_name{
+    transform: rotate(45deg);
+}
+.nav_name div{
+    background-color: white;
+    width: auto;
+    color: black;
+    font-family: "DB Sans";
+    font-size: 1.5vw;
+}
+
+nav:hover, nav a:hover .nav_name, nav a:hover .nav_name div {
     display: block;
-    float: left;
-    transform: rotate(-45deg);
-}
-
-#scrollnav a:hover + #scrollnav_name_intro {
-    margin-top: 3vw;
-    margin-left: -2.5vw;
-}
-
-#scrollnav a:hover + #scrollnav_name_pendler {
-    margin-top: 3.5vw;
-    margin-left: -3.25vw;
-}
-
-#scrollnav a:hover + #scrollnav_name_bahnhof {
-    margin-top: 3.7vw;
-    margin-left: -3.5vw;
-}
-
-#scrollnav a:hover + #scrollnav_name_fahrgaeste {
-    margin-top: 3.75vw;
-    margin-left: -4.25vw;
-}
-
-#scrollnav a:hover + #scrollnav_name_nachtfahrt {
-    margin-top: 3.75vw;
-    margin-left: -4vw;
-}
-
-#scrollnav a:hover + #scrollnav_name_outro {
-    margin-top: 3.2vw;
-    margin-left: -2.75vw;
+    opacity: 1;
 }
 
 /**
@@ -473,13 +518,7 @@ mit skrollr auf der x-Achse positioniert
     line-height: 2.25vw;
     padding: 1vw 0 0 2vw;
 }
-#muteButton{
-    position: absolute;
-}
-#unMuteButton{
-    left: 2.5vw;
-    position: absolute;
-}
+
 .s3_zug {
     margin: 0;
 }

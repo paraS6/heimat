@@ -9,17 +9,25 @@ var un_Mute_Audio = document.getElementById("unMuteButton");
 var mute = "on";
 
 //Funktion zum Stumm schalten
-function muteAudio(){
+document.getElementsByTagName("input")[1].onclick = function(){
     //Falls Ton gerade abgespielt wird muss dieser gestoptt werden.
     document.getElementById("nameAudio").pause();
     //Standart Ton wird abgeschaltet
     mute = "off";
 //    alert(mute);
+
+    //buttonStyle
+    mute_Audio.style.display = 'none';
+    un_Mute_Audio.style.display = 'block';
 }
-function unMuteAudio(){
+document.getElementsByTagName("input")[0].onclick = function(){
     //Standart Ton wird eingeschaltet
     mute = "on";
 //    alert(mute);
+    //buttonStyle
+
+    mute_Audio.style.display = 'block';
+    un_Mute_Audio.style.display = 'none';
 }
 
 //in Jedem Frame den Scrollwert berechnen und Ton ab gewissem Wert abspielen
@@ -31,10 +39,10 @@ function sc(mute) {
     var scroll = window.pageYOffset;
     //Variable für die AudioDateien
     var nameAudio = document.getElementById("nameAudio");
-    
-    
-    
-    
+
+
+
+
     //Gemutet?
     if(mute == "off"){
         nameAudio.pause();
@@ -52,3 +60,8 @@ function sc(mute) {
         }
     }
 }
+/*document.getElementsByTagName("nav")[0].onclick = function (){
+
+
+ document.getElementsByTagName("nav")[0].style.backgroundColor = "green";
+ }*/

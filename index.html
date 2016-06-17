@@ -8,58 +8,100 @@
 </head>
 <body>
 <main>
-    <div id="scrollnav">
+    <nav>
+
+        <audio id="nameAudio" preload="auto">
+            <source src="audio/Hit%20The%20Road%20Jack@Berlin%20U-Bahn%20U2.mp3">
+        </audio>
+        <div id="unMuteButton">
+            <input type="button" name="unMuteAudio">
+        </div>
+        <div id="muteButton" >
+            <input type="button" name="muteAudio">
+        </div>
+
+        <div id="linie"></div>
+        <div id="pfeil"></div>
+
         <a href="#s1_intro" data-menu-top="0">
-            <div id="nav_s1_intro"
-                 data-0="background-color:red"
-                 data-15000="background-color:transparent">
+            <div class="ring" id="ring1">
+                <div class="nav_name">
+                    <div>Intro</div>
+                </div>
+                <div class="innen"></div>
+                <div class="innen"
+                     data-0="background-color:red"
+                     data-15000="background-color:transparent">
+                </div>
             </div>
         </a>
-        <div class="scrollnav_name" id="scrollnav_name_intro">Intro</div>
         <a href="#s2_pendler" data-menu-top="15001">
-            <div id="nav_s2_pendler"
-                 data-0="background-color:transparent"
-                 data-15000="background-color:red"
-                 data-42000="background-color:transparent">
+            <div class="ring" id="ring2">
+                <div class="nav_name">
+                    <div>Pendler</div>
+                </div>
+                <div class="innen"></div>
+                <div class="innen"
+                     data-0="background-color:transparent"
+                     data-15000="background-color:red"
+                     data-42000="background-color:transparent">
+                </div>
             </div>
         </a>
-        <div class="scrollnav_name" id="scrollnav_name_pendler">Pendler</div>
         <a href="#s3_bahnhof" data-menu-top="42005">
-            <div id="nav_s3_bahnhof"
-                 data-0="background-color:transparent"
-                 data-42000="background-color:red"
-                 data-50000="background-color:transparent">
+            <div class="ring" id="ring3">
+                <div class="nav_name">
+                    <div>Bahnhof</div>
+                </div>
+                <div class="innen"></div>
+                <div class="innen"
+                     data-0="background-color:transparent"
+                     data-42000="background-color:red"
+                     data-50000="background-color:transparent">
+                </div>
             </div>
         </a>
-        <div class="scrollnav_name" id="scrollnav_name_bahnhof">Bahnhof</div>
         <a href="#s4_nervigefahrgaeste" data-menu-top="50001">
-            <div id="nav_s4_nervigefahrgaeste"
-                 data-0="background-color:transparent"
-                 data-50000="background-color:red"
-                 data-60000="background-color:transparent">
+            <div class="ring" id="ring4">
+                <div  class="nav_name">
+                    <div>nervige&nbsp;Fahrgäste</div>
+                </div>
+                <div class="innen"></div>
+                <div class="innen"
+                     data-0="background-color:transparent"
+                     data-50000="background-color:red"
+                     data-60000="background-color:transparent">
+                </div>
             </div>
         </a>
-        <div class="scrollnav_name" id="scrollnav_name_fahrgaeste">Fahrgaeste</div>
         <a href="#s5_nachtfahrt">
-            <div id="nav_s5_nachtfahrt"
-                 data-0="background-color:transparent"
-                 data-60000="background-color:red"
-                 data-70000="background-color:transparent">
+            <div class="ring" id="ring5">
+                <div class="nav_name">
+                    <div>Nachtfahrt</div>
+                </div>
+                <div class="innen"></div>
+                <div class="innen"
+                     data-0="background-color:transparent"
+                     data-60000="background-color:red"
+                     data-70000="background-color:transparent">
+                </div>
             </div>
         </a>
-        <div class="scrollnav_name" id="scrollnav_name_nachtfahrt">Nachtfahrt</div>
         <a href="#s6_outro">
-            <div id="nav_s6_nachtfahrt"
-                 data-0="background-color:transparent"
-                 data-70000="background-color:red"
-                 data-80000="background-color:transparent">
+            <div class="ring" id="ring6">
+                <div class="nav_name">
+                    <div >Sternenhimmel</div>
+                </div>
+                <div class="innen"></div>
+                <div class="innen"
+                     data-0="background-color:transparent"
+                     data-70000="background-color:red"
+                     data-80000="background-color:transparent"></div>
             </div>
         </a>
-        <div class="scrollnav_name" id="scrollnav_name_outro">Outro</div>
-    </div>
+    </nav>
 
 
-    <script type="text/javascript" src="js/sound.js"></script>
 
 
 
@@ -270,15 +312,6 @@
          data-42000 = "display: block"
          data-50000 = "display: none"
     >
-        <audio id="nameAudio" preload="auto">
-            <source src="audio/Hit%20The%20Road%20Jack@Berlin%20U-Bahn%20U2.mp3">
-        </audio>
-        <div id="muteButton" onclick="muteAudio()">
-            <input type="button" name="muteAudio" value="Off">
-        </div>
-        <div id="unMuteButton" onclick="unMuteAudio()">
-            <input type="button" name="unMuteAudio" value="On">
-        </div>
         <section id="s3_bahnhof"
             data-48500="transform:translateX(0vw);display:block"
             data-49500="transform:translateX(-100vw);display:none">
@@ -832,6 +865,7 @@
     </div>
 
 </main>
+<script type="text/javascript" src="js/sound.js"></script>
 <script type="text/javascript" src="js/skrollr.min.js"></script>
 <script type="text/javascript" src="js/skrollr.menu.min.js"></script>
 <script>
