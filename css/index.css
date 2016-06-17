@@ -1359,11 +1359,36 @@ mit skrollr auf der x-Achse positioniert
 .sterne, .sterne div{
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 100vw;
     background-size: contain;
     background-repeat:no-repeat;
-    background-position: center;
-    top:5vh;
+    top:30vw;
+}
+
+/*Liste Namen*/
+
+ul{
+    text-align: center;
+    font-family: "DB Sans Comp", "sans-serif";
+    font-size: 3vw;
+    color: white;
+    position: absolute;
+    top: 56vw;
+    list-style: none;
+    opacity: 0.5;
+}
+
+
+section h1{
+    font-family: "DB Sans", "sans-serif";
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    top: 1vw;
+    font-size: 6vw;
+    width: 50vw;
+    left: 25vw;
+    text-align: center;
 }
 
 /*
