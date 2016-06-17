@@ -794,9 +794,67 @@ mit skrollr auf der x-Achse positioniert
     background-repeat: no-repeat;
     background-size: contain;
     z-Index: -5;
-    top:7.3vw;
-    left:2.1vw;
+    top:9.6vw;
+    left:0.9vw;
     position: absolute;
+}
+
+@keyframes rassel_1 {
+    0% {
+
+        transform: rotate(-3deg);
+    }
+    25% {
+        transform: rotate(3deg);
+    }
+
+    50% {
+
+        transform: rotate(-3deg);
+    }
+    75% {
+        transform: rotate(3deg);
+    }
+
+    100% {
+
+        transform: rotate(-3deg);
+    }
+}
+
+#s4_band_1_arm_r{
+    width: 10vw;
+    height: 10vw;
+    background-image: url(Szene4/Band/band_rasseln_r.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -5;
+    top:9.5vw;
+    left:6.7vw;
+    position: absolute;
+}
+
+@keyframes rassel_2 {
+    0% {
+
+        transform: rotate(-7deg);
+    }
+    25% {
+        transform: rotate(7deg);
+    }
+
+    50% {
+
+        transform: rotate(-7deg);
+    }
+    75% {
+        transform: rotate(7deg);
+    }
+
+    100% {
+
+        transform: rotate(-7deg);
+    }
 }
 
 #s4_band_2 {
@@ -810,13 +868,6 @@ mit skrollr auf der x-Achse positioniert
     top: 11vw;
 }
 
-#s4_band_2_arm_l{
-
- }
-
-#s4_band_2_arm_l{
-
-}
 
 #s4_band_2_arm {
     width: 10vw;
@@ -852,6 +903,7 @@ mit skrollr auf der x-Achse positioniert
         transform: rotate(-8deg);
     }
 }
+
 
 #s4_band_3 {
     width: 45vw;
@@ -916,7 +968,7 @@ mit skrollr auf der x-Achse positioniert
     background-image: url(Szene4/Köln/mann_ddorf_1.png);
     background-repeat: no-repeat;
     background-size: contain;
-    z-Index: -8;
+    z-Index: -10;
     position: absolute;
     top: 10vw;
 }
@@ -927,7 +979,7 @@ mit skrollr auf der x-Achse positioniert
     background-image: url(Szene4/ruhrpott/ruhrpott1.png);
     background-repeat: no-repeat;
     background-size: contain;
-    z-Index: -7;
+    z-Index: -12;
     position: absolute;
     top: 11vw;
 }
@@ -960,7 +1012,7 @@ mit skrollr auf der x-Achse positioniert
     background-image: url(Szene4/frau1.png);
     background-repeat: no-repeat;
     background-size: contain;
-    z-Index: -3;
+    z-Index: -9;
     position: absolute;
     top: 15vw;
 }
@@ -971,7 +1023,7 @@ mit skrollr auf der x-Achse positioniert
     background-image: url(Szene4/frau3.png);
     background-repeat: no-repeat;
     background-size: contain;
-    z-Index: -3;
+    z-Index: -9;
     position: absolute;
     top: 17vw;
 }
@@ -996,6 +1048,46 @@ mit skrollr auf der x-Achse positioniert
     z-Index: 5000;
     position: absolute;
     top: 14vw;
+}
+
+.bubble{
+    position: absolute;
+    width: 25vw;
+    height: 8vw;
+    padding: 2vw;
+    background: #FFFFFF;
+    border-radius: 3vw;
+    z-index: 5003;
+    top: 1vw;
+}
+
+.bubble:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 5vw 2vw 0;
+    border-color: #FFFFFF transparent;
+    width: 0;
+    z-index: 5000;
+    margin-left: -5vw;
+    bottom: -3vw;
+    left: 10vw;
+    transform: rotate(25deg);
+}
+
+
+.bubble_text{
+    position: absolute;
+    width: 25vw;
+    height: 7vw;
+    text-align: center;
+    font-family: "DB Sans Cond", sans-serif;
+    font-size: 2vw;
+    line-height: 3vw;
+    z-index: 5003;
+    padding: 3vw;
+    top:-3vw;
+    left: -1vw;
 }
 
 
