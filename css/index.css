@@ -163,7 +163,19 @@ nav:hover, nav a:hover .nav_name, nav a:hover .nav_name div {
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
+    background-image: url("../img/intro/bahn_ohne_tuer.png");
 }
+
+#s1_tim {
+    top: 12vw;
+    width: 15vw;
+    height: 32vw;
+    background-image: url("../img/intro/hauptcharakter_rucksackgriff-01.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
 
 #left_door div{
     width: 47vw;
