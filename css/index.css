@@ -170,10 +170,24 @@ nav:hover, nav a:hover .nav_name, nav a:hover .nav_name div {
     top: 12vw;
     width: 15vw;
     height: 32vw;
-    background-image: url("../img/intro/hauptcharakter_rucksackgriff-01.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
+    background-image: url("../img/intro/hauptcharakter_rucksackgriff-01.png");
+}
+
+#s1_tim_winken {
+    top: 12vw;
+    width: 15vw;
+    height: 32vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    background-image: url("../img/intro/hauptcharakter_winken-01.png");
+}
+
+#s1_tim:hover {
+    background-image:url("../img/intro/hauptcharakter_winken-01.png");
 }
 
 
