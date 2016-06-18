@@ -269,7 +269,7 @@ nav:hover, nav a:hover .nav_name, nav a:hover .nav_name div {
 #s2_schild_koeln {
     background-image: url(../img/Szene2/bahnhof_schild_text_koeln-01.png);
     top: 20vw;
-    left: 225vw;
+    left: 220vw;
 }
 
 #s2_bahn_innen{
@@ -444,7 +444,7 @@ mit skrollr auf der x-Achse positioniert
 #s2_Jeck1 div{
     width: 25vw;
     height: 50vw;
-    background-image: url(../img/Szene2/Jan.png);
+    background-image: url(../img/Szene2/karneval_frau_teufel.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-Index: -8;
@@ -457,7 +457,7 @@ mit skrollr auf der x-Achse positioniert
 #s2_Jeck2 div{
     width: 25vw;
     height: 33vw;
-    background-image: url(../img/Szene2/fussballfan_fc_1.png);
+    background-image: url(../img/Szene2/karneval_mann_koeln.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-Index: -8;
@@ -467,6 +467,33 @@ mit skrollr auf der x-Achse positioniert
 
 
 }
+
+
+#s2_Jeck3 div{
+    width: 25vw;
+    height: 33vw;
+    background-image: url(../img/Szene2/karneval_frau_koeln.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 9vw;
+    /*left: 320vw;*/
+}
+
+#s2_Jeck4 div{
+    width: 25vw;
+    height: 33vw;
+    background-image: url(../img/Szene2/karneval_frau_matrose.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 9vw;
+    /*left: 320vw;*/
+}
+
+
 
 
 #s2_frauMusik div{
