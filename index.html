@@ -309,6 +309,7 @@
         >
             <div></div>
         </section>
+        <!--<div id="uebergang_zug" data-0="display: none" data-40550="display: block; transform: translateX(-150vw);" data-42000="transform: translateX(-50vw)" ></div>-->
     </div>
     <!-- Funfact Szene2-->
     <section class="viewport">
@@ -329,7 +330,8 @@
     <!-- Szene 3 -->
     <div id="s3" class="viewport"
          data-0="display: none"
-         data-42000 = "display: block"
+         data-40500 = "display: block; opacity: 0"
+         data-42000="opacity: 1"
          data-50000 = "display: none"
     >
         <section id="s3_bahnhof"
@@ -391,7 +393,7 @@
         </section>
         <section class="s3_zug">
             <div id="s3_zug_vorne"
-                 data-42200="transform:translateX(-300vw); width: 300vw; height: 100vw; top: 5.6vw; left: 0vw;"
+                 data-40500="transform: translateX(-300vw); width: 300vw; height: 100vw; top: 5.6vw; left: 0vw"
                  data-43000="transform:translateX(-200vw)"
                  data-43500="transform:translateX(-200vw)"
                  data-44500="transform:translateX(300vw)"
@@ -401,7 +403,7 @@
                  data-48000="transform:translateX(-200vw)"
                  data-48500="transform:translateX(-200vw)"
                  data-49500="width: 650vw; height: 110vw; top: -34vw; left: -115vw; opacity:1"
-                 data-49999="opacity: 0; left: -25vw">
+                 data-49999="opacity: 0; left: 25vw">
             </div>
         </section>
     </div>
@@ -409,7 +411,8 @@
     <!--Szene 4-->
     <div class="viewport" id="s4_nervigefahrgaeste"
          data-0="display: none;"
-         data-50000 = "display: block; transform: translateX(0vw);"
+         data-49500 = "display: block; transform: translateX(0vw); opacity: 0"
+         data-50000="opacity: 1"
          data-90000 = "transform: translateX(-100vw); display: none;"
     >
 
@@ -730,12 +733,13 @@
 
     </section>
 
-<!-- Szene 5 -->
+<!-- Szene 5 fuer Uebergang am Besten ersten translate-Wert und Display von der Bahn anpassen bzw alle Scrollwerte nach hinten verschieben-->
 
     <div class="viewport"
          id="s5_nachtfahrt"
          data-0="display:none"
-         data-90000="display:block"
+         data-88400="display:block; transform: translateX(100vw)"
+         data-90000="transform: translateX(0vw)"
          data-96000="transform:translateY(0vh)"
          data-98000="transform:translateY(100vh); display:none">
         <div id="s5_hintergrund_himmel_hell">
@@ -780,7 +784,8 @@
 
 
         <div id="s5_bahn"
-             data-90000="transform:translateX(-150vw)"
+             data-88400="display: none"
+             data-90000="display: block; transform:translateX(-150vw)"
              data-95000="transform:translateX(-50vw)">
              <!--data-96000="transform: translateX(-100vw)">-->
 
@@ -807,7 +812,8 @@
              data-95000="transform:translateX(10vw)">
         </div>
         <div id="s5_wolken"
-             data-90000="transform:translateX(0vw);opacity:1"
+             data-88400="transform:translateX(15vw)"
+             data-90000="transform:translateX(10vw)"
              data-92500="transform:translateX(-20vw);opacity:1"
              data-95000="transform:translateX(-70vw);opacity:0.2">
         </div>
