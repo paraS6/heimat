@@ -354,6 +354,17 @@ mit skrollr auf der x-Achse positioniert
     top: 6vw;
 }
 
+#s2_mann div{
+    width: 25vw;
+    height: 50vw;
+    background-image: url(../img/Szene2/Jan.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 20vw;
+}
+
 #s2_bierFlasche div{
     width: 4vw;
     height: 4vw;
@@ -395,6 +406,30 @@ mit skrollr auf der x-Achse positioniert
 
 }
 
+
+#s2_student div {
+    width: 25vw;
+    height: 29vw;
+    background-image: url(../img/Szene2/handy_sitzen_student2_rechts.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 17vw;
+    /*left: 340vw;*/
+}
+
+#s2_jeck_duesseldorf div{
+    width: 25vw;
+    height: 42vw;
+    background-image: url(../img/Szene2/karneval_frau_duesseldorf.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 18vw;
+}
+
 #s2_reicherMann2 div{
     width: 25vw;
     height: 33vw;
@@ -420,8 +455,6 @@ mit skrollr auf der x-Achse positioniert
     z-Index: -8;
     position: absolute;
     top: 26vw;
-    /*left: 222vw;*/
-
 }
 
 
