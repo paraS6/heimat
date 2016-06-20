@@ -193,10 +193,6 @@ nav:hover, nav a:hover .nav_name, nav a:hover .nav_name div {
     background-image: url("../img/intro/hauptcharakter_winken-01.png");
 }
 
-#s1_bubble {
-    height: 10vw;
-}
-
 #s1_tim:hover {
     background-image:url("../img/intro/hauptcharakter_winken-01.png");
 }
@@ -1246,7 +1242,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 7vw;
     text-align: center;
-    font-family: "DB Sans Cond", sans-serif;
+    font-family: "db1", sans-serif;
     font-size: 2vw;
     line-height: 3vw;
     z-index: 5003;
@@ -1552,7 +1548,7 @@ mit skrollr auf der x-Achse positioniert
 
 ul{
     text-align: center;
-    font-family: "DB Sans Comp", "sans-serif";
+    font-family: "db1", "sans-serif";
     font-size: 3vw;
     color: white;
     position: absolute;
@@ -1563,7 +1559,7 @@ ul{
 
 
 section h1{
-    font-family: "DB Sans", "sans-serif";
+    font-family: "db2", "sans-serif";
     color: white;
     opacity: 0.5;
     position: absolute;
