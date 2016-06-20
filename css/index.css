@@ -1557,7 +1557,10 @@ ul{
     opacity: 0.5;
     width: 100vw;
     top: 50vw;
+    padding: 0;
+    margin:0;
 }
+
 
 
 section h1{
