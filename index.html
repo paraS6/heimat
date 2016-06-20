@@ -11,7 +11,7 @@
     <nav>
 
         <audio id="nameAudio" preload="auto">
-            <source src="audio/Hit%20The%20Road%20Jack@Berlin%20U-Bahn%20U2.mp3">
+            <source src="audio/durchsage_kurz.mp3">
         </audio>
         <audio id="mariachiAudio" preload="auto">
             <source src="audio/mariachi_music.mp3">
@@ -233,7 +233,7 @@
             <div></div>
         </section>
         <section class="container" id=s2_bierFlasche
-                 data-17000 = "transform: translateX(105vw); opacity:1"
+                 data-17000 = "transform: translateX(105vw); opacity:1; "
                  data-35000 = "transform: translateX(-150vw);">
             <div></div>
         </section>
@@ -341,6 +341,10 @@
             data-57000="transform:translateX(0vw);display:block"
             data-60000="transform:translateX(-100vw);display:none">
             <div id="s3_werbung_1">
+            </div>
+            <div id="s3_werbung_2"
+                 data-44000="opacity:0"
+                 data-48250="opacity:1">
             </div>
             <div id="s3_funfact"
                  data-48250="opacity:0"
@@ -771,72 +775,81 @@
          data-108000="transform:translateY(100vh); display:none">
         <div id="s5_hintergrund_himmel_hell">
         </div>
+        <div id="s5_hintergrund_daemmerung"
+             data-101500="opacity:0"
+             data-102000="opacity:1">
+        </div>
         <div id="s5_hintergrund_himmel_dunkel"
-             data-100000="transform:translateX(0vw);opacity:0"
-             data-101500="transform:translateX(0vw);opacity:0"
-             data-103000="transform:translateX(0vw);opacity:1">
+             data-102000="opacity:0"
+             data-104000="opacity:1">
         </div>
         <div id="s5_hintergrund_landschaft"
              data-100000="transform:translateX(0vw)"
              data-100800="transform:translateX(0vw)"
-             data-105000="transform:translateX(-170vw)">
+             data-105000="transform:translateX(-180vw)">
         </div>
 
         <div id="s5_hintergrund_du"
-             data-100000="transform:translateX(0vw)"
-             data-100800="transform:translateX(0vw)"
+             data-100000="transform:translateX(20vw)"
+             data-100800="transform:translateX(20vw)"
              data-105000="transform:translateX(-170vw)">
         </div>
         <div id="s5_hintergrund_zeche_zoll"
-             data-100000="transform:translateX(19vw)"
-             data-100800="transform:translateX(19vw)"
-             data-105000="transform:translateX(-150vw)">
+             data-100000="transform:translateX(35vw)"
+             data-100800="transform:translateX(35vw)"
+             data-105000="transform:translateX(-140vw)">
         </div>
         <div id="s5_hintergrund_skyline_ddorf"
-             data-100000="transform:translateX(39vw)"
-             data-100800="transform:translateX(39vw)"
-             data-105000="transform:translateX(-131vw)">
+             data-100000="transform:translateX(60vw)"
+             data-100800="transform:translateX(60vw)"
+             data-105000="transform:translateX(-110vw)">
         </div>
         <div id="s5_hintergrund_skyline_lev"
-             data-100000="transform:translateX(119vw)"
-             data-100800="transform:translateX(119vw)"
-             data-105000="transform:translateX(-51vw)">
+             data-100000="transform:translateX(125vw)"
+             data-100800="transform:translateX(125vw)"
+             data-105000="transform:translateX(-45vw)">
         </div>
 
         <div id="s5_hintergrund_skyline_koeln"
-             data-100000="transform:translateX(133vw)"
-             data-100800="transform:translateX(133vw)"
-             data-105000="transform:translateX(-37vw)">
+             data-100000="transform:translateX(138vw);display:block"
+             data-100800="transform:translateX(138vw)"
+             data-104000="transform:translateX(10vw);display:none">
+        </div>
+        <div id="s5_hintergrund_skyline_koeln_licht"
+             data-100000="transform:translateX(10vw);display:none"
+             data-104000="transform:translateX(10vw);display:block"
+             data-105000="transform:translateX(-32vw)">
         </div>
 
 
         <div id="s5_bahn"
              data-98400="display: none"
              data-100000="display: block; transform:translateX(-150vw)"
-             data-105000="transform:translateX(-50vw)">
-             <!--data-96000="transform: translateX(-100vw)">-->
+             data-100800="transform:translateX(-50vw)"
+            data-107900="transform:translateX(-50vw)"
+            data-108000="transform:translateX(50vw)"
+             data-109000="transform: translateX(-100vw)">
 
         </div>
 
         <div id="s5_tunnel"
-             data-100000="transform:translateX(0vw);margin-left:-1vw"
-             data-100800="transform:translateX(0vw)"
-             data-105000="transform:translateX(-100vw)">
+             data-100800="transform:translateX(-1vw)"
+             data-105000="transform:translateX(-170vw)">
         </div>
 
         <div id="s5_sonne"
              data-100000="transform:translateX(0vw);margin-top:0vh;display:block"
              data-100600="transform:translateX(10vw);margin-top:10vh"
-             data-104000="transform:translateX(50vw);margin-top:60vh;display:none">
+             data-104000="transform:translateX(40vw);margin-top:70vh;display:none">
         </div>
         <div id="s5_flugzeug"
              data-100000="transform:translateX(95vw);margin-top:20vh"
              data-105000="transform:translateX(-50vw);margin-top:-30vh">
         </div>
         <div id="s5_ballon"
-             data-100000="transform:translateX(70vw)"
-             data-100400="transform:translateX(100vw)"
-             data-105000="transform:translateX(10vw)">
+             data-100000="transform:translateX(30vw)"
+             data-105000="transform:translateX(40vw)"
+             data-108000="transform:translateX(45vw)">
         </div>
         <div id="s5_wolken"
              data-98400="transform:translateX(15vw)"
@@ -844,20 +857,41 @@
              data-102500="transform:translateX(-20vw);opacity:1"
              data-105000="transform:translateX(-70vw);opacity:0.2">
         </div>
-        <div id="bruecke"
-             data-100000="transform:translateX(170vw)"
-             data-100800="transform:translateX(170vw)"
-             data-105000="transform:translateX(0vw)"
-        >
+        <div id="s5_bruecke"
+             data-100000="transform:translateX(190vw)"
+             data-100800="transform:translateX(190vw)"
+             data-105000="transform:translateX(13vw)">
         </div>
-        <div id="koeln_rechts"
-             data-100000="transform:translateX(233vw)"
-             data-100800="transform:translateX(233vw)"
-             data-105000="transform:translateX(63vw)">
+        <div id="s5_koeln_rechts"
+             data-100000="transform:translateX(246vw)"
+             data-100800="transform:translateX(246vw)"
+             data-105000="transform:translateX(76vw)">
         </div>
 
 
     </div>
+
+    <!-- Funfact Szene5-->
+
+    <!--s4_funfact -->
+    <section class="viewport">
+
+        <div class="funfact"
+             data-100000 = "transform: translateY(130vw) rotate(0deg);display:block;"
+             data-102000 = "transform: translateY(50vw) rotate(0deg);"
+             data-104000 = "transform: translateY(27vw) rotate(-10deg);"
+             data-105000 = "transform: translateY(27vw) rotate(-10deg);"
+             data-106000 = "transform: translateY(27vw) rotate(-10deg);"
+             data-107000 = "transform: translateY(50vw) rotate(0deg);"
+             data-107500 = "display:none;"
+        >
+            <div class="funfact_text"><p>Durch die Erneuerung der Züge hat die S6 seit 2015 eine Klimaanlage – die Toiletten wurden jedoch vergessen.</p></div>
+        </div>
+
+
+    </section>
+
+
 
     <!--Outro-->
 
