@@ -36,27 +36,27 @@ function sc(mute) {
     //Scrolwert berechnen
     var scroll = window.pageYOffset;
     //Variable für die AudioDateien
-    var nameAudio = document.getElementById("nameAudio");
+    var durchsage = document.getElementById("durchsageAudio");
     var mariachi = document.getElementById("mariachiAudio");
 
 
 
     //Gemutet?
     if(mute == "off"){
-        nameAudio.pause();
+        durchsage.pause();
         mariachi.pause();
     }
     //Sonst Spiele ab
     else{
         //Bahnhof Durchsage
-        if(scroll < 51000){
-            nameAudio.pause();
+        if(scroll < 49900){
+            durchsage.pause();
         }
-        if(scroll > 51000 && scroll < 57000){
-            nameAudio.play();
+        if(scroll > 49900 && scroll < 55500){
+            durchsage.play();
         }
-        if(scroll > 57000){
-            nameAudio.pause();
+        if(scroll > 55500){
+            durchsage.pause();
         }
         //Mariachi Band
         if(scroll < 78000){
