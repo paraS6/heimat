@@ -1,4 +1,4 @@
-//ECMASCRIPT Sound
+//JavaScript Sound
 //Jens Roemer
 
 
@@ -14,7 +14,6 @@ document.getElementsByTagName("input")[1].onclick = function(){
     document.getElementById("nameAudio").pause();
     //Standart Ton wird abgeschaltet
     mute = "off";
-//    alert(mute);
 
     //buttonStyle
     mute_Audio.style.display = 'none';
@@ -23,7 +22,6 @@ document.getElementsByTagName("input")[1].onclick = function(){
 document.getElementsByTagName("input")[0].onclick = function(){
     //Standart Ton wird eingeschaltet
     mute = "on";
-//    alert(mute);
     //buttonStyle
 
     mute_Audio.style.display = 'block';
@@ -39,29 +37,36 @@ function sc(mute) {
     var scroll = window.pageYOffset;
     //Variable für die AudioDateien
     var nameAudio = document.getElementById("nameAudio");
-
+    var mariachi = document.getElementById("mariachiAudio");
 
 
 
     //Gemutet?
     if(mute == "off"){
         nameAudio.pause();
+        mariachi.pause();
     }
     //Sonst Spiele ab
     else{
-        if(scroll < 46000){
+        //Bahnhof Durchsage
+        if(scroll < 51000){
             nameAudio.pause();
         }
-        if(scroll > 46000 && scroll < 47000){
+        if(scroll > 51000 && scroll < 57000){
             nameAudio.play();
         }
-        if(scroll > 47000){
+        if(scroll > 57000){
             nameAudio.pause();
+        }
+        //Mariachi Band
+        if(scroll < 78000){
+            mariachi.pause();
+        }
+        if(scroll > 78000 && scroll < 86000){
+            mariachi.play();
+        }
+        if(scroll > 86000){
+            mariachi.pause();
         }
     }
 }
-/*document.getElementsByTagName("nav")[0].onclick = function (){
-
-
- document.getElementsByTagName("nav")[0].style.backgroundColor = "green";
- }*/

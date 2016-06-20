@@ -607,12 +607,25 @@ mit skrollr auf der x-Achse positioniert
     top: 11.6vw;
     left: 7vw;
 }
+
+#s3_werbung_2{
+    display: flex;
+    background-image: url("../img/Szene3/werbung2-01.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: -3;
+    width: 22.5vw;
+    height: 26vw;
+    top: 11.6vw;
+    left: 7vw;
+}
 #s3_funfact{
     background-image: url("../img/Szene3/szene_3_fun_fact-01.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    z-index: -3;
+    z-index: -2;
     width: 20.5vw;
     height: 14vw;
     top: 11.6vw;
@@ -727,7 +740,7 @@ mit skrollr auf der x-Achse positioniert
     z-index: 4;
 }
 #s3_kl_zeiger{
-    background-image: url("../img/Szene3/bahnhofsuhr_sekunde-01.svg");
+    background-image: url("../img/Szene3/bahnhofsuhr_minute-01.svg");
     width: 10vw;
     height: 10vw;
     background-repeat: no-repeat;
@@ -972,14 +985,73 @@ mit skrollr auf der x-Achse positioniert
 #s4_band_1_arm_l{
     width: 10vw;
     height: 10vw;
-    background-image: url(../img/Szene4/band_gitarre_arm.png);
+    background-image: url(../img/Szene4/band_rasseln_l.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-Index: -5;
-    top:21.3vw;
-    left:14.1vw;
+    top:9.6vw;
+    left:0.9vw;
     position: absolute;
 }
+
+@keyframes rassel_1 {
+    0% {
+
+        transform: rotate(-3deg);
+    }
+    25% {
+        transform: rotate(3deg);
+    }
+
+    50% {
+
+        transform: rotate(-3deg);
+    }
+    75% {
+        transform: rotate(3deg);
+    }
+
+    100% {
+
+        transform: rotate(-3deg);
+    }
+}
+
+#s4_band_1_arm_r{
+    width: 10vw;
+    height: 10vw;
+    background-image: url(../img/Szene4/band_rasseln_r.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -5;
+    top:9.5vw;
+    left:6.7vw;
+    position: absolute;
+}
+
+@keyframes rassel_2 {
+    0% {
+
+        transform: rotate(-7deg);
+    }
+    25% {
+        transform: rotate(7deg);
+    }
+
+    50% {
+
+        transform: rotate(-7deg);
+    }
+    75% {
+        transform: rotate(7deg);
+    }
+
+    100% {
+
+        transform: rotate(-7deg);
+    }
+}
+
 
 #s4_band_2 {
     width: 45vw;
@@ -1125,7 +1197,7 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -9;
     position: absolute;
-    top: 15vw;
+    top: 17vw;
 }
 
 #s4_frau_1{
@@ -1136,7 +1208,7 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -3;
     position: absolute;
-    top: 15vw;
+    top: 17vw;
 }
 
 #s4_frau_2{
@@ -1172,6 +1244,46 @@ mit skrollr auf der x-Achse positioniert
     top: 14vw;
 }
 
+.bubble{
+    position: absolute;
+    width: 25vw;
+    height: 8vw;
+    padding: 2vw;
+    background: #FFFFFF;
+    border-radius: 3vw;
+    z-index: 5003;
+    top: 1vw;
+}
+
+.bubble:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 5vw 2vw 0;
+    border-color: #FFFFFF transparent;
+    width: 0;
+    z-index: 5000;
+    margin-left: -5vw;
+    bottom: -3vw;
+    left: 10vw;
+    transform: rotate(25deg);
+}
+
+
+.bubble_text{
+    position: absolute;
+    width: 25vw;
+    height: 7vw;
+    text-align: center;
+    font-family: "DB Sans Cond", sans-serif;
+    font-size: 2vw;
+    line-height: 3vw;
+    z-index: 5003;
+    padding: 3vw;
+    top:-3vw;
+    left: -1vw;
+}
+
 /* Szene 5 */
 
 #s5_nachtfahrt{
@@ -1187,23 +1299,24 @@ mit skrollr auf der x-Achse positioniert
     z-index:-5;
 }
 
-#s5_hintergrund_himmel_dunkel {
-
-    background-size: contain;
-    width: 200vw;
-    height: 100vw;
-    background-image: url(../img/Szene5/himmel_dunkelheit-01.png);
+#s5_hintergrund_daemmerung {
+    background-size: cover;
+    width: 100vw;
+    height: 300vw;
+    background-image: url(../img/Szene5/himmel_sommerabend-01.png);
     position: absolute;
     z-index:-4;
 }
 
-#s5_sterne {
-    width: 200vw;
-    height: 100vw;
-    /*background-image: url(img/sterne.gif);*/
+
+#s5_hintergrund_himmel_dunkel {
+
+    background-size: cover;
+    width: 100vw;
+    height: 300vw;
+    background-image: url(../img/Szene5/himmel_dunkelheit-01.png);
     position: absolute;
-    z-index:-3;
-    background-repeat: repeat;
+    z-index:-4;
 }
 
 
@@ -1217,7 +1330,7 @@ mit skrollr auf der x-Achse positioniert
 }
 
 #s5_hintergrund_zeche_zoll{
-    margin-top: 15vw;
+    margin-top: 17vw;
     width: 20vw;
     height: 20vw;
     background-image: url(../img/Szene5/zeche_zollverein-01.png);
@@ -1228,7 +1341,7 @@ mit skrollr auf der x-Achse positioniert
 }
 
 #s5_hintergrund_du{
-    margin-top: 12.9vw;
+    margin-top: 15vw;
     width: 20vw;
     height: 20vw;
     background-image: url(../img/Szene5/dortmunder_u-01.png);
@@ -1239,8 +1352,8 @@ mit skrollr auf der x-Achse positioniert
 }
 
 #s5_hintergrund_skyline_ddorf{
-    margin-top: -0.3vw;
-    width: 80vw;
+    margin-top: 14vw;
+    width: 70vw;
     height: 100vw;
     background-image: url(../img/Szene5/skyline_ddorf-01.png);
     position: absolute;
@@ -1250,7 +1363,7 @@ mit skrollr auf der x-Achse positioniert
 }
 
 #s5_hintergrund_skyline_lev{
-    margin-top: 9.5vw;
+    margin-top: 20.8vw;
     width: 16vw;
     height: 17vw;
     background-image: url(../img/Szene5/bayer_kreuz-01.gif);
@@ -1261,7 +1374,7 @@ mit skrollr auf der x-Achse positioniert
 }
 
 #s5_hintergrund_skyline_koeln{
-    margin-top:-0.3vw;
+    margin-top:20.9vw;
     width: 40vw;
     height: 50vw;
     background-size: contain;
@@ -1269,6 +1382,17 @@ mit skrollr auf der x-Achse positioniert
     background-repeat: no-repeat;
     z-index: -1;
     background-image: url(../img/Szene5/skyline_koeln-01.png);
+}
+
+#s5_hintergrund_skyline_koeln_licht{
+    margin-top:20.9vw;
+    width: 40vw;
+    height: 50vw;
+    background-size: contain;
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-image: url(../img/Szene5/skyline_koeln_licht-01.png);
 }
 #s5_bahn {
     margin-top: 27.6vw;
@@ -1333,10 +1457,10 @@ mit skrollr auf der x-Achse positioniert
     z-index: 2;
 }
 
-#bruecke {
-    margin-top: 11vw;
-    width:80vw;
-    height: 40vw;
+#s5_bruecke {
+    margin-top: 31vw;
+    width:65vw;
+    height: 50vw;
     background-image: url(../img/Szene5/hohenzollernbruecke-01.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -1344,17 +1468,38 @@ mit skrollr auf der x-Achse positioniert
     z-index: 2;
 }
 
-#koeln_rechts {
-    margin-top: 12vw;
+#s5_koeln_rechts {
+    margin-top: 22vw;
     width:30vw;
     height: 40vw;
-    background-image: url(../img/Szene5/skyline_koeln-01_rechts.png);
+    background-image: url(../img/Szene5/skyline_koeln-01_rechts-01.png);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    z-index: 2;
+    z-index: -3;
+}
+.s5_funfact_text {
+    width: 21.5vw;
+    height: 25vw;
+    margin-left: 3.3vw;
+    margin-top: 9.2vw;
+    font-family: "DB Sans";
+    font-size: 1.5vw;
+    line-height: 2.25vw;
 }
 
+.s5_funfact{
+    width: 30vw;
+    height: 30vw;
+    background-image: url(../img/Szene2/fun_fact2-01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: 15;
+    position: absolute;
+    background-position: center;
+    left: 35vw;
+
+}
 .funfact{
     width: 30vw;
     height: 30vw;
@@ -1482,3 +1627,16 @@ section h1{
         background-image: url("hintergrund_alina-01.png");
     }
 }*/
+
+@media only screen and (max-aspect-ratio: 17/9) {
+
+    #mq {
+        display:block;
+        background-color: black;
+        height: 180vw;
+        width: 100vw;
+        top:52vw;
+        position: fixed;
+        z-index: 10000;
+    }
+}
