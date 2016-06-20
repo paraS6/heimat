@@ -569,10 +569,10 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     position: absolute;
     z-index: -4;
-    width: 22.5vw;
+    width: 22.8vw;
     height: 26vw;
     top: 11.6vw;
-    left: 7vw;
+    left: 6.7vw;
 }
 
 #s3_werbung_2{
@@ -582,10 +582,10 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     position: absolute;
     z-index: -3;
-    width: 22.5vw;
+    width: 22.8vw;
     height: 26vw;
     top: 11.6vw;
-    left: 7vw;
+    left: 6.7vw;
 }
 #s3_funfact{
     background-image: url("../img/Szene3/szene_3_fun_fact-01.png");
@@ -593,10 +593,10 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     position: absolute;
     z-index: -2;
-    width: 20.5vw;
+    width: 20.8vw;
     height: 14vw;
     top: 11.6vw;
-    left: 7vw;
+    left: 6.7vw;
     font-family: "DB Sans";
     font-size: 1.5vw;
     line-height: 2.25vw;
