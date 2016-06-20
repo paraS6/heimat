@@ -1555,6 +1555,7 @@ ul{
     top: 90vh;
     list-style: none;
     opacity: 0.5;
+    width: 100vw;
 }
 
 
@@ -1565,8 +1566,7 @@ section h1{
     position: absolute;
     top: 1vw;
     font-size: 6vw;
-    width: 50vw;
-    left: 25vw;
+    width: 100vw;
     text-align: center;
 }
 
