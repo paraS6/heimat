@@ -1,11 +1,3 @@
-#uebergang_zug {
-    background-image: url("../img/Szene3/bahn_hinten_vorne-01.png");
-    width: 300%;
-    height: 100%;
-    opacity: 1;
-    top: 5.6vw;
-}
-
 body {
     margin: 0;
 }
@@ -240,7 +232,7 @@ nav:hover, nav a:hover .nav_name, nav a:hover .nav_name div {
     background: #FFFFFF;
     border-radius: 3vw;
     z-index: 5003;
-    top: 1vw;
+    top: 9vw;
 }
 
 #s2_sprechblase:after {
@@ -253,8 +245,8 @@ nav:hover, nav a:hover .nav_name, nav a:hover .nav_name div {
     z-index: 5000;
     margin-left: -5vw;
     bottom: -3vw;
-    left: 10vw;
-    transform: rotate(25deg);
+    left: 30vw;
+    transform: rotate(340deg);
 }
 
 #s2_hintergrund{
@@ -1657,6 +1649,10 @@ section h1{
 .social a:hover{
     opacity: 0.3;
 }
+
+.social a {
+    text-decoration: none;
+}
 @media only screen and (max-aspect-ratio: 17/9) {
 
     #mq {
@@ -1706,5 +1702,9 @@ section h1{
     }
     .social a:hover{
         opacity: 0.3;
+    }
+
+    .social a {
+        text-decoration: none;
     }
 }
