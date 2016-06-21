@@ -30,7 +30,7 @@ document.getElementsByTagName("input")[0].onclick = function(){
 }
 
 //in Jedem Frame den Scrollwert berechnen und Ton ab gewissem Wert abspielen
-window.addEventListener('scroll', function(){requestAnimationFrame(sc(mute));})
+window.addEventListener('scroll', function(){requestAnimationFrame(function(){sc(mute)});})
 
 //Funktion zum Ton abspielen
 function sc(mute) {
