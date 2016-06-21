@@ -1622,7 +1622,13 @@ section h1{
         background-image: url("hintergrund_alina-01.png");
     }
 }*/
+#mq {
+    display: none;
+}
 
+.social a:hover{
+    opacity: 0.3;
+}
 @media only screen and (max-aspect-ratio: 17/9) {
 
     #mq {
