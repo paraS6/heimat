@@ -232,6 +232,30 @@ nav:hover, nav a:hover .nav_name, nav a:hover .nav_name div {
 *
 **/
 
+#s2_sprechblase {
+    position: absolute;
+    width: 25vw;
+    height: 8vw;
+    padding: 2vw;
+    background: #FFFFFF;
+    border-radius: 3vw;
+    z-index: 5003;
+    top: 1vw;
+}
+
+#s2_sprechblase:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 5vw 2vw 0;
+    border-color: #FFFFFF transparent;
+    width: 0;
+    z-index: 5000;
+    margin-left: -5vw;
+    bottom: -3vw;
+    left: 10vw;
+    transform: rotate(25deg);
+}
 
 #s2_hintergrund{
     width: 480vw;
@@ -630,6 +654,11 @@ mit skrollr auf der x-Achse positioniert
     top: 22vw;
     left: 44vw;
 }
+
+#s3_sprechblase {
+    top: 9vw;
+}
+
 #s3_oma{
     width: 10vw;
     height: 10vw;
@@ -1211,7 +1240,7 @@ mit skrollr auf der x-Achse positioniert
     top: 14vw;
 }
 
-.bubble{
+.blase{
     position: absolute;
     width: 25vw;
     height: 8vw;
@@ -1222,7 +1251,7 @@ mit skrollr auf der x-Achse positioniert
     top: 1vw;
 }
 
-.bubble:after {
+.blase:after {
     content: "";
     position: absolute;
     border-style: solid;
@@ -1236,8 +1265,7 @@ mit skrollr auf der x-Achse positioniert
     transform: rotate(25deg);
 }
 
-
-.bubble_text{
+.blase_text{
     position: absolute;
     width: 25vw;
     height: 7vw;
