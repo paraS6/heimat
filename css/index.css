@@ -1574,6 +1574,32 @@ section h1{
     text-align: center;
 }
 
+#facebook {
+    position: absolute;
+    background-image: url("../img/facebook.png");
+    width: 5vw;
+    height: 20vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#twitter {
+    position: absolute;
+    background-image: url("../img/twitter.png");
+    width: 5vw;
+    height: 20vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#instagram {
+    position: absolute;
+    background-image: url("../img/instagram.png");
+    width: 5vw;
+    height: 20vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 /*
  * Fonts
  */
@@ -1606,8 +1632,47 @@ section h1{
         background-color: black;
         height: 180vw;
         width: 100vw;
-        top:52vw;
+        top:50vw;
         position: fixed;
         z-index: 10000;
+    }
+
+
+    #mq ul{
+        top: 10vw;
+        text-align: right;
+        right: 5vw;
+        opacity:1;
+    }
+    #mq li {
+        display: inline;
+        list-style-type: none;
+        padding: 1vw;
+
+    }
+
+    #mq li img {
+        width: 10vw;
+
+    }
+    #logo{
+        left: 15vw;
+        top: 20vw;
+    }
+    #logo img{
+        width: 20vw;
+    }
+
+    #schienen{
+        top:18vw;
+        text-align: center;
+
+    }
+
+    #schienen img{
+        width: 100vw;
+    }
+    #social a:hover{
+        opacity: 0.3;
     }
 }
