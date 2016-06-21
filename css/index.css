@@ -463,7 +463,7 @@ mit skrollr auf der x-Achse positioniert
     height: 25vw;
     margin-left: 3.3vw;
     margin-top: 9.2vw;
-    font-family: "DB Sans", serif;
+    font-family: "db2", serif;
     font-size: 1.5vw;
     line-height: 2.25vw;
 }
@@ -630,7 +630,7 @@ mit skrollr auf der x-Achse positioniert
     height: 14vw;
     top: 11.6vw;
     left: 6.7vw;
-    font-family: "DB Sans", serif;
+    font-family: "db2", serif;
     font-size: 1.5vw;
     line-height: 2.25vw;
     padding: 1vw 0 0 2vw;
@@ -1483,7 +1483,7 @@ mit skrollr auf der x-Achse positioniert
     height: 25vw;
     margin-left: 3.3vw;
     margin-top: 9.2vw;
-    font-family: "DB Sans", serif;
+    font-family: "db2", serif;
     font-size: 1.5vw;
     line-height: 2.25vw;
 }
@@ -1517,7 +1517,7 @@ mit skrollr auf der x-Achse positioniert
     height: 25vw;
     margin-left: 3.3vw;
     margin-top: 4.2vw;
-    font-family: "DB Sans", serif;
+    font-family: "db2", serif;
     font-size: 1.5vw;
     line-height: 2.25vw;
 }
@@ -1589,7 +1589,11 @@ ul{
     list-style: none;
     opacity: 0.5;
     width: 100vw;
+    top: 50vw;
+    padding: 0;
+    margin:0;
 }
+
 
 
 section h1{

@@ -11,7 +11,8 @@ var mute = "on";
 //Funktion zum Stumm schalten
 document.getElementsByTagName("input")[1].onclick = function(){
     //Falls Ton gerade abgespielt wird muss dieser gestoptt werden.
-    document.getElementById("nameAudio").pause();
+    document.getElementById("durchsageAudio");
+    document.getElementById("mariachiAudio");
     //Standart Ton wird abgeschaltet
     mute = "off";
 
