@@ -1419,7 +1419,6 @@ mit skrollr auf der x-Achse positioniert
     width:200vw;
     height: 15vw;
     background-image: url(../img/Szene5/hintergrund_wolken-01.png);
-    /*background-repeat: repeat-x;*/
     background-size: contain;
     position: absolute;
     z-index: 2;
@@ -1446,25 +1445,15 @@ mit skrollr auf der x-Achse positioniert
     position: absolute;
     z-index: -3;
 }
-.s5_funfact_text {
-    width: 21.5vw;
-    height: 25vw;
-    margin-left: 3.3vw;
-    margin-top: 9.2vw;
-    font-family: "db2", serif;
-    font-size: 1.5vw;
-    line-height: 2.25vw;
-}
 
-.s5_funfact{
+.funfact{
     width: 30vw;
     height: 30vw;
-    background-image: url(../img/Szene2/fun_fact2-01.png);
+    background-image: url(../img/Szene4/fun_fact2-01.png);
     background-repeat: no-repeat;
     background-size: contain;
-    z-Index: 15;
+    z-Index: 5000;
     position: absolute;
-    background-position: center;
     left: 35vw;
 
 }
@@ -1476,8 +1465,8 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: 5000;
     position: absolute;
+    background-position: center;
     left: 35vw;
-
 }
 
 .funfact_text {
