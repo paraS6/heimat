@@ -33,11 +33,11 @@ body {
     margin-left: 2vw;
 }
 #unMuteButton input{
-    background-image: url("../img/soundaus.png");
+    background-image: url("../img/soundaus-01.svg");
 
 }
 #muteButton input{
-    background-image: url("../img/soundan.png");
+    background-image: url("../img/soundan-01.svg");
 }
 
 /**
@@ -1485,7 +1485,6 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: 5000;
     position: absolute;
-    background-position: center;
     left: 35vw;
 }
 
@@ -1580,31 +1579,14 @@ section h1{
     text-align: center;
 }
 
-#facebook {
-    position: absolute;
-    background-image: url("../img/facebook.png");
-    width: 5vw;
-    height: 20vw;
-    background-size: contain;
-    background-repeat: no-repeat;
+.social li {
+    display: inline;
+    list-style-type: none;
+    padding: 1vw;
 }
 
-#twitter {
-    position: absolute;
-    background-image: url("../img/twitter.png");
-    width: 5vw;
-    height: 20vw;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-#instagram {
-    position: absolute;
-    background-image: url("../img/instagram.png");
-    width: 5vw;
-    height: 20vw;
-    background-size: contain;
-    background-repeat: no-repeat;
+.social li img{
+    width:5vw;
 }
 
 /*
@@ -1635,13 +1617,17 @@ section h1{
     display: none;
 }
 
+
+
 .social a:hover{
     opacity: 0.3;
 }
 
+
 .social a {
     text-decoration: none;
 }
+
 @media only screen and (max-aspect-ratio: 17/9) {
 
     #mq {
@@ -1656,7 +1642,7 @@ section h1{
 
 
     #mq ul{
-        top: 10vw;
+        top: 12vw;
         text-align: right;
         right: 5vw;
         opacity:1;
@@ -1669,15 +1655,15 @@ section h1{
     }
 
     #mq li img {
-        width: 10vw;
+        width: 5vw;
 
     }
     #logo{
-        left: 15vw;
+        left: 30vw;
         top: 20vw;
     }
     #logo img{
-        width: 20vw;
+        width: 22vw;
     }
 
     #schienen{
@@ -1689,11 +1675,6 @@ section h1{
     #schienen img{
         width: 100vw;
     }
-    .social a:hover{
-        opacity: 0.3;
-    }
 
-    .social a {
-        text-decoration: none;
-    }
+
 }
