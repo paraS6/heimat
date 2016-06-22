@@ -330,7 +330,6 @@ nav:hover, nav a:hover .nav_name, nav a:hover .nav_name div {
     z-index: -8;
     position: absolute;
     top: 15vw;
-    /* right: -330vw;*/
 }
 
 
@@ -346,7 +345,7 @@ Mann: width:25vw; height: 38vw; top: 23vh;
 Mann steht quasi in der hintere Reihe; ganzer Körper sichtbar
 mit skrollr auf der x-Achse positioniert
 */
-#s2_mannZeche div{
+#s2_mannZeche1 div{
     width: 25vw;
     height: 38vw;
     background-image: url(../img/Szene2/zeche1.png);
@@ -354,10 +353,20 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 16vh;
-
-
+    top: 14vw;
 }
+
+#s2_mannZeche2 div{
+    width: 25vw;
+    height: 38vw;
+    background-image: url(../img/Szene2/zeche2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 14vw;
+}
+
 
 #s2_mannRuhrpott div{
     width: 25vw;
@@ -390,11 +399,10 @@ mit skrollr auf der x-Achse positioniert
     z-Index: -8;
     position: absolute;
     top: 25vw;
-    /*left: 105vw;*/
 }
 
 
-#s2_reicheFrau div{
+#s2_reicheFrau1 div{
     width: 25vw;
     height: 40vw;
     background-image: url(../img/Szene2/richBitch1.png);
@@ -402,49 +410,20 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -8;
     position: absolute;
-
     top: 20vw;
-   /* left: 168vw;*/
-
 }
 
-
 #s2_reicherMann1 div{
-    width: 25vw;
-    height: 38vw;
+    width: 27vw;
+    height: 48vw;
     background-image: url(../img/Szene2/mann_ddorf_1.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 10vw;
-   /* left: 136vw;*/
-
-}
-
-
-#s2_student div {
-    width: 25vw;
-    height: 29vw;
-    background-image: url(../img/Szene2/handy_sitzen_student2_rechts.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-Index: -8;
-    position: absolute;
     top: 17vw;
-    /*left: 340vw;*/
 }
 
-#s2_jeck_duesseldorf div{
-    width: 25vw;
-    height: 42vw;
-    background-image: url(../img/Szene2/karneval_frau_duesseldorf.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-Index: -8;
-    position: absolute;
-    top: 18vw;
-}
 
 #s2_reicherMann2 div{
     width: 25vw;
@@ -455,9 +434,17 @@ mit skrollr auf der x-Achse positioniert
     z-Index: -8;
     position: absolute;
     top: 8vw;
-    /*left: 182vw;*/
+}
 
-
+#s2_reicheFrau2 div{
+    width: 25vw;
+    height: 35vw;
+    background-image: url(../img/Szene2/richBitch2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 16vw;
 }
 
 
@@ -500,14 +487,12 @@ mit skrollr auf der x-Achse positioniert
 #s2_Jeck1 div{
     width: 25vw;
     height: 50vw;
-    background-image: url(../img/Szene2/karneval_frau_teufel.png);
+    background-image: url(../img/Szene2/karneval_frau_matrose.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-Index: -8;
     position: absolute;
     top: 15vw;
-   /* left: 280vw;*/
-
 }
 
 #s2_Jeck2 div{
@@ -519,9 +504,6 @@ mit skrollr auf der x-Achse positioniert
     z-Index: -8;
     position: absolute;
     top: 8vw;
-    /*left: 320vw;*/
-
-
 }
 
 
@@ -533,35 +515,41 @@ mit skrollr auf der x-Achse positioniert
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 9vw;
-    /*left: 320vw;*/
+    top: 10vw;
 }
 
 #s2_Jeck4 div{
     width: 25vw;
-    height: 33vw;
-    background-image: url(../img/Szene2/karneval_frau_matrose.png);
+    height: 50vw;
+    background-image: url(../img/Szene2/karneval_frau_teufel.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 9vw;
-    /*left: 320vw;*/
+    top: 15vw;
 }
 
 
-
-
-#s2_frauMusik div{
+#s2_jeck_duesseldorf_frau div{
     width: 25vw;
-    height: 30vw;
-    background-image: url(../img/Szene2/musik_frau_sitzen.png);
+    height: 42vw;
+    background-image: url(../img/Szene2/karneval_frau_duesseldorf.png);
     background-repeat: no-repeat;
     background-size: contain;
     z-Index: -8;
     position: absolute;
-    top: 17vw;
-    /*left: 340vw;*/
+    top: 18vw;
+}
+
+#s2_jeck_duesseldorf_mann div{
+    width: 25vw;
+    height: 50vw;
+    background-image: url(../img/Szene2/karneval_mann_duesseldorf.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-Index: -8;
+    position: absolute;
+    top: 19vw;
 }
 
 
@@ -575,7 +563,6 @@ mit skrollr auf der x-Achse positioniert
     position: absolute;
     top: 16vw;
     right: -309vw;
-
 }
 
 #s2_blase2 div{
@@ -601,6 +588,7 @@ mit skrollr auf der x-Achse positioniert
     top: 24vh;
     right: -308vw;
 }
+
 #s3_bahnhof{
     display: flex;
     background-image: url("../img/Szene3/bahnhof_derendorf-01.png");
@@ -892,11 +880,6 @@ mit skrollr auf der x-Achse positioniert
     z-index: 1000;
     background-color: white;
 }
-
-
-
-
-
 
 /**
 *
