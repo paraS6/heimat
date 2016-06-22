@@ -11,8 +11,9 @@ var mute = "on";
 //Funktion zum Stumm schalten
 document.getElementsByTagName("input")[1].onclick = function(){
     //Falls Ton gerade abgespielt wird muss dieser gestoptt werden.
-    document.getElementById("durchsageAudio");
-    document.getElementById("mariachiAudio");
+    document.getElementById("durchsageAudio").pause();
+    document.getElementById("mariachiAudio").pause();
+    document.getElementById("fansAudio").pause();
     //Standart Ton wird abgeschaltet
     mute = "off";
 
@@ -39,13 +40,14 @@ function sc(mute) {
     //Variable für die AudioDateien
     var durchsage = document.getElementById("durchsageAudio");
     var mariachi = document.getElementById("mariachiAudio");
-
+    var fans = document.getElementById("fansAudio");
 
 
     //Gemutet?
     if(mute == "off"){
         durchsage.pause();
         mariachi.pause();
+        fans.pause();
     }
     //Sonst Spiele ab
     else{
@@ -58,6 +60,16 @@ function sc(mute) {
         }
         if(scroll > 55500){
             durchsage.pause();
+        }
+        //Fangesaenge
+        if(scroll <60000){
+            fans.pause();
+        }
+        if(scroll >60000 && scroll < 70000){
+            fans.play();
+        }
+        if(scroll > 70000){
+            fans.pause();
         }
         //Mariachi Band
         if(scroll < 78000){

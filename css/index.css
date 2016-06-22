@@ -33,11 +33,11 @@ body {
     margin-left: 2vw;
 }
 #unMuteButton input{
-    background-image: url("../img/soundaus.png");
+    background-image: url("../img/soundaus-01.svg");
 
 }
 #muteButton input{
-    background-image: url("../img/soundan.png");
+    background-image: url("../img/soundan-01.svg");
 }
 
 /**
@@ -1472,7 +1472,6 @@ mit skrollr auf der x-Achse positioniert
     width:200vw;
     height: 15vw;
     background-image: url(../img/Szene5/hintergrund_wolken-01.png);
-    /*background-repeat: repeat-x;*/
     background-size: contain;
     position: absolute;
     z-index: 2;
@@ -1499,25 +1498,15 @@ mit skrollr auf der x-Achse positioniert
     position: absolute;
     z-index: -3;
 }
-.s5_funfact_text {
-    width: 21.5vw;
-    height: 25vw;
-    margin-left: 3.3vw;
-    margin-top: 9.2vw;
-    font-family: "db2", serif;
-    font-size: 1.5vw;
-    line-height: 2.25vw;
-}
 
-.s5_funfact{
+.funfact{
     width: 30vw;
     height: 30vw;
-    background-image: url(../img/Szene2/fun_fact2-01.png);
+    background-image: url(../img/Szene4/fun_fact2-01.png);
     background-repeat: no-repeat;
     background-size: contain;
-    z-Index: 15;
+    z-Index: 5000;
     position: absolute;
-    background-position: center;
     left: 35vw;
 
 }
@@ -1530,7 +1519,6 @@ mit skrollr auf der x-Achse positioniert
     z-Index: 5000;
     position: absolute;
     left: 35vw;
-
 }
 
 .funfact_text {
@@ -1624,31 +1612,14 @@ section h1{
     text-align: center;
 }
 
-#facebook {
-    position: absolute;
-    background-image: url("../img/facebook.png");
-    width: 5vw;
-    height: 20vw;
-    background-size: contain;
-    background-repeat: no-repeat;
+.social li {
+    display: inline;
+    list-style-type: none;
+    padding: 1vw;
 }
 
-#twitter {
-    position: absolute;
-    background-image: url("../img/twitter.png");
-    width: 5vw;
-    height: 20vw;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-#instagram {
-    position: absolute;
-    background-image: url("../img/instagram.png");
-    width: 5vw;
-    height: 20vw;
-    background-size: contain;
-    background-repeat: no-repeat;
+.social li img{
+    width:5vw;
 }
 
 /*
@@ -1679,13 +1650,17 @@ section h1{
     display: none;
 }
 
+
+
 .social a:hover{
     opacity: 0.3;
 }
 
+
 .social a {
     text-decoration: none;
 }
+
 @media only screen and (max-aspect-ratio: 17/9) {
 
     #mq {
@@ -1700,7 +1675,7 @@ section h1{
 
 
     #mq ul{
-        top: 10vw;
+        top: 12vw;
         text-align: right;
         right: 5vw;
         opacity:1;
@@ -1713,15 +1688,15 @@ section h1{
     }
 
     #mq li img {
-        width: 10vw;
+        width: 5vw;
 
     }
     #logo{
-        left: 15vw;
+        left: 30vw;
         top: 20vw;
     }
     #logo img{
-        width: 20vw;
+        width: 22vw;
     }
 
     #schienen{
@@ -1733,11 +1708,6 @@ section h1{
     #schienen img{
         width: 100vw;
     }
-    .social a:hover{
-        opacity: 0.3;
-    }
 
-    .social a {
-        text-decoration: none;
-    }
+
 }
