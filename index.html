@@ -5,8 +5,23 @@
     <title>6 ist Heimat</title>
     <link rel="icon" href="img/sbahnlogo.png" type="image/png">
     <link rel="stylesheet" href="css/index.css"/>
+    <script type="text/javascript">
+        function loadingCheck() {
+            if (document.readyState != "complete") {
+                window.setTimeout(loadingCheck, 10000);
+            }
+            else {
+                document.getElementById('loading').id = 'loaded';
+            }
+        }
+    </script>
 </head>
-<body>
+<body onload="loadingCheck();">
+    <div id=loading>
+        <p>"Achtung an Gleis 6! Zug fährt ein."</p>
+        <div id="loading_screen">
+        </div>
+    </div>
 <main>
     <nav>
 
@@ -846,89 +861,97 @@
          data-100000="transform: translateX(0vw)"
          data-108000="transform:translateY(0vh);"
          data-110000="transform:translateY(100vh);">
-        <div id="s5_hintergrund_himmel_hell">
-        </div>
-        <div id="s5_hintergrund_daemmerung"
-             data-101500="opacity:0"
-             data-102000="opacity:1">
-        </div>
-        <div id="s5_hintergrund_himmel_dunkel"
-             data-102000="opacity:0"
-             data-104000="opacity:1"
-            >
-        </div>
-        <div id="s5_hintergrund_landschaft"
-             data-100000="transform:translateX(0vw)"
-             data-100800="transform:translateX(0vw)"
-             data-105000="transform:translateX(-180vw)">
-        </div>
 
-        <div id="s5_hintergrund_du"
-             data-100000="transform:translateX(20vw)"
-             data-100800="transform:translateX(20vw)"
-             data-105000="transform:translateX(-170vw)">
-        </div>
-        <div id="s5_hintergrund_zeche_zoll"
-             data-100000="transform:translateX(35vw)"
-             data-100800="transform:translateX(35vw)"
-             data-105000="transform:translateX(-140vw)">
-        </div>
-        <div id="s5_hintergrund_skyline_ddorf"
-             data-100000="transform:translateX(60vw)"
-             data-100800="transform:translateX(60vw)"
-             data-105000="transform:translateX(-110vw)">
-        </div>
-        <div id="s5_hintergrund_skyline_lev"
-             data-100000="transform:translateX(125vw)"
-             data-100800="transform:translateX(125vw)"
-             data-105000="transform:translateX(-45vw)">
-        </div>
+        <section id="himmel">
+            <div id="s5_hintergrund_himmel_hell">
+            </div>
+            <div id="s5_hintergrund_daemmerung"
+                 data-101500="opacity:0"
+                 data-102000="opacity:1">
+            </div>
+            <div id="s5_hintergrund_himmel_dunkel"
+                 data-102000="opacity:0"
+                 data-104000="opacity:1"
+                >
+            </div>
+            <div id="s5_hintergrund_landschaft"
+                 data-100000="transform:translateX(0vw)"
+                 data-100800="transform:translateX(0vw)"
+                 data-105000="transform:translateX(-180vw)">
+            </div>
+        </section>
 
-        <div id="s5_hintergrund_skyline_koeln"
-             data-100000="transform:translateX(138vw);display:block"
-             data-100800="transform:translateX(138vw)"
-             data-104000="transform:translateX(10vw);display:none">
-        </div>
-        <div id="s5_hintergrund_skyline_koeln_licht"
-             data-100000="transform:translateX(10vw);display:none"
-             data-104000="transform:translateX(10vw);display:block"
-             data-105000="transform:translateX(-32vw)">
-        </div>
+        <section id="s5_skyline">
+            <div id="s5_hintergrund_du"
+                 data-100000="transform:translateX(20vw)"
+                 data-100800="transform:translateX(20vw)"
+                 data-105000="transform:translateX(-170vw)">
+            </div>
+            <div id="s5_hintergrund_zeche_zoll"
+                 data-100000="transform:translateX(35vw)"
+                 data-100800="transform:translateX(35vw)"
+                 data-105000="transform:translateX(-140vw)">
+            </div>
+            <div id="s5_hintergrund_skyline_ddorf"
+                 data-100000="transform:translateX(60vw)"
+                 data-100800="transform:translateX(60vw)"
+                 data-105000="transform:translateX(-110vw)">
+            </div>
+            <div id="s5_hintergrund_skyline_lev"
+                 data-100000="transform:translateX(125vw)"
+                 data-100800="transform:translateX(125vw)"
+                 data-105000="transform:translateX(-45vw)">
+            </div>
+            <div id="s5_hintergrund_skyline_koeln"
+                 data-100000="transform:translateX(140vw);display:block"
+                 data-100800="transform:translateX(140vw)"
+                 data-104000="transform:translateX(8vw);display:none">
+            </div>
+            <div id="s5_hintergrund_skyline_koeln_licht"
+                 data-100000="transform:translateX(8vw);display:none"
+                 data-104000="transform:translateX(8vw);display:block"
+                 data-105000="transform:translateX(-35vw)">
+            </div>
+        </section>
 
-
-        <div id="s5_bahn"
+        <section id="s5_bahn"
              data-98400="display: none"
              data-100000="display: block; transform:translateX(-150vw)"
              data-104000="transform:translateX(-50vw)"
-             data-108000="transform:translateX(100vw)">
+             data-108000="transform:translateX(100vw)"
+             data-110000="display:none">
+            <div></div>
+        </section>
 
-        </div>
 
-        <div id="s5_tunnel"
+        <section id="s5_tunnel"
              data-100800="transform:translateX(-1vw)"
              data-105000="transform:translateX(-170vw)">
-        </div>
+            <div></div>
+        </section>
 
-        <div id="s5_sonne"
-             data-100000="transform:translateX(0vw);margin-top:0vh;display:block"
-             data-100600="transform:translateX(10vw);margin-top:10vh"
-             data-104000="transform:translateX(40vw);margin-top:70vh;display:none">
-        </div>
-        <div id="s5_flugzeug"
-             data-100000="transform:translateX(95vw);margin-top:20vh"
-             data-105000="transform:translateX(-50vw);margin-top:-30vh">
-        </div>
-        <div id="s5_ballon"
-             data-100000="transform:translateX(30vw)"
-             data-105000="transform:translateX(40vw)"
-             data-108000="transform:translateX(45vw)">
-        </div>
-        <div id="s5_wolken"
-             data-98400="transform:translateX(15vw)"
-             data-100000="transform:translateX(10vw)"
-             data-102500="transform:translateX(-20vw);opacity:1"
-             data-105000="transform:translateX(-70vw);opacity:0.2">
-        </div>
+        <section id="s5_himmelelemente">
+            <div id="s5_sonne"
+                 data-100000="transform:translateX(0vw);margin-top:0vh;display:block"
+                 data-100600="transform:translateX(10vw);margin-top:10vh"
+                 data-104000="transform:translateX(40vw);margin-top:70vh;display:none">
+            </div>
+            <div id="s5_flugzeug"
+                 data-100000="transform:translateX(95vw);margin-top:20vh"
+                 data-105000="transform:translateX(-50vw);margin-top:-30vh">
+            </div>
+            <div id="s5_ballon"
+                 data-100000="transform:translateX(30vw)"
+                 data-105000="transform:translateX(40vw)"
+                 data-108000="transform:translateX(45vw)">
+            </div>
+            <div id="s5_wolken"
+                 data-98400="transform:translateX(15vw)"
+                 data-100000="transform:translateX(10vw)"
+                 data-102500="transform:translateX(-20vw);opacity:1"
+                 data-105000="transform:translateX(-70vw);opacity:0.2">
+            </div>
+        </section>
         <div id="s5_bruecke"
              data-100000="transform:translateX(190vw)"
              data-100800="transform:translateX(190vw)"
@@ -1095,8 +1118,18 @@
         <div id="logo">
             <img src="img/graffiti-01.png">
         </div>
-        <div class="social">
-            <ul>
+        <div class="social"
+             data-0="top:12vw"
+             data-40500 = "top:2vw"
+             data-59500 = "top:12vw"
+             data-98400="top:2vw">
+            <ul             data-0="top:12vw"
+                            data-40499="top:12vw"
+                            data-40500 = "top:4vw"
+                            data-59499="top:4vw"
+                            data-59500 = "top:12vw"
+                            data-98399="top:12vw"
+                            data-98400="top:4vw">
                 <li>
                     <a href="https://www.facebook.com/S6-ist-Heimat-750096865034005/" target="_blank">
                         <img src="img/facebook.png">

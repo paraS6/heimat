@@ -14,6 +14,44 @@ body {
     height: 100vh;
 }
 
+#loading{
+    display: block;
+    width: 100vw;
+    height: 100vw;
+    background-color: black;
+    font-family: "DB Sans", serif;
+    text-align: center;
+    color: white;
+    position: fixed;
+    z-index: 10;
+}
+#loading p{
+    margin-top: 33vw;
+}
+
+#loading_screen{
+    background-image: url(../img/Szene3/bahn_hinten_vorne-01.png);
+    width: 150vw;
+    height: 100vw;
+    display: block;
+    background-size: 150vw;
+    top: 10vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    animation: loading 5s linear infinite;
+}
+@keyframes loading {
+    0% {left: -150vw;}
+    25% {left: -75vw;}
+    50% {left: 0vw;}
+    75% {left: 75vw;}
+    100% {left: 150vw;}
+}
+
+#loaded{
+    display: none;
+}
+
 #muteButton,#unMuteButton{
     cursor: pointer;
     position: fixed;
@@ -1378,9 +1416,9 @@ mit skrollr auf der x-Achse positioniert
 }
 
 #s5_hintergrund_skyline_koeln{
-    margin-top:20.9vw;
-    width: 40vw;
-    height: 50vw;
+    margin-top:8.1vw;
+    width: 71vw;
+    height: 30vw;
     background-size: contain;
     position: absolute;
     background-repeat: no-repeat;
@@ -1389,16 +1427,16 @@ mit skrollr auf der x-Achse positioniert
 }
 
 #s5_hintergrund_skyline_koeln_licht{
-    margin-top:20.9vw;
-    width: 40vw;
-    height: 50vw;
+    margin-top:8.1vw;
+    width: 71vw;
+    height: 30vw;
     background-size: contain;
     position: absolute;
     background-repeat: no-repeat;
     z-index: -1;
     background-image: url(../img/Szene5/skyline_koeln_licht-01.png);
 }
-#s5_bahn {
+#s5_bahn div{
     margin-top: 27.6vw;
     width: 120vw;
     height: 15vw;
@@ -1409,7 +1447,7 @@ mit skrollr auf der x-Achse positioniert
     z-index:1;
 }
 
-#s5_sonne {
+#s5_sonne{
     width: 10vw;
     height: 10vw;
     background-image: url(../img/Szene5/sonne-01.png);
@@ -1418,7 +1456,7 @@ mit skrollr auf der x-Achse positioniert
     background-repeat: no-repeat;
     z-index:-4;
 }
-#s5_tunnel{
+#s5_tunnel div{
     width: 65vw;
     height: 50vw;
     background-image: url(../img/Szene5/tunnel-01.png);
@@ -1460,7 +1498,7 @@ mit skrollr auf der x-Achse positioniert
     z-index: 2;
 }
 
-#s5_bruecke {
+#s5_bruecke{
     margin-top: 31vw;
     width:65vw;
     height: 50vw;
@@ -1471,7 +1509,7 @@ mit skrollr auf der x-Achse positioniert
     z-index: 2;
 }
 
-#s5_koeln_rechts {
+#s5_koeln_rechts{
     margin-top: 22vw;
     width:30vw;
     height: 40vw;
