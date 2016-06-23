@@ -863,11 +863,12 @@
          data-110000="transform:translateY(100vh);">
 
         <section id="himmel">
-            <div id="s5_hintergrund_himmel_hell">
+            <div id="s5_hintergrund_himmel_hell" data-98400="display:block" data-110000="display: none">
             </div>
             <div id="s5_hintergrund_daemmerung"
-                 data-101500="opacity:0"
-                 data-102000="opacity:1">
+                 data-101500="opacity:0; display: block"
+                 data-102000="opacity:1"
+                 data-110000="display: none">
             </div>
             <div id="s5_hintergrund_himmel_dunkel"
                  data-102000="opacity:0"
@@ -875,13 +876,17 @@
                 >
             </div>
             <div id="s5_hintergrund_landschaft"
-                 data-100000="transform:translateX(0vw)"
+                 data-98400="display:block"
+                 data-100000="transform:translateX(0vw);"
                  data-100800="transform:translateX(0vw)"
-                 data-105000="transform:translateX(-180vw)">
+                 data-105000="transform:translateX(-180vw)"
+                data-110000="display:none">
             </div>
         </section>
 
-        <section id="s5_skyline">
+        <section id="s5_skyline"
+                 data-98400="display:block"
+                 data-110000="display: none">
             <div id="s5_hintergrund_du"
                  data-100000="transform:translateX(20vw)"
                  data-100800="transform:translateX(20vw)"
@@ -925,12 +930,14 @@
 
 
         <section id="s5_tunnel"
+                 data-98400="display:block"
              data-100800="transform:translateX(-1vw)"
-             data-105000="transform:translateX(-170vw)">
+             data-105000="transform:translateX(-170vw)"
+                 data-110000="display: none">
             <div></div>
         </section>
 
-        <section id="s5_himmelelemente">
+        <section id="s5_himmelelemente" data-98400="display:block" data-110000="display: none">
             <div id="s5_sonne"
                  data-100000="transform:translateX(0vw);margin-top:0vh;display:block"
                  data-100600="transform:translateX(10vw);margin-top:10vh"
@@ -953,14 +960,18 @@
             </div>
         </section>
         <div id="s5_bruecke"
+             data-98400="display:block"
              data-100000="transform:translateX(190vw)"
              data-100800="transform:translateX(190vw)"
-             data-105000="transform:translateX(13vw)">
+             data-105000="transform:translateX(13vw)"
+             data-110000="display: none">
         </div>
         <div id="s5_koeln_rechts"
+             data-98400="display:block"
              data-100000="transform:translateX(246vw)"
              data-100800="transform:translateX(246vw)"
-             data-105000="transform:translateX(76vw)">
+             data-105000="transform:translateX(76vw)"
+             data-110000="display: none">
         </div>
 
 
@@ -1001,45 +1012,44 @@
          data-118000="transform:translateY(-100vh)"
          data-120000="transform:translateY(0vh)"
          data-122000="transform:translateY(0vh)">
-
         <section class="sterne" id="s6_sterne1"
-                 data-110000="transform:translate(-100vw,0vw);"
-                 data-116000="transform:translate(0vw,0vw);">
+                 data-110000="transform:translate3d(-100vw,0vw, 1px);"
+                 data-116000="transform:translate3d(0vw,0vw 1px);">
             <div></div>
         </section>
         <section class="sterne" id="s6_sterne2"
-                 data-110000="transform:translate(175vw,50vw);"
-                 data-116000="transform:translate(0vw,0vw);">
+                 data-110000="transform:translate3d(175vw,50vw, 1px);"
+                 data-116000="transform:translate3d(0vw,0vw, 1px);">
             <div></div>
         </section>
         <section class="sterne" id="s6_sterne3"
-                 data-110000="transform:translate(100vw,0vw);"
-                 data-116000="transform:translate(0vw,0vw);">
+                 data-110000="transform:translate3d(100vw,0vw, 1px);"
+                 data-116000="transform:translate3d(0vw,0vw, 1px);">
             <div></div>
         </section>
         <section class="sterne" id="s6_sterne4"
-                 data-110000="transform:translate(100vw,0vw);"
-                 data-116000="transform:translate(0vw,0vw);">
+                 data-110000="transform:translate3d(100vw,0vw, 1px);"
+                 data-116000="transform:translate3d(0vw,0vw, 1px);">
             <div></div>
         </section>
         <section class="sterne" id="s6_sterne5"
-                 data-110000="transform:translate(-175vw,0vw);"
-                 data-116000="transform:translate(0vw,0vw);">
+                 data-110000="transform:translate3d(-175vw,0vw, 1px);"
+                 data-116000="transform:translate3d(0vw,0vw, 1px);">
             <div></div>
         </section>
         <section class="sterne" id="s6_sterne6"
-                 data-110000="transform:translate(100vw,-50vw);"
-                 data-116000="transform:translate(0vw,0vw);">
+                 data-110000="transform:translate3d(100vw,-50vw, 1px);"
+                 data-116000="transform:translate3d(0vw,0vw, 1px);">
             <div></div>
         </section>
         <section class="sterne" id="s6_sterne7"
-                 data-110000="transform:translate(100vw,75vw);"
-                 data-116000=" opacity:1; transform:translate(0vw,0vw);">
+                 data-110000="transform:translate3d(100vw,75vw, 1px);"
+                 data-116000=" opacity:1; transform:translate3d(0vw,0vw, 1px);">
             <div></div>
         </section>
         <section class="sterne" id="s6_sterne8"
-                 data-110000="transform:translate(-100vw,75vw);"
-                 data-116000="transform:translate(0vw,0vw);">
+                 data-110000="transform:translate3d(-100vw,75vw, 1px);"
+                 data-116000="transform:translate3d(0vw,0vw, 1px);">
             <div></div>
         </section>
 
@@ -1052,38 +1062,36 @@
         <section>
             <h1>S6 ist Heimat</h1>
             <ul data-0="display:none"
-                data-118000="top:100vh"
-                data-119000="top: 50vw"
             data-117000="display:block">
-                <li data-117000="transform:translate(100vw, 100vw)"
-                    data-118000="transform:translate(25vw, 30vw)"
-                    data-119000="transform:translate(25vw, 30vw)"
-                    data-122000="transform:translate(0vw, -35vw)">
+                <li data-117000="transform:translate3d(100vw, 100vw, 1px)"
+                    data-118000="transform:translate3d(25vw, 30vw, 1px)"
+                    data-119000="transform:translate3d(25vw, 30vw, 1px)"
+                    data-122000="transform:translate3d(0vw, -35vw, 1px)">
                     Alina Otten</li>
-                <li data-117000="transform:translate(-100vw, 20vw)"
-                    data-118000="transform:translate(-39vw, 10vw)"
-                    data-119000="transform:translate(-39vw, 10vw)"
-                    data-122000="transform:translate(0vw, -35vw)">
+                <li data-117000="transform:translate3d(-100vw, 20vw, 1px)"
+                    data-118000="transform:translate3d(-39vw, 10vw, 1px)"
+                    data-119000="transform:translate3d(-39vw, 10vw, 1px)"
+                    data-122000="transform:translate3d(0vw, -35vw, 1px)">
                     Christian Leich</li>
-                <li data-117000="transform:translate(-100vw, 100vw)"
-                    data-118000="transform:translate(-25vw, 27vw)"
-                    data-119000="transform:translate(-25vw, 27vw)"
-                    data-122000="transform:translate(0vw, -35vw)">
+                <li data-117000="transform:translate3d(-100vw, 100vw, 1px)"
+                    data-118000="transform:translate3d(-25vw, 27vw, 1px)"
+                    data-119000="transform:translate3d(-25vw, 27vw, 1px)"
+                    data-122000="transform:translate3d(0vw, -35vw, 1px)">
                     Jana Borchardt</li>
-                <li data-117000="transform:translate(120vw, 20vw)"
-                    data-118000="transform:translate(35vw, 3vw)"
-                    data-119000="transform:translate(35vw, 3vw)"
-                    data-122000="transform:translate(0vw, -35vw)">
+                <li data-117000="transform:translate3d(120vw, 20vw, 1px)"
+                    data-118000="transform:translate3d(35vw, 3vw, 1px)"
+                    data-119000="transform:translate3d(35vw, 3vw, 1px)"
+                    data-122000="transform:translate3d(0vw, -35vw, 1px)">
                     Jan Schürtz</li>
-                <li data-117000="transform:translate(45vw, 100vw)"
-                    data-118000="transform:translate(5vw, 23vw)"
-                    data-119000="transform:translate(5vw, 23vw)"
-                    data-122000="transform:translate(0vw, -35vw)">
+                <li data-117000="transform:translate3d(45vw, 100vw, 1px)"
+                    data-118000="transform:translate3d(5vw, 23vw, 1px)"
+                    data-119000="transform:translate3d(5vw, 23vw, 1px)"
+                    data-122000="transform:translate3d(0vw, -35vw, 1px)">
                     Jens Römer</li>
-                <li data-117000="transform:translate(35vw, -100vw)"
-                    data-118000="transform:translate(-5vw, -12vw)"
-                    data-119000="transform:translate(-5vw, -12vw)"
-                    data-122000="transform:translate(0vw, -35vw)">
+                <li data-117000="transform:translate3d(35vw, -100vw, 1px)"
+                    data-118000="transform:translate3d(-5vw, -12vw, 1px)"
+                    data-119000="transform:translate3d(-5vw, -12vw, 1px)"
+                    data-122000="transform:translate3d(0vw, -35vw, 1px)">
                     Thomas Schlömer</li>
             </ul>
             <ul class="social"

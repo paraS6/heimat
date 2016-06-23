@@ -1611,7 +1611,7 @@ ul{
     font-size: 3vw;
     color: white;
     position: absolute;
-    top: 90vh;
+    top: 50vw;
     list-style: none;
     opacity: 0.5;
     width: 100vw;
@@ -1731,3 +1731,4 @@ section h1{
 
 
 }
+
