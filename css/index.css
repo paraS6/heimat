@@ -14,6 +14,44 @@ body {
     height: 100vh;
 }
 
+#loading{
+    display: block;
+    width: 100vw;
+    height: 100vw;
+    background-color: black;
+    font-family: "DB Sans", serif;
+    text-align: center;
+    color: white;
+    position: fixed;
+    z-index: 10;
+}
+#loading p{
+    margin-top: 33vw;
+}
+
+#loading_screen{
+    background-image: url(../img/Szene3/bahn_hinten_vorne-01.png);
+    width: 150vw;
+    height: 100vw;
+    display: block;
+    background-size: 150vw;
+    top: 10vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    animation: loading 5s linear infinite;
+}
+@keyframes loading {
+    0% {left: -150vw;}
+    25% {left: -75vw;}
+    50% {left: 0vw;}
+    75% {left: 75vw;}
+    100% {left: 150vw;}
+}
+
+#loaded{
+    display: none;
+}
+
 #muteButton,#unMuteButton{
     cursor: pointer;
     position: fixed;

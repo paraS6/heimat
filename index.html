@@ -5,8 +5,23 @@
     <title>6 ist Heimat</title>
     <link rel="icon" href="img/sbahnlogo.png" type="image/png">
     <link rel="stylesheet" href="css/index.css"/>
+    <script type="text/javascript">
+        function loadingCheck() {
+            if (document.readyState != "complete") {
+                window.setTimeout(loadingCheck, 10000);
+            }
+            else {
+                document.getElementById('loading').id = 'loaded';
+            }
+        }
+    </script>
 </head>
-<body>
+<body onload="loadingCheck();">
+    <div id=loading>
+        <p>"Achtung an Gleis 6! Zug fährt ein."</p>
+        <div id="loading_screen">
+        </div>
+    </div>
 <main>
     <nav>
 
