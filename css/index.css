@@ -711,15 +711,15 @@ mit skrollr auf der x-Achse positioniert
 }
 
 #s3_oma{
-    width: 10vw;
-    height: 10vw;
-    background-image: url("../img/Szene3/oma-01.png");
+    width: 15vw;
+    height: 13vw;
+    background-image: url("../img/Szene3/frau2.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     background-position: center;
     z-index: -1;
-    top: 25vw;
+    top: 23vw;
     left: 70vw;
 }
 #s3_mann_1{
