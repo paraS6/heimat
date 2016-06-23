@@ -34,11 +34,11 @@
         <audio id="fansAudio" preload="auto">
             <source src="audio/fangesaenge.mp3">
         </audio>
-        <div id="unMuteButton">
-            <input type="button" name="unMuteAudio">
-        </div>
         <div id="muteButton" >
             <input type="button" name="muteAudio">
+        </div>
+        <div id="unMuteButton">
+            <input type="button" name="unMuteAudio">
         </div>
 
         <div id="linie"></div>
@@ -974,34 +974,29 @@
              data-110000="display: none">
         </div>
 
+        <!--Szene5_funfact -->
+        <section class="viewport">
+
+            <div class="funfact"
+                 data-100000 = "transform: translateY(130vw) rotate(0deg);display:block;"
+                 data-102000 = "transform: translateY(50vw) rotate(0deg);"
+                 data-104000 = "transform: translateY(27vw) rotate(-10deg);"
+                 data-105000 = "transform: translateY(27vw) rotate(-10deg);"
+                 data-106000 = "transform: translateY(27vw) rotate(-10deg);"
+                 data-107000 = "transform: translateY(50vw) rotate(0deg);"
+                 data-107500 = "display:none;"
+            >
+                <div class="funfact_text"><p>Die S6 hat sogar ihre eigene Facebook Fanseite. Liken!</p>
+                    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FS6-ist-Heimat-750096865034005%2F&width=300&layout=button&action=like&show_faces=false&share=false&height=65&appId" width="300" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">
+
+                    </iframe>
+                </div>
+            </div>
+
+
+        </section>
 
     </div>
-
-    <!-- Funfact Szene5-->
-
-    <!--s4_funfact -->
-    <section class="viewport">
-
-        <div class="funfact"
-             data-100000 = "transform: translateY(130vw) rotate(0deg);display:block;"
-             data-102000 = "transform: translateY(50vw) rotate(0deg);"
-             data-104000 = "transform: translateY(27vw) rotate(-10deg);"
-             data-105000 = "transform: translateY(27vw) rotate(-10deg);"
-             data-106000 = "transform: translateY(27vw) rotate(-10deg);"
-             data-107000 = "transform: translateY(50vw) rotate(0deg);"
-             data-107500 = "display:none;"
-        >
-            <div class="funfact_text"><p>Die S6 hat sogar ihre eigene Facebook Fanseite. Liken!</p>
-                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FS6-ist-Heimat-750096865034005%2F&width=300&layout=button&action=like&show_faces=false&share=false&height=65&appId" width="300" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">
-
-                </iframe>
-            </div>
-        </div>
-
-
-    </section>
-
-
 
     <!--Outro-->
 
@@ -1118,28 +1113,17 @@
         </section>
     </div>
     <div id="mq">
-        <div id="schienen"
-             data-0="display:block"
-             data-40500 = "display: none;"
-             data-59500 = "display: block"
-             data-98400="display:none">
-            <img src="img/schienen-01.png">
+        <div id="schienen">
+            <img src="img/schienen-1.png" data-0="display: block;"
+                 data-40500="display: none;"
+                 data-59500 ="display: block;"
+                 data-98400="display: none;"/>
         </div>
         <div id="logo">
             <img src="img/graffiti-01.png">
         </div>
-        <div class="social"
-             data-0="top:12vw"
-             data-40500 = "top:2vw"
-             data-59500 = "top:12vw"
-             data-98400="top:2vw">
-            <ul             data-0="top:12vw"
-                            data-40499="top:12vw"
-                            data-40500 = "top:4vw"
-                            data-59499="top:4vw"
-                            data-59500 = "top:12vw"
-                            data-98399="top:12vw"
-                            data-98400="top:4vw">
+        <div class="social">
+            <ul>
                 <li>
                     <a href="https://www.facebook.com/S6-ist-Heimat-750096865034005/" target="_blank">
                         <img src="img/facebook.png">

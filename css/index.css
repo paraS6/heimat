@@ -43,7 +43,7 @@ body {
 @keyframes loading {
     0% {left: -150vw;}
     25% {left: -75vw;}
-    50% {left: 0vw;}
+    50% {left: 0;}
     75% {left: 75vw;}
     100% {left: 150vw;}
 }
@@ -71,11 +71,11 @@ body {
     margin-left: 2vw;
 }
 #unMuteButton input{
-    background-image: url("../img/soundaus-01.svg");
+    background-image: url("../img/soundan-01.svg");
 
 }
 #muteButton input{
-    background-image: url("../img/soundan-01.svg");
+    background-image: url("../img/soundaus-01.svg");
 }
 
 /**
@@ -1506,7 +1506,7 @@ mit skrollr auf der x-Achse positioniert
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    z-index: 2;
+    z-index: 0;
 }
 
 #s5_koeln_rechts{
@@ -1530,16 +1530,6 @@ mit skrollr auf der x-Achse positioniert
     position: absolute;
     left: 35vw;
 
-}
-.funfact{
-    width: 30vw;
-    height: 30vw;
-    background-image: url(../img/Szene4/fun_fact2-01.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-Index: 5000;
-    position: absolute;
-    left: 35vw;
 }
 
 .funfact_text {
@@ -1722,13 +1712,13 @@ section h1{
     #schienen{
         top:18vw;
         text-align: center;
-
+        width: 100vw;
+        height: 6.75vw;
     }
 
     #schienen img{
         width: 100vw;
     }
-
 
 }
 
