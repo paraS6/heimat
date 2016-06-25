@@ -405,7 +405,6 @@ mit skrollr auf der x-Achse positioniert
     top: 14vw;
 }
 
-
 #s2_mannRuhrpott div{
     width: 25vw;
     height: 37vw;
@@ -1660,12 +1659,9 @@ section h1{
     display: none;
 }
 
-
-
 .social a:hover{
     opacity: 0.3;
 }
-
 
 .social a {
     text-decoration: none;
@@ -1721,4 +1717,3 @@ section h1{
     }
 
 }
-

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>6 ist Heimat</title>
-    <link rel="icon" href="img/sbahnlogo.png" type="image/png">
+    <link rel="icon" href="img/sbahnlogo.png" type="image/png"/>
     <link rel="stylesheet" href="css/index.css"/>
     <script type="text/javascript">
         function loadingCheck() {
@@ -17,7 +17,7 @@
     </script>
 </head>
 <body onload="loadingCheck();">
-    <div id=loading>
+    <div id="loading">
         <p>"Achtung an Gleis 6! Zug fährt ein."</p>
         <div id="loading_screen">
         </div>
@@ -26,235 +26,241 @@
     <nav>
 
         <audio id="durchsageAudio" preload="auto">
-            <source src="audio/durchsage_kurz.mp3">
+            <source src="audio/durchsage_kurz.mp3"/>
         </audio>
         <audio id="mariachiAudio" preload="auto">
-            <source src="audio/mariachi_band_ver2.mp3">
+            <source src="audio/mariachi_band_ver2.mp3"/>
         </audio>
         <audio id="fansAudio" preload="auto">
-            <source src="audio/fangesaenge.mp3">
+            <source src="audio/fangesaenge.mp3"/>
         </audio>
-        <div id="muteButton" >
-            <input type="button" name="muteAudio">
+        <div id="muteButton">
+            <input type="button" name="muteAudio"/>
         </div>
         <div id="unMuteButton">
-            <input type="button" name="unMuteAudio">
+            <input type="button" name="unMuteAudio"/>
         </div>
 
         <div id="linie"></div>
         <div id="pfeil"></div>
 
         <a href="#s1_intro" data-menu-top="0">
-            <div class="ring" id="ring1">
+            <div id="ring1" class="ring">
                 <div class="nav_name">
                     <div>Intro</div>
                 </div>
                 <div class="innen"></div>
                 <div class="innen"
-                     data-0="background-color:red"
-                     data-15000="background-color:transparent">
+                     data-0="background-color: red;"
+                     data-15000="background-color: transparent;">
                 </div>
             </div>
         </a>
         <a href="#s2_pendler" data-menu-top="15001">
-            <div class="ring" id="ring2">
+            <div id="ring2" class="ring">
                 <div class="nav_name">
                     <div>Pendler</div>
                 </div>
                 <div class="innen"></div>
                 <div class="innen"
-                     data-0="background-color:transparent"
-                     data-15000="background-color:red"
-                     data-42000="background-color:transparent">
+                     data-0="background-color: transparent;"
+                     data-15000="background-color: red;"
+                     data-42000="background-color: transparent;">
                 </div>
             </div>
         </a>
         <a href="#s3_bahnhof" data-menu-top="42005">
-            <div class="ring" id="ring3">
+            <div id="ring3" class="ring">
                 <div class="nav_name">
                     <div>Bahnhof</div>
                 </div>
                 <div class="innen"></div>
                 <div class="innen"
-                     data-0="background-color:transparent"
-                     data-42000="background-color:red"
-                     data-60000="background-color:transparent">
+                     data-0="background-color: transparent;"
+                     data-42000="background-color: red;"
+                     data-60000="background-color: transparent;">
                 </div>
             </div>
         </a>
         <a href="#s4_nervigefahrgaeste" data-menu-top="60001">
-            <div class="ring" id="ring4">
-                <div  class="nav_name">
+            <div id="ring4" class="ring">
+                <div class="nav_name">
                     <div>nervige&nbsp;Fahrgäste</div>
                 </div>
                 <div class="innen"></div>
                 <div class="innen"
-                     data-0="background-color:transparent"
-                     data-60000="background-color:red"
-                     data-100000="background-color:transparent">
+                     data-0="background-color: transparent;"
+                     data-60000="background-color: red;"
+                     data-100000="background-color: transparent;">
                 </div>
             </div>
         </a>
         <a href="#s5_nachtfahrt" data-menu-top="100001">
-            <div class="ring" id="ring5">
+            <div id="ring5" class="ring">
                 <div class="nav_name">
                     <div>Nachtfahrt</div>
                 </div>
                 <div class="innen"></div>
                 <div class="innen"
-                     data-0="background-color:transparent"
-                     data-100000="background-color:red"
-                     data-108000="background-color:transparent">
+                     data-0="background-color: transparent;"
+                     data-100000="background-color: red;"
+                     data-108000="background-color: transparent;">
                 </div>
             </div>
         </a>
         <a href="#s6_outro" data-menu-top="106001">
-            <div class="ring" id="ring6">
+            <div id="ring6" class="ring">
                 <div class="nav_name">
                     <div >Sternenhimmel</div>
                 </div>
                 <div class="innen"></div>
                 <div class="innen"
-                     data-0="background-color:transparent"
-                     data-108000="background-color:red"
-                     data-120000="background-color:transparent"></div>
+                     data-0="background-color: transparent;"
+                     data-108000="background-color: red;"
+                     data-120000="background-color: transparent;">
+                </div>
             </div>
         </a>
     </nav>
 
-
-
-
-
-
+    <!-- Intro -->
     <div id="s1_intro"
          class="viewport"
-         data-10000="transform:translateX(-400vw); display: block;"
-         data-12500="transform:translateX(-126.5vw)"
-         data-17000="opacity: 1"
-         data-22000="opacity: 0; display:none">
+         data-10000="display: block; transform: translateX(-400vw);"
+         data-12500="transform: translateX(-126.5vw);"
+         data-17000="opacity: 1;"
+         data-22000="display: none; opacity: 0;">
 
         <section id="zug"></section>
 
-        <div id="s1_tim" data-0="display:block"
-             data-2500="transform:translateX(439vw)"
-             data-3900="opacity:1"
-             data-4000="display:none;opacity:0">
+        <div id="s1_tim"
+             data-0="display: block;"
+             data-2500="transform: translateX(439vw);"
+             data-3900="opacity: 1;"
+             data-4000="display: none; opacity: 0;">
         </div>
 
-        <div id="s1_tim_winken" data-0="display:block"
-             data-2700="transform:translateX(439vw);opacity:0"
-             data-4000="opacity:1">
+        <div id="s1_tim_winken"
+             data-0="display: block;"
+             data-2700="transform: translateX(439vw); opacity: 0;"
+             data-4000="opacity: 1;">
         </div>
 
         <div class="blase"
-             data-4000="display: block; transform: translateX(445vw); opacity: 0"
-             data-5000="opacity: 1"
-             data-7000="opacity: 1"
-             data-7500="opacity: 0; display: none">
+             data-4000="display: block; transform: translateX(445vw); opacity: 0;"
+             data-5000="opacity: 1;"
+             data-7000="opacity: 1;"
+             data-7500="display: none; opacity: 0;">
             <div class="blase_text"
-                 data-5000="display: block"
-                 data-6000="display: none">
+                 data-5000="display: block;"
+                 data-6000="display: none;">
                 <p>Hey Leute, ich bin Tim! Als Student der HSD sitze ich mehr in der S6 als im Vorlesungssaal.</p>
             </div>
             <div class="blase_text"
-                 data-5000="display:none"
-                 data-6000="display:block"
-                 data-7000="display:none">
+                 data-5000="display: none;"
+                 data-6000="display: block;"
+                 data-7000="display: none;">
                 <p>Hier verdichtet sich ganz NRW in einer einzigen Bahnlinie.<br>Kommt mit!</p>
             </div>
         </div>
 
-        <section class="container" id="left_door" data-0="transform:translateX(404.5vw);"
-                 data-2500="transform:translateX(390vw);"
-                 data-7500="transform:translateX(390vw);"
-                 data-10000="transform:translateX(404.5vw);">
+        <section id="left_door"
+                 class="container"
+                 data-0="transform: translateX(404.5vw);"
+                 data-2500="transform: translateX(390vw);"
+                 data-7500="transform: translateX(390vw);"
+                 data-10000="transform: translateX(404.5vw);">
             <div></div>
         </section>
-        <section class="container" id="right_door" data-0="transform:translateX(451.5vw);"
-                 data-2500="transform:translateX(466vw);"
-                 data-7500="transform:translateX(466vw);"
-                 data-10000="transform:translateX(451.5vw);">
+        <section id="right_door"
+                 class="container"
+                 data-0="transform: translateX(451.5vw);"
+                 data-2500="transform: translateX(466vw);"
+                 data-7500="transform: translateX(466vw);"
+                 data-10000="transform: translateX(451.5vw);">
             <div></div>
         </section>
     </div>
-    <div id=s2_pendler class="viewport"
-         data-0="display: none"
-         data-15000 = " display: block; transform: translateX(0vw); opacity: 0"
-         data-17000 = "transform: translateX(0vw); opacity:1"
-         data-35000 = "transform: translateX(-100vw);"
-         data-42000 = "display: none"
-    >
 
-        <div id = s2_hintergrund
-             data-0="display: none"
-             data-15000 = " display: block; transform: translateX(0vw); opacity: 0.8"
-             data-17000 = "transform: translateX(0vw); opacity:1;"
-             data-35000 = "transform: translateX(20vw);"
-             data-41300 = "opacity: 0">
+    <!-- Szene 2 -->
+    <div id="s2_pendler"
+         class="viewport"
+         data-0="display: none;"
+         data-15000="display: block; transform: translateX(0vw); opacity: 0;"
+         data-17000="transform: translateX(0vw); opacity:1;"
+         data-35000="transform: translateX(-100vw);"
+         data-42000="display: none;">
+
+        <div id ="s2_hintergrund"
+             data-0="display: none;"
+             data-15000="display: block; transform: translateX(0vw); opacity: 0.8;"
+             data-17000="transform: translateX(0vw); opacity:1;"
+             data-35000="transform: translateX(20vw);"
+             data-41300="opacity: 0;">
         </div>
 
-        <div id=s2_schild_essen class="schilder"
-             data-0="display: none"
-             data-15000 = " display: block; transform: translateX(0vw); opacity: 0.8"
-             data-17000 = "transform: translateX(0vw); opacity:1;"
-             data-35000 = "transform: translateX(-150vw);"
-             data-41300 = "opacity: 0">
-
+        <div id="s2_schild_essen"
+             class="schilder"
+             data-0="display: none;"
+             data-15000="display: block; transform: translateX(0vw); opacity: 0.8;"
+             data-17000="transform: translateX(0vw); opacity: 1;"
+             data-35000="transform: translateX(-150vw);"
+             data-41300="opacity: 0;">
         </div>
 
-        <div id=s2_schild_ddorf class="schilder"
-             data-0="display: none"
-             data-15000 = " display: block; transform: translateX(0vw); opacity: 0.8"
-             data-17000 = "transform: translateX(0vw); opacity:1;"
-             data-35000 = "transform: translateX(-150vw);"
-             data-41300 = "opacity: 0">
-
+        <div id="s2_schild_ddorf"
+             class="schilder"
+             data-0="display: none;"
+             data-15000="display: block; transform: translateX(0vw); opacity: 0.8;"
+             data-17000="transform: translateX(0vw); opacity: 1;"
+             data-35000="transform: translateX(-150vw);"
+             data-41300="opacity: 0;">
         </div>
 
-        <div id=s2_schild_leverkusen class="schilder"
-             data-0="display: none"
-             data-15000 = " display: block; transform: translateX(0vw); opacity: 0.8"
-             data-17000 = "transform: translateX(0vw); opacity:1;"
-             data-35000 = "transform: translateX(-150vw);"
-             data-41300 = "opacity: 0">
-
+        <div id="s2_schild_leverkusen"
+             class="schilder"
+             data-0="display: none;"
+             data-15000="display: block; transform: translateX(0vw); opacity: 0.8;"
+             data-17000="transform: translateX(0vw); opacity: 1;"
+             data-35000="transform: translateX(-150vw);"
+             data-41300="opacity: 0;">
         </div>
 
-        <div id=s2_schild_koeln class="schilder"
-             data-0="display: none"
-             data-15000 = " display: block; transform: translateX(0vw); opacity: 0.8"
-             data-17000 = "transform: translateX(0vw); opacity:1;"
-             data-35000 = "transform: translateX(-150vw);"
-             data-41300 = "opacity: 0">
-
+        <div id="s2_schild_koeln"
+             class="schilder"
+             data-0="display: none;"
+             data-15000="display: block; transform: translateX(0vw); opacity: 0.8;"
+             data-17000="transform: translateX(0vw); opacity: 1;"
+             data-35000="transform: translateX(-150vw);"
+             data-41300="opacity: 0;">
         </div>
 
         <div class="container"
-             data-0="display: none"
-             data-15000 = " display: block; transform: translateX(0vw); opacity: 0.8"
-             data-17000 = "transform: translateX(0vw); opacity:1;"
-             data-35000 = "transform: translateX(-250vw);"
-             data-41300 = "opacity: 0"
-        >
+             data-0="display: none;"
+             data-15000=" display: block; transform: translateX(0vw); opacity: 0.8;"
+             data-17000="transform: translateX(0vw); opacity: 1;"
+             data-35000="transform: translateX(-250vw);"
+             data-41300="opacity: 0;">
             <div id = s2_bahn_innen></div>
         </div>
-        <section class="container" id=s2_protagonist_neutral
-                 data-17000 = "transform: translateX(378vw); opacity:1"
-                 data-35000 = "transform: translateX(137vw);"
-                 data-35100 = "transform: translateX(137vw);opacity: 0.5"
-                 data-35200 = "opacity:0"
-                 data-41300="opacity: 0"
-        >
+
+        <section id="s2_protagonist_neutral"
+                 class="container"
+                 data-17000="transform: translateX(378vw); opacity: 1;"
+                 data-35000="transform: translateX(137vw);"
+                 data-35100="transform: translateX(137vw); opacity: 0.5;"
+                 data-35200="opacity: 0;"
+                 data-41300="opacity: 0;">
             <div></div>
         </section>
-        <section class="container" id=s2_protagonist_muede
-                 data-17000 = "transform: translateX(378vw); opacity:0"
-                 data-35000 = "transform: translateX(137vw); opacity:0"
-                 data-35100 = "transform: translateX(137vw); opacity: 0.7;"
-                 data-35200 = "opacity: 1;"
-                 data-41300="opacity: 0"
-        >
+
+        <section id="s2_protagonist_muede"
+                 class="container"
+                 data-17000="transform: translateX(378vw); opacity: 0;"
+                 data-35000="transform: translateX(137vw); opacity: 0;"
+                 data-35100="transform: translateX(137vw); opacity: 0.7;"
+                 data-35200="opacity: 1;"
+                 data-41300="opacity: 0;">
             <div></div>
         </section>
 
@@ -264,218 +270,265 @@
              data-33500="transform: translateX(135.25vw); opacity: 1;"
              data-34500="transform: translateX(121.75vw); opacity: 1;"
              data-35000="transform: translateX(115vw); opacity: 0; display: none;">
+
             <div class="blase_text"
                  data-33000="display: block;"
                  data-34000="display: none;">
                 <p>Die S6 fährt von Essen Hbf nach<br>Köln-Worringen.</p>
             </div>
+
             <div class="blase_text"
                  data-33000="display: none;"
                  data-34000="display: block;">
                 <p>Entlang dieser Hauptschlagader NRWs mischen sich alle Klischees der verschiedenen Städte.</p>
             </div>
+
         </div>
 
-        <section class="container" id=s2_mannZeche1
-                 data-17000 = "transform: translateX(5vw);opacity:1"
-                 data-35000 = "transform: translateX(-260vw);">
+        <section id="s2_mannZeche1"
+                 class="container"
+                 data-17000="transform: translateX(5vw); opacity: 1;"
+                 data-35000="transform: translateX(-260vw);">
             <div></div>
         </section>
-        <section class="container" id=s2_mannRuhrpott
-                 data-17000 = "transform: translateX(57vw); opacity:1"
-                 data-35000 = "transform: translateX(-200vw);">
+
+        <section id="s2_mannRuhrpott"
+                 class="container"
+                 data-17000="transform: translateX(57vw); opacity: 1;"
+                 data-35000="transform: translateX(-200vw);">
             <div></div>
         </section>
-        <section class="container" id=s2_mannZeche2
-                 data-17000 = "transform: translateX(75vw);opacity:1"
-                 data-35000 = "transform: translateX(-180vw);">
+
+        <section id="s2_mannZeche2"
+                 class="container"
+                 data-17000="transform: translateX(75vw); opacity: 1;"
+                 data-35000="transform: translateX(-180vw);">
             <div></div>
         </section>
-        <section class="container" id=s2_mann
-                 data-17000 = "transform: translateX(65vw); opacity:1"
-                 data-35000 = "transform: translateX(-195vw);">
+
+        <section id="s2_mann"
+                 class="container"
+                 data-17000="transform: translateX(65vw); opacity: 1;"
+                 data-35000="transform: translateX(-195vw);">
             <div></div>
         </section>
-        <section class="container" id=s2_bierFlasche
-                 data-17000 = "transform: translateX(105vw); opacity:1; "
-                 data-35000 = "transform: translateX(-150vw);">
+
+        <section id="s2_bierFlasche"
+                 class="container"
+                 data-17000="transform: translateX(105vw); opacity: 1; "
+                 data-35000="transform: translateX(-150vw);">
             <div></div>
         </section>
-        <section class="container" id=s2_reicheFrau1
-                 data-17000 = "transform: translateX(168vw);opacity:1"
-                 data-35000 = "transform: translateX(-96vw);">
+
+        <section id="s2_reicheFrau1"
+                 class="container"
+                 data-17000="transform: translateX(168vw); opacity: 1;"
+                 data-35000="transform: translateX(-96vw);">
             <div></div>
         </section>
-        <section class="container" id=s2_reicherMann1
-                 data-17000 = "transform: translateX(152vw);opacity:1"
-                 data-35000 = "transform: translateX(-104vw);">
+
+        <section id="s2_reicherMann1"
+                 class="container"
+                 data-17000="transform: translateX(152vw); opacity: 1;"
+                 data-35000="transform: translateX(-104vw);">
             <div></div>
         </section>
-        <section class="container" id=s2_reicherMann2
-                 data-17000 = "transform: translateX(180vw);opacity:1"
-                 data-35000 = "transform: translateX(-70vw);">
+
+        <section id="s2_reicherMann2"
+                 class="container"
+                 data-17000="transform: translateX(180vw); opacity: 1;"
+                 data-35000="transform: translateX(-70vw);">
             <div></div>
         </section>
-        <section class="container" id=s2_reicheFrau2
-                 data-17000 = "transform: translateX(187vw);opacity:1"
-                 data-35000 = "transform: translateX(-67vw);">
+
+        <section id="s2_reicheFrau2"
+                 class="container"
+                 data-17000="transform: translateX(187vw); opacity: 1;"
+                 data-35000="transform: translateX(-67vw);">
             <div></div>
         </section>
-        <section class="container" id=s2_becher
-                 data-17000 = "transform: translateX(222vw);opacity:1"
-                 data-35000 = "transform: translateX(-28vw);">
+
+        <section id="s2_becher"
+                 class="container"
+                 data-17000="transform: translateX(222vw); opacity: 1;"
+                 data-35000="transform: translateX(-28vw);">
             <div></div>
         </section>
-        <section class="container" id=s2_Jeck1
-                 data-17000 = "transform: translateX(280vw);opacity:1"
-                 data-35000 = "transform: translateX(25vw);">
+
+        <section id="s2_Jeck1"
+                 class="container"
+                 data-17000="transform: translateX(280vw); opacity: 1;"
+                 data-35000="transform: translateX(25vw);">
             <div></div>
         </section>
-        <section class="container" id=s2_Jeck2
-                 data-17000 = "transform: translateX(320vw);opacity:1"
-                 data-35000 = "transform: translateX(70vw);">
+
+        <section id="s2_Jeck2"
+                 class="container"
+                 data-17000="transform: translateX(320vw); opacity: 1;"
+                 data-35000="transform: translateX(70vw);">
             <div></div>
         </section>
-        <section class="container" id=s2_Jeck3
-                 data-17000 = "transform: translateX(315vw);opacity:1"
-                 data-35000 = "transform: translateX(60vw);">
+
+        <section id="s2_Jeck3"
+                 class="container"
+                 data-17000="transform: translateX(315vw); opacity: 1;"
+                 data-35000="transform: translateX(60vw);">
             <div></div>
         </section>
-        <section class="container" id=s2_Jeck4
-                 data-17000 = "transform: translateX(290vw);opacity:1"
-                 data-35000 = "transform: translateX(40vw);">
+
+        <section id="s2_Jeck4"
+                 class="container"
+                 data-17000="transform: translateX(290vw); opacity: 1;"
+                 data-35000="transform: translateX(40vw);">
             <div></div>
         </section>
-        <section class="container" id=s2_jeck_duesseldorf_frau
-                 data-17000 = "transform: translateX(330vw);opacity:1"
-                 data-35000 = "transform: translateX(75vw);">
+
+        <section id="s2_jeck_duesseldorf_frau"
+                 class="container"
+                 data-17000="transform: translateX(330vw); opacity: 1;"
+                 data-35000="transform: translateX(75vw);">
             <div></div>
         </section>
-        <section class="container" id=s2_jeck_duesseldorf_mann
-                 data-17000 = "transform: translateX(318vw);opacity:1"
-                 data-35000 = "transform: translateX(90vw);"
-                 data-35100 = "transform: translateX(90vw);opacity: 0.5"
-                 data-35200 = "opacity:0.3"
-                 data-41300=  "opacity: 0">
-        >
+
+        <section id="s2_jeck_duesseldorf_mann"
+                 class="container"
+                 data-17000="transform: translateX(318vw); opacity: 1;"
+                 data-35000="transform: translateX(90vw);"
+                 data-35100="transform: translateX(90vw); opacity: 0.5;"
+                 data-35200="opacity:0.3;"
+                 data-41300="opacity: 0;">
             <div></div>
         </section>
-        <section class="container" id="s2_blase1"
-                 data-15000 = "transform: translateX(0vw); opacity:0"
-                 data-35000 = "transform: translateX(-250vw); opacity:0"
-                 data-35500 = "opacity:1">
+
+        <section id="s2_blase1"
+                 class="container"
+                 data-15000="transform: translateX(0vw); opacity: 0;"
+                 data-35000="transform: translateX(-250vw); opacity: 0;"
+                 data-35500="opacity: 1;">
             <div></div>
         </section>
-        <section class="container" id="s2_blase2"
-                 data-15000 = "transform: translateX(0vw); opacity:0"
-                 data-35000 = "transform: translateX(-250vw); opacity:0"
-                 data-36000 = "opacity:1">
+
+        <section id="s2_blase2"
+                 class="container"
+                 data-15000="transform: translateX(0vw); opacity: 0;"
+                 data-35000="transform: translateX(-250vw); opacity: 0;"
+                 data-36000="opacity: 1;">
             <div></div>
         </section>
-        <section class="container" id="s2_blase3"
-                 data-15000 = "transform: translateX(0vw); opacity:0;"
-                 data-35000 = "transform: translateX(-240vw); opacity:0;"
-                 data-37000 = "opacity:1; "
-                 data-38000 = "width: 100%; height: 100%; right: -40%;"
-                 data-39000 = "width: 200%; height: 200% ; right: -50% ; top -20%"
-                 data-40000 = "width: 300%; height: 300% ; right: -79%; top: -39%"
-                 data-40250 = "width: 320%; height: 320% ; right: -86%; top: -44%"
-                 data-40500 = "width: 340%; height: 340% ; right: -91%; top: -50%"
-                 data-41000 = "opacity: 0.8"
-                 data-42000 = "opacity: 0"
-        >
+
+        <section id="s2_blase3"
+                 class="container"
+                 data-15000="transform: translateX(0vw); opacity: 0;"
+                 data-35000="transform: translateX(-240vw); opacity: 0;"
+                 data-37000="opacity: 1;"
+                 data-38000="width: 100%; height: 100%; right: -40%;"
+                 data-39000="width: 200%; height: 200%; right: -50%; top: -20%;"
+                 data-40000="width: 300%; height: 300%; right: -79%; top: -39%;"
+                 data-40250="width: 320%; height: 320%; right: -86%; top: -44%;"
+                 data-40500="width: 340%; height: 340%; right: -91%; top: -50%;"
+                 data-41000="opacity: 0.8;"
+                 data-42000="opacity: 0;">
             <div></div>
         </section>
     </div>
+
     <!-- Funfact Szene2-->
     <section class="viewport">
-
         <div class="s2_funfact"
-             data-17000 = "transform: translateY(130vw) rotate(0deg);display:block;"
-             data-27500 = "transform: translateY(27vw) rotate(-10deg);"
-             data-29500 = "transform: translateY(27vw) rotate(-10deg);"
-             data-35500 = "transform: translateY(130vw) rotate(0deg);"
-             data-42000 = "display:none;"
-        >
-            <div class="s2_funfact_text"><p>2014 rangierte die S6 auf dem letzten Platz bei der VRR-Kundenzufriedenheits-<br>messung.</p></div>
+             data-17000="transform: translateY(130vw) rotate(0deg); display: block;"
+             data-27500="transform: translateY(27vw) rotate(-10deg);"
+             data-29500="transform: translateY(27vw) rotate(-10deg);"
+             data-35500="transform: translateY(130vw) rotate(0deg);"
+             data-42000="display: none;">
+            <div class="s2_funfact_text">
+                <p>2014 rangierte die S6 auf dem letzten Platz bei der VRR-Kundenzufriedenheits-<br>messung.</p>
+            </div>
         </div>
-
-
     </section>
 
     <!-- Szene 3 -->
-    <div id="s3" class="viewport"
-         data-0="display: none"
-         data-40500 = "display: block; opacity: 0"
-         data-42000="opacity: 1"
-         data-60000 = "display: none"
-    >
+    <div id="s3"
+         class="viewport"
+         data-0="display: none;"
+         data-40500="display: block; opacity: 0;"
+         data-42000="opacity: 1;"
+         data-60000="display: none;">
+
         <section id="s3_bahnhof"
-            data-57000="transform:translateX(0vw);display:block"
-            data-60000="transform:translateX(-100vw);display:none">
-            <div id="s3_werbung_1">
-            </div>
+            data-57000="transform: translateX(0vw); display: block;"
+            data-60000="transform: translateX(-100vw); display: none;">
+            <div id="s3_werbung_1"></div>
+
             <div id="s3_werbung_2"
-                 data-44000="opacity:0"
-                 data-48250="opacity:1">
+                 data-44000="opacity: 0;"
+                 data-48250="opacity: 1;">
             </div>
+
             <div id="s3_funfact"
-                 data-48250="opacity:0"
-                 data-49500="opacity:1"
-                 data-54500="opacity:1"
-                 data-57000="opacity:0">
+                 data-48250="opacity: 0;"
+                 data-49500="opacity: 1;"
+                 data-54500="opacity: 1;"
+                 data-57000="opacity: 0;">
                  <p>Laut DB wurde die Ankunftszeit zu 96.4% eingehalten<br>Toleranzgrenze 7:29 Min</p>
             </div>
+
             <div id="s3_uhr">
                 <div id="s3_gr_zeiger"
-                     data-42000="animation: 2s linear infinite"
-                     data-49500="animation: rev_rotate 2s linear infinite"
-                     data-57000="animation: 2s linear infinite">
+                     data-42000="animation: 2s linear infinite;"
+                     data-49500="animation: rev_rotate 2s linear infinite;"
+                     data-57000="animation: 2s linear infinite;">
                 </div>
+
                 <div id="s3_kl_zeiger"
-                     data-42000="animation: 4s linear infinite"
-                     data-49500="animation: rotate 4s linear infinite"
-                     data-57000="animation: 4s linear infinite">
+                     data-42000="animation: 4s linear infinite;"
+                     data-49500="animation: rotate 4s linear infinite;"
+                     data-57000="animation: 4s linear infinite;">
                 </div>
+
                 <div id="s3_se_zeiger"
-                     data-42000="animation: 1s linear infinite"
-                     data-49500="animation: rotate 1s linear infinite"
-                     data-57000="animation: 1s linear infinite">
+                     data-42000="animation: 1s linear infinite;"
+                     data-49500="animation: rotate 1s linear infinite;"
+                     data-57000="animation: 1s linear infinite;">
                 </div>
-                <div id="s3_uhr_punkt">
-                </div>
+
+                <div id="s3_uhr_punkt"></div>
             </div>
+
             <div id="s3_haupt_charakter"
-                 data-42000="display:none;"
-                 data-45750="display:block"
-                 data-52000="display:none"
-                 data-54500="display:block"
-                 data-58250="display:none">
+                 data-42000="display: none;"
+                 data-45750="display: block;"
+                 data-52000="display: none;"
+                 data-54500="display: block;"
+                 data-58250="display: none;">
             </div>
+
             <div id="s3_haupt_charakter_uhr"
-                 data-42000="display:none;"
-                 data-52000="display:block"
-                 data-54500="display:none">
+                 data-42000="display: none;"
+                 data-52000="display: block;"
+                 data-54500="display: none;">
             </div>
+
             <div id="s3_oma"
-                 data-42000="display:block"
-                 data-45750="display:block"
-                 data-58250="display:none">
+                 data-42000="display: block;"
+                 data-45750="display: block;"
+                 data-58250="display: none;">
             </div>
+
             <div id="s3_mann_1"
-                 data-42000="display:none"
-                 data-45750="display:block">
+                 data-42000="display: none;"
+                 data-45750="display: block;">
             </div>
+
             <div id="s3_frau_1"
-                 data-42000="display:block"
-                 data-45750="display:none">
+                 data-42000="display: block;"
+                 data-45750="display: none;">
             </div>
 
             <div class="blase"
                  id="s3_sprechblase"
                  data-52000="display: block; opacity: 0;"
                  data-53000="transform: translateX(50vw); opacity: 1;"
-                 data-54000="opacity: 1"
+                 data-54000="opacity: 1;"
                  data-54500="display: none; opacity: 0;">
                 <div class="blase_text"
                      data-52000="display: block;">
@@ -483,660 +536,663 @@
                 </div>
             </div>
         </section>
+
         <section class="s3_zug">
             <div id="s3_zug_vorne"
-                 data-40500="transform: translateX(-300vw); width: 300vw; height: 100vw; top: 5.6vw; left: 0vw"
-                 data-44500="transform:translateX(-200vw)"
-                 data-45750="transform:translateX(-200vw)"
-                 data-46750="transform:translateX(-180vw)"
-                 data-48000="transform:translateX(0vw)"
-                 data-49000="transform:translateX(100vw)"
-                 data-49500="transform:translateX(100vw)"
-                 data-49501="transform:translateX(-300vw)"
-                 data-53500="transform:translateX(-300vw)"
-                 data-56000="transform:translateX(-200vw)"
-                 data-58500="transform:translateX(-200vw)"
-                 data-59500="width: 650vw; height: 110vw; top: -34vw; left: -115vw; opacity:1"
-                 data-63000="opacity: 0; left: 25vw">
+                 data-40500="transform: translateX(-300vw); width: 300vw; height: 100vw; top: 5.6vw; left: 0vw;"
+                 data-44500="transform: translateX(-200vw);"
+                 data-45750="transform: translateX(-200vw);"
+                 data-46750="transform: translateX(-180vw);"
+                 data-48000="transform: translateX(0vw);"
+                 data-49000="transform: translateX(100vw);"
+                 data-49500="transform: translateX(100vw);"
+                 data-49501="transform: translateX(-300vw);"
+                 data-53500="transform: translateX(-300vw);"
+                 data-56000="transform: translateX(-200vw);"
+                 data-58500="transform: translateX(-200vw);"
+                 data-59500="width: 650vw; height: 110vw; top: -34vw; left: -115vw; opacity: 1;"
+                 data-63000="opacity: 0; left: 25vw;">
             </div>
         </section>
     </div>
 
     <!--Szene 4-->
-    <div class="viewport" id="s4_nervigefahrgaeste"
+    <div id="s4_nervigefahrgaeste"
+         class="viewport"
          data-0="display: none;"
-         data-59500 = "display: block; transform: translateX(0vw); opacity: 0"
-         data-60000="opacity: 1"
-         data-100000 = "transform: translateX(-100vw); display: none;"
-    >
+         data-59500="display: block; transform: translateX(0vw); opacity: 0;"
+         data-60000="opacity: 1;"
+         data-100000="display: none; transform: translateX(-100vw);">
 
         <section id="bahn_effekte">
-            <div class="container" id = "s4_bahn_innen"
+            <div id="s4_bahn_innen"
+                 class="container"
                  data-59500 = "transform: translateX(0vw);"
-                 data-87000 = "transform: translateX(-250vw);"
-            >
+                 data-87000 = "transform: translateX(-250vw);">
                 <div></div>
             </div>
-            <div id = "s4_hintergrund"
-                 data-60000 = "transform: translateX(0vw); display: block;"
-                 data-87000 = "transform: translateX(-25vw);"
-            >
+
+            <div id="s4_hintergrund"
+                 data-60000="transform: translateX(0vw); display: block;"
+                 data-87000="transform: translateX(-25vw);">
             </div>
 
-            <div class="container" id="s4_tunnel_licht"
+            <div id="s4_tunnel_licht"
+                 class="container"
                  data-85500="opacity: 0;"
-                 data-86000 = "opacity: 0.7;"
-                 data-86500 = "opacity: 0;"
-                 data-89000 = "z-index: 2000; opacity: 1;">
+                 data-86000="opacity: 0.7;"
+                 data-86500="opacity: 0;"
+                 data-89000="z-index: 2000; opacity: 1;">
             </div>
 
             <div id="s4_layer_licht_blitz"
-
-                 data-87300="opacity: 0"
-                 data-87400="opacity: 0.3"
-                 data-87600="opacity: 0.8"
+                 data-87300="opacity: 0:"
+                 data-87400="opacity: 0.3;"
+                 data-87600="opacity: 0.8;"
                  data-87900="display: none;">
-            </div>>
+            </div>
 
-
-            <div class="container" id="s4_tunnel"
+            <div id="s4_tunnel"
+                 class="container"
                  data-60000="display:none;"
-                 data-83000="transform: translateX(300vw); display:block;"
-                 data-87000 = "transform: translateX(0vw);">
+                 data-83000="display: block; transform: translateX(300vw);"
+                 data-87000="transform: translateX(0vw);">
                 <div></div>
             </div>
         </section>
 
         <section id="s4_natur">
-
             <div class="container s4_baum_1"
-                 data-60000 = "transform: translateX(300vw);"
-                 data-87000 = "transform: translateX(-1000vw);"
-            >
+                 data-60000="transform: translateX(300vw);"
+                 data-87000="transform: translateX(-1000vw);">
             </div>
 
             <div class="container s4_baum_1"
-                 data-60000 = "transform: translateX(500vw);"
-                 data-87000 = "transform: translateX(-800vw);"
-            >
+                 data-60000="transform: translateX(500vw);"
+                 data-87000="transform: translateX(-800vw);">
             </div>
 
             <div class="container s4_baum_1"
-                 data-60000 = "transform: translateX(410vw);"
-                 data-87000 = "transform: translateX(-890vw);"
-            >
+                 data-60000="transform: translateX(410vw);"
+                 data-87000="transform: translateX(-890vw);">
             </div>
 
             <div class="container s4_baum_1"
-                 data-60000 = "transform: translateX(500vw);"
-                 data-87000 = "transform: translateX(-800vw);"
-            >
+                 data-60000="transform: translateX(500vw);"
+                 data-87000="transform: translateX(-800vw);">
             </div>
 
             <div class="container s4_baum_1"
-                 data-60000 = "transform: translateX(560vw);"
-                 data-87000 = "transform: translateX(-740vw);"
-            >
+                 data-60000="transform: translateX(560vw);"
+                 data-87000="transform: translateX(-740vw);">
             </div>
 
             <div class="container s4_baum_1"
-                 data-60000 = "transform: translateX(600vw);"
-                 data-87000 = "transform: translateX(-700vw);"
-            >
+                 data-60000="transform: translateX(600vw);"
+                 data-87000="transform: translateX(-700vw);">
             </div>
 
             <div class="container s4_baum_1"
-                 data-60000 = "transform: translateX(650vw);"
-                 data-87000 = "transform: translateX(-650vw);"
-            >
+                 data-60000="transform: translateX(650vw);"
+                 data-87000="transform: translateX(-650vw);">
             </div>
 
             <div class="container s4_baum_1"
-                 data-60000 = "transform: translateX(800vw);"
-                 data-87000 = "transform: translateX(-500vw);"
-            >
+                 data-60000="transform: translateX(800vw);"
+                 data-87000="transform: translateX(-500vw);">
             </div>
 
             <div class="container 4_baum_1"
-                 data-60000 = "transform: translateX(840vw);"
-                 data-87000 = "transform: translateX(-460vw);"
-            >
+                 data-60000="transform: translateX(840vw);"
+                 data-87000="transform: translateX(-460vw);">
             </div>
 
             <div class="container s4_baum_1"
-                 data-60000 = "transform: translateX(870vw);"
-                 data-87000 = "transform: translateX(-430vw);"
-            >
+                 data-60000="transform: translateX(870vw);"
+                 data-87000="transform: translateX(-430vw);">
             </div>
 
             <div class="container s4_baum_1"
-                 data-60000 = "transform: translateX(900vw);"
-                 data-87000 = "transform: translateX(-200vw);"
-            >
+                 data-60000="transform: translateX(900vw);"
+                 data-87000="transform: translateX(-200vw);">
             </div>
 
             <div class="container s4_wald"
-                 data-60000 = "transform: translateX(0vw);"
-                 data-87000 = "transform: translateX(-700vw);"
-            >
+                 data-60000="transform: translateX(0vw);"
+                 data-87000="transform: translateX(-700vw);">
             </div>
 
             <div class="container s4_wald"
-                 data-60000 = "transform: translateX(100vw);"
-                 data-87000 = "transform: translateX(-600vw);"
-            >
+                 data-60000="transform: translateX(100vw);"
+                 data-87000="transform: translateX(-600vw);">
             </div>
 
             <div class="container s4_wald"
-                 data-60000 = "transform: translateX(300vw);"
-                 data-87000 = "transform: translateX(-400vw);"
-            >
+                 data-60000="transform: translateX(300vw);"
+                 data-87000="transform: translateX(-400vw);">
             </div>
 
             <div class="container s4_wald"
-                 data-60000 = "transform: translateX(600vw);"
-                 data-87000 = "transform: translateX(-100vw);"
-            >
+                 data-60000="transform: translateX(600vw);"
+                 data-87000="transform: translateX(-100vw);">
             </div>
 
             <div class="container s4_wald"
-                 data-60000 = "transform: translateX(700vw);"
-                 data-87000 = "transform: translateX(0vw);"
-            >
+                 data-60000="transform: translateX(700vw);"
+                 data-87000="transform: translateX(0vw);">
             </div>
 
             <div class="container s4_wald"
-                 data-60000 = "transform: translateX(810vw);"
-                 data-87000 = "transform: translateX(110vw);"
-            >
+                 data-60000="transform: translateX(810vw);"
+                 data-87000="transform: translateX(110vw);">
             </div>
 
             <div class="container s4_wald"
-                 data-60000 = "transform: translateX(900vw);"
-                 data-87000 = "transform: translateX(200vw);"
-            >
+                 data-60000="transform: translateX(900vw);"
+                 data-87000="transform: translateX(200vw);">
             </div>
-
         </section>
 
         <section id="s4_personen">
-
-            <div class="container" id="s4_fan_1"
-                 data-60000 = "transform: translateX(84vw); display: block"
-                 data-68000 = "transform: translateX(6vw); display: none;"
-            >
+            <div id="s4_fan_1"
+                 class="container"
+                 data-60000="transform: translateX(84vw); display: block;"
+                 data-68000="transform: translateX(6vw); display: none;">
                 <div></div>
             </div>
 
-            <div class="container" id=s4_fan_2
-                 data-60500 = "transform: translateX(100vw); display: block"
-                 data-70100 = "transform: translateX(8.5vw); display: none"
-            >
+            <div id="s4_fan_2"
+                 class="container"
+                 data-60500="transform: translateX(100vw); display: block;"
+                 data-70100="transform: translateX(8.5vw); display: none;">
                 <div></div>
             </div>
 
-            <div class="container" id=s4_fan_3
-                 data-60000 = "transform: translateX(75vw); display: block;"
-                 data-67250 = "transform: translateX(5vw); display: none;"
-            >
+            <div id="s4_fan_3"
+                 class="container"
+                 data-60000="transform: translateX(75vw); display: block;"
+                 data-67250="transform: translateX(5vw); display: none;">
                 <div></div>
             </div>
 
-            <div class="container" id=s4_fan_4
-                 data-60000 = "transform: translateX(95vw); display: block"
-                 data-69000=" transform: translateX(8vw); display: none"
-            >
+            <div id="s4_fan_4"
+                 class="container"
+                 data-60000="transform: translateX(95vw); display: block;"
+                 data-69000="transform: translateX(8vw); display: none;">
                 <div></div>
             </div>
 
-            <div class="container" id=s4_fan_5
-                 data-61750 = "transform: translateX(103vw); display: block;"
-                 data-71000 = "transform: translateX(14vw); display: none;"
-            >
+            <div id="s4_fan_5"
+                 class="container"
+                 data-61750="transform: translateX(103vw); display: block;"
+                 data-71000="transform: translateX(14vw); display: none;">
                 <div></div>
             </div>
 
-            <div class="container" id=s4_fan_6
-                 data-60000 = "transform: translateX(132vw); display: block;"
-                 data-72100 = "transform: translateX(15vw); display: none;"
-            >
+            <div id="s4_fan_6"
+                 class="container"
+                 data-60000="transform: translateX(132vw); display: block;"
+                 data-72100="transform: translateX(15vw); display: none;">
                 <div></div>
             </div>
 
-            <div class="container" id=s4_fan_7
-                 data-60000 = "transform: translateX(148vw); display: block;"
-                 data-73400 = "transform: translateX(19vw); display: none;"
-            >
+            <div id="s4_fan_7"
+                 class="container"
+                 data-60000="transform: translateX(148vw); display: block;"
+                 data-73400="transform: translateX(19vw); display: none;">
                 <div></div>
             </div>
 
-            <div class="container" id=s4_band_1
-                 data-60000 = "transform: translateX(310vw); display: block;"
-                 data-86750 = "transform: translateX(52vw); display: none"
-            >
+            <div id="s4_band_1"
+                 class="container"
+                 data-60000="transform: translateX(310vw); display: block;"
+                 data-86750="transform: translateX(52vw); display: none;">
                 <div id="s4_band_1_arm_l"
-                     data-60000="animation: rassel_1 1s linear infinite; transform-origin: 0vw 0%;"
-                ></div>
+                     data-60000="animation: rassel_1 1s linear infinite; transform-origin: 0vw 0%;">
+                </div>
                 <div id="s4_band_1_arm_r"
-                     data-60000="animation: rassel_2 1s linear infinite; transform-origin: 2vw 50%;"
-                ></div>
+                     data-60000="animation: rassel_2 1s linear infinite; transform-origin: 2vw 50%;">
+                </div>
             </div>
 
-            <div class="container" id=s4_band_2
-                 data-60000="transform: translateX(312vw); display: block;"
+            <div id="s4_band_2"
+                 class="container"
+                 data-60000="display: block; transform: translateX(312vw);"
                  data-87000="transform: translateX(52vw);"
-                 data-90000="display: none;"
-            >
+                 data-90000="display: none;">
                 <div id="s4_band_2_arm"
-                     data-60000="animation: gitar_1 2s linear infinite; transform-origin: 10vw 20%;"
-                ></div>
+                     data-60000="animation: gitar_1 2s linear infinite; transform-origin: 10vw 20%;">
+                </div>
             </div>
 
-            <div class="container" id=s4_band_3
-                 data-60000 = "transform: translateX(315vw); display: block;"
-                 data-87000 = "transform: translateX(55vw);"
-                 data-90000="display: none;"
-            >
+            <div id="s4_band_3"
+                 class="container"
+                 data-60000="display: block; transform: translateX(315vw);"
+                 data-87000="transform: translateX(55vw);"
+                 data-90000="display: none;">
                 <div id="s4_band_3_arm"
-                     data-60000="animation: tromp_1 3s linear infinite; transform-origin: 10vw 20%;"
-                ></div>
+                     data-60000="animation: tromp_1 3s linear infinite; transform-origin: 10vw 20%;">
+                </div>
             </div>
 
-
-            <div class="container" id=s4_jan
-                 data-60000 = "transform: translateX(255vw);"
-                 data-87000 = "transform: translateX(-5vw);"
-            >
+            <div id="s4_jan"
+                 class="container"
+                 data-60000="transform: translateX(255vw);"
+                 data-87000="transform: translateX(-5vw);">
                 <div></div>
             </div>
 
-            <div class="container" id=s4_mann_1
-                 data-60000 = "transform: translateX(180vw);"
-                 data-87000 = "transform: translateX(-80vw);"
-            >
+            <div id="s4_mann_1"
+                 class="container"
+                 data-60000="transform: translateX(180vw);"
+                 data-87000="transform: translateX(-80vw);">
                 <div></div>
             </div>
 
-            <div class="container" id=s4_mann_2
-                 data-60000 = "transform: translateX(190vw);"
-                 data-87000 = "transform: translateX(-70vw);"
-            >
+            <div id="s4_mann_2"
+                 class="container"
+                 data-60000="transform: translateX(190vw);"
+                 data-87000="transform: translateX(-70vw);">
                 <div></div>
             </div>
 
-            <div class="container" id=s4_mann_3
-                 data-60000 = "transform: translateX(400vw); display: block;"
-                 data-87000 = "transform: translateX(140vw);"
-                 data-90000="display: none;"
-            >
+            <div id="s4_mann_3"
+                 class="container"
+                 data-60000="display: block; transform: translateX(400vw);"
+                 data-87000="transform: translateX(140vw);"
+                 data-90000="display: none;">
                 <div></div>
             </div>
 
-            <div class="container" id=s4_frau_3
-                 data-60000 = "transform: translateX(272vw);"
-                 data-87000 = "transform: translateX(11vw);"
-            >
+            <div id="s4_frau_3"
+                 class="container"
+                 data-60000="transform: translateX(272vw);"
+                 data-87000="transform: translateX(11vw);">
                 <div></div>
             </div>
 
-            <div class="container" id=s4_frau_1
-                 data-60000 = "transform: translateX(290vw);"
-                 data-87000 = "transform: translateX(30vw);"
-            >
+            <div id="s4_frau_1"
+                 class="container"
+                 data-60000="transform: translateX(290vw);"
+                 data-87000="transform: translateX(30vw);">
                 <div></div>
             </div>
 
-            <div class="container" id=s4_frau_2
-                 data-60000 = "transform: translateX(228vw);"
-                 data-87000 = "transform: translateX(-32vw);"
-            >
+            <div id="s4_frau_2"
+                 class="container"
+                 data-60000="transform: translateX(228vw);"
+                 data-87000="transform: translateX(-32vw);">
                 <div></div>
             </div>
 
-            <div class="container" id=s4_tim
-                 data-60000 = "transform: translateX(380vw);"
-                 data-87000 = "transform: translateX(120vw);"
-            >
+            <div id="s4_tim"
+                 class="container"
+                 data-60000="transform: translateX(380vw);"
+                 data-87000="transform: translateX(120vw);">
                 <div></div>
             </div>
 
-            <div class="container" id=s4_tim_tunnel
-                 data-60000="transform: translateX(380vw); display:none;"
-                 data-87000="transform: translateX(120vw); display:none;"
-                 data-88700="transform: translateX(120vw); display:block; opacity:0"
-                 data-88900="opacity:1"
+            <div id="s4_tim_tunnel"
+                 class="container"
+                 data-60000="display:none; transform: translateX(380vw);"
+                 data-87000="display:none; transform: translateX(120vw);"
+                 data-88700="display:block; transform: translateX(120vw); opacity:0;"
+                 data-88900="opacity:1;"
                  data-95000="transform: translateX(120vw);"
-                 data-100000="transform: translateX(70vw);"
-            >
+                 data-100000="transform: translateX(70vw);">
                 <div></div>
             </div>
 
-            <div class="blase" id="s4_sprechblase"
-
-                 data-86800=" opacity:0;display: block;"
-                 data-87000 = "transform: translateX(125vw); opacity:1;"
-                 data-99000 = "opacity:0;"
-            >
-                <div class="blase_text" id="s4_text_1"
+            <div id="s4_sprechblase"
+                 class="blase"
+                 data-86800="display: block; opacity:0;"
+                 data-87000="transform: translateX(125vw); opacity:1;"
+                 data-99000="opacity:0;">
+                <div id="s4_text_1"
+                     class="blase_text"
                      data-84000="display: block;"
-                     data-90000="display: none;"
-                ><p>Jede Tageszeit hat seine speziellen Nervensägen <br>in der S6...</p>
+                     data-90000="display: none;">
+                    <p>Jede Tageszeit hat seine speziellen Nervensägen <br>in der S6...</p>
                 </div>
-                <div class="blase_text" id="s4_text_2"
+                <div id="s4_text_2"
+                     class="blase_text"
                      data-83001="display: none;"
-                     data-90001="display: block;"
-                ><p>Och nööö, jetzt auch <br>noch ein Stromausfall!</p>
+                     data-90001="display: block;">
+                    <p>Och nööö, jetzt auch <br>noch ein Stromausfall!</p>
                 </div>
             </div>
-
-
         </section>
-
     </div>
 
-    <!--s4_funfact -->
+    <!--Funfact Szene4 -->
     <section class="viewport">
-
         <div class="funfact"
-             data-72000 = "transform: translateY(130vw) rotate(0deg);display:block;"
+             data-72000 = "display: block; transform: translateY(130vw) rotate(0deg);"
              data-75000 = "transform: translateY(50vw) rotate(0deg);"
              data-77000 = "transform: translateY(27vw) rotate(-10deg);"
              data-80000 = "transform: translateY(27vw) rotate(-10deg);"
              data-82000 = "transform: translateY(27vw) rotate(-10deg);"
              data-84000 = "transform: translateY(50vw) rotate(0deg);"
-             data-84001 = "display:none;"
-        >
-            <div class="funfact_text"><p>Durch die Erneuerung der Züge hat die S6 seit 2015 eine Klimaanlage – die Toiletten wurden jedoch vergessen.</p></div>
+             data-84001 = "display:none;">
+            <div class="funfact_text">
+                <p>Durch die Erneuerung der Züge hat die S6 seit 2015 eine Klimaanlage – die Toiletten wurden jedoch vergessen.</p>
+            </div>
         </div>
-
-
     </section>
 
-<!-- Szene 5 fuer Uebergang am Besten ersten translate-Wert und Display von der Bahn anpassen bzw alle Scrollwerte nach hinten verschieben-->
-
-    <div class="viewport"
-         id="s5_nachtfahrt"
-         data-0="display:none"
-         data-98400="display:block; transform: translateX(100vw)"
-         data-100000="transform: translateX(0vw)"
-         data-108000="transform:translateY(0vh);"
-         data-110000="transform:translateY(100vh);">
+    <!-- Szene 5 -->
+    <div id="s5_nachtfahrt"
+         class="viewport"
+         data-0="display: none;"
+         data-98400="display: block; transform: translateX(100vw);"
+         data-100000="transform: translateX(0vw);"
+         data-108000="transform: translateY(0vh);"
+         data-110000="transform: translateY(100vh);">
 
         <section id="himmel">
-            <div id="s5_hintergrund_himmel_hell" data-98400="display:block" data-110000="display: none">
+            <div id="s5_hintergrund_himmel_hell"
+                 data-98400="display: block;"
+                 data-110000="display: none;">
             </div>
+
             <div id="s5_hintergrund_daemmerung"
-                 data-101500="opacity:0; display: block"
-                 data-102000="opacity:1"
-                 data-110000="display: none">
+                 data-101500="display: block; opacity: 0;"
+                 data-102000="opacity: 1;"
+                 data-110000="display: none;">
             </div>
+
             <div id="s5_hintergrund_himmel_dunkel"
-                 data-102000="opacity:0"
-                 data-104000="opacity:1"
-                >
+                 data-102000="opacity: 0;"
+                 data-104000="opacity: 1;">
             </div>
+
             <div id="s5_hintergrund_landschaft"
-                 data-98400="display:block"
-                 data-100000="transform:translateX(0vw);"
-                 data-100800="transform:translateX(0vw)"
-                 data-105000="transform:translateX(-180vw)"
-                data-110000="display:none">
+                 data-98400="display: block;"
+                 data-100000="transform: translateX(0vw);"
+                 data-100800="transform: translateX(0vw);"
+                 data-105000="transform: translateX(-180vw);"
+                 data-110000="display: none;">
             </div>
         </section>
 
         <section id="s5_skyline"
-                 data-98400="display:block"
-                 data-110000="display: none">
+                 data-98400="display: block;"
+                 data-110000="display: none;">
             <div id="s5_hintergrund_du"
-                 data-100000="transform:translateX(20vw)"
-                 data-100800="transform:translateX(20vw)"
-                 data-105000="transform:translateX(-170vw)">
+                 data-100000="transform: translateX(20vw);"
+                 data-100800="transform: translateX(20vw);"
+                 data-105000="transform: translateX(-170vw);">
             </div>
+
             <div id="s5_hintergrund_zeche_zoll"
-                 data-100000="transform:translateX(35vw)"
-                 data-100800="transform:translateX(35vw)"
-                 data-105000="transform:translateX(-140vw)">
+                 data-100000="transform: translateX(35vw);"
+                 data-100800="transform: translateX(35vw);"
+                 data-105000="transform: translateX(-140vw);">
             </div>
+
             <div id="s5_hintergrund_skyline_ddorf"
-                 data-100000="transform:translateX(60vw)"
-                 data-100800="transform:translateX(60vw)"
-                 data-105000="transform:translateX(-110vw)">
+                 data-100000="transform: translateX(60vw);"
+                 data-100800="transform: translateX(60vw);"
+                 data-105000="transform: translateX(-110vw);">
             </div>
+
             <div id="s5_hintergrund_skyline_lev"
-                 data-100000="transform:translateX(125vw)"
-                 data-100800="transform:translateX(125vw)"
-                 data-105000="transform:translateX(-45vw)">
+                 data-100000="transform: translateX(125vw);"
+                 data-100800="transform: translateX(125vw);"
+                 data-105000="transform: translateX(-45vw);">
             </div>
+
             <div id="s5_hintergrund_skyline_koeln"
-                 data-100000="transform:translateX(140vw);display:block"
-                 data-100800="transform:translateX(140vw)"
-                 data-104000="transform:translateX(8vw);display:none">
+                 data-100000="display:block; transform: translateX(140vw);"
+                 data-100800="transform: translateX(140vw);"
+                 data-104000="display:none; transform: translateX(8vw);">
             </div>
+
             <div id="s5_hintergrund_skyline_koeln_licht"
-                 data-100000="transform:translateX(8vw);display:none"
-                 data-104000="transform:translateX(8vw);display:block"
-                 data-105000="transform:translateX(-35vw)">
+                 data-100000="display:none; transform: translateX(8vw);"
+                 data-104000="display:block; transform: translateX(8vw);"
+                 data-105000="transform: translateX(-35vw);">
             </div>
         </section>
 
         <section id="s5_bahn"
-             data-98400="display: none"
-             data-100000="display: block; transform:translateX(-150vw)"
-             data-104000="transform:translateX(-50vw)"
-             data-108000="transform:translateX(100vw)"
-             data-110000="display:none">
+             data-98400="display: none;"
+             data-100000="display: block; transform: translateX(-150vw);"
+             data-104000="transform: translateX(-50vw);"
+             data-108000="transform: translateX(100vw);"
+             data-110000="display: none;">
             <div></div>
         </section>
-
 
         <section id="s5_tunnel"
-                 data-98400="display:block"
-             data-100800="transform:translateX(-1vw)"
-             data-105000="transform:translateX(-170vw)"
-                 data-110000="display: none">
+                 data-98400="display: block;"
+                 data-100800="transform: translateX(-1vw);"
+                 data-105000="transform: translateX(-170vw);"
+                 data-110000="display: none;">
             <div></div>
         </section>
 
-        <section id="s5_himmelelemente" data-98400="display:block" data-110000="display: none">
+        <section id="s5_himmelelemente"
+                 data-98400="display: block;"
+                 data-110000="display: none;">
             <div id="s5_sonne"
-                 data-100000="transform:translateX(0vw);margin-top:0vh;display:block"
-                 data-100600="transform:translateX(10vw);margin-top:10vh"
-                 data-104000="transform:translateX(40vw);margin-top:70vh;display:none">
+                 data-100000="display: block; transform: translateX(0vw); margin-top: 0vh;"
+                 data-100600="transform: translateX(10vw); margin-top: 10vh"
+                 data-104000="display: none; transform: translateX(40vw); margin-top: 70vh;">
             </div>
+
             <div id="s5_flugzeug"
-                 data-100000="transform:translateX(95vw);margin-top:20vh"
-                 data-105000="transform:translateX(-50vw);margin-top:-30vh">
+                 data-100000="transform: translateX(95vw); margin-top: 20vh;"
+                 data-105000="transform: translateX(-50vw); margin-top: -30vh;">
             </div>
+
             <div id="s5_ballon"
-                 data-100000="transform:translateX(30vw)"
-                 data-105000="transform:translateX(40vw)"
-                 data-108000="transform:translateX(45vw)">
+                 data-100000="transform: translateX(30vw);"
+                 data-105000="transform: translateX(40vw);"
+                 data-108000="transform: translateX(45vw);">
             </div>
+
             <div id="s5_wolken"
-                 data-98400="transform:translateX(15vw)"
-                 data-100000="transform:translateX(10vw)"
-                 data-102500="transform:translateX(-20vw);opacity:1"
-                 data-105000="transform:translateX(-70vw);opacity:0.2">
+                 data-98400="transform: translateX(15vw);"
+                 data-100000="transform: translateX(10vw);"
+                 data-102500="transform: translateX(-20vw); opacity: 1;"
+                 data-105000="transform: translateX(-70vw); opacity: 0.2;">
             </div>
         </section>
+
         <div id="s5_bruecke"
-             data-98400="display:block"
-             data-100000="transform:translateX(190vw)"
-             data-100800="transform:translateX(190vw)"
-             data-105000="transform:translateX(13vw)"
-             data-110000="display: none">
+             data-98400="display :block;"
+             data-100000="transform: translateX(190vw);"
+             data-100800="transform: translateX(190vw);"
+             data-105000="transform: translateX(13vw);"
+             data-110000="display: none;">
         </div>
+
         <div id="s5_koeln_rechts"
-             data-98400="display:block"
-             data-100000="transform:translateX(246vw)"
-             data-100800="transform:translateX(246vw)"
-             data-105000="transform:translateX(76vw)"
-             data-110000="display: none">
+             data-98400="display: block;"
+             data-100000="transform: translateX(246vw);"
+             data-100800="transform: translateX(246vw);"
+             data-105000="transform: translateX(76vw);"
+             data-110000="display: none;">
         </div>
 
-        <!--Szene5_funfact -->
+        <!-- Funfact Szene5 -->
         <section class="viewport">
-
             <div class="funfact"
-                 data-100000 = "transform: translateY(130vw) rotate(0deg);display:block;"
-                 data-102000 = "transform: translateY(50vw) rotate(0deg);"
-                 data-104000 = "transform: translateY(27vw) rotate(-10deg);"
-                 data-105000 = "transform: translateY(27vw) rotate(-10deg);"
-                 data-106000 = "transform: translateY(27vw) rotate(-10deg);"
-                 data-107000 = "transform: translateY(50vw) rotate(0deg);"
-                 data-107500 = "display:none;"
-            >
-                <div class="funfact_text"><p>Die S6 hat sogar ihre eigene Facebook Fanseite. Liken!</p>
-                    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FS6-ist-Heimat-750096865034005%2F&width=300&layout=button&action=like&show_faces=false&share=false&height=65&appId" width="300" height="65" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">
-
+                 data-100000="display: block; transform: translateY(130vw) rotate(0deg);"
+                 data-102000="transform: translateY(50vw) rotate(0deg);"
+                 data-104000="transform: translateY(27vw) rotate(-10deg);"
+                 data-105000="transform: translateY(27vw) rotate(-10deg);"
+                 data-106000="transform: translateY(27vw) rotate(-10deg);"
+                 data-107000="transform: translateY(50vw) rotate(0deg);"
+                 data-107500="display: none;">
+                <div class="funfact_text">
+                    <p>Die S6 hat sogar ihre eigene Facebook Fanseite. Liken!</p>
+                    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FS6-ist-Heimat-750096865034005%2F&width=300&layout=button&action=like&show_faces=false&share=false&height=65&appId"
+                            width="300" height="65" style="border: none; overflow: hidden" scrolling="no" frameborder="0" allowTransparency="true">
                     </iframe>
                 </div>
             </div>
-
-
         </section>
-
     </div>
 
     <!--Outro-->
-
-    <div class="viewport" id="s6_outro"
-         data-0="display: none"
-         data-110000="transform:translateY(-300vh); display:block;"
-         data-114000="transform:translateY(-100vh);"
-         data-118000="transform:translateY(-100vh)"
-         data-120000="transform:translateY(0vh)"
-         data-122000="transform:translateY(0vh)">
-        <section class="sterne" id="s6_sterne1"
-                 data-110000="transform:translate3d(-100vw,0vw, 1px);"
-                 data-116000="transform:translate3d(0vw,0vw 1px);">
-            <div></div>
-        </section>
-        <section class="sterne" id="s6_sterne2"
-                 data-110000="transform:translate3d(175vw,50vw, 1px);"
-                 data-116000="transform:translate3d(0vw,0vw, 1px);">
-            <div></div>
-        </section>
-        <section class="sterne" id="s6_sterne3"
-                 data-110000="transform:translate3d(100vw,0vw, 1px);"
-                 data-116000="transform:translate3d(0vw,0vw, 1px);">
-            <div></div>
-        </section>
-        <section class="sterne" id="s6_sterne4"
-                 data-110000="transform:translate3d(100vw,0vw, 1px);"
-                 data-116000="transform:translate3d(0vw,0vw, 1px);">
-            <div></div>
-        </section>
-        <section class="sterne" id="s6_sterne5"
-                 data-110000="transform:translate3d(-175vw,0vw, 1px);"
-                 data-116000="transform:translate3d(0vw,0vw, 1px);">
-            <div></div>
-        </section>
-        <section class="sterne" id="s6_sterne6"
-                 data-110000="transform:translate3d(100vw,-50vw, 1px);"
-                 data-116000="transform:translate3d(0vw,0vw, 1px);">
-            <div></div>
-        </section>
-        <section class="sterne" id="s6_sterne7"
-                 data-110000="transform:translate3d(100vw,75vw, 1px);"
-                 data-116000=" opacity:1; transform:translate3d(0vw,0vw, 1px);">
-            <div></div>
-        </section>
-        <section class="sterne" id="s6_sterne8"
-                 data-110000="transform:translate3d(-100vw,75vw, 1px);"
-                 data-116000="transform:translate3d(0vw,0vw, 1px);">
+    <div id="s6_outro"
+         class="viewport"
+         data-0="display: none;"
+         data-110000="display:block; transform: translateY(-300vh);"
+         data-114000="transform: translateY(-100vh);"
+         data-118000="transform: translateY(-100vh);"
+         data-120000="transform: translateY(0vh);"
+         data-122000="transform: translateY(0vh);">
+        <section id="s6_sterne1"
+                 class="sterne"
+                 data-110000="transform: translate3d(-100vw,0vw, 1px);"
+                 data-116000="transform: translate3d(0vw,0vw 1px);">
             <div></div>
         </section>
 
-        <section class="sterne" id="s6_linien"
+        <section id="s6_sterne2"
+                 class="sterne"
+                 data-110000="transform: translate3d(175vw,50vw, 1px);"
+                 data-116000="transform: translate3d(0vw,0vw, 1px);">
+            <div></div>
+        </section>
+
+        <section id="s6_sterne3"
+                 class="sterne"
+                 data-110000="transform: translate3d(100vw,0vw, 1px);"
+                 data-116000="transform: translate3d(0vw,0vw, 1px);">
+            <div></div>
+        </section>
+
+        <section id="s6_sterne4"
+                 class="sterne"
+                 data-110000="transform: translate3d(100vw,0vw, 1px);"
+                 data-116000="transform: translate3d(0vw,0vw, 1px);">
+            <div></div>
+        </section>
+
+        <section id="s6_sterne5"
+                 class="sterne"
+                 data-110000="transform: translate3d(-175vw,0vw, 1px);"
+                 data-116000="transform: translate3d(0vw,0vw, 1px);">
+            <div></div>
+        </section>
+
+        <section id="s6_sterne6"
+                 class="sterne"
+                 data-110000="transform: translate3d(100vw,-50vw, 1px);"
+                 data-116000="transform: translate3d(0vw,0vw, 1px);">
+            <div></div>
+        </section>
+
+        <section id="s6_sterne7"
+                 class="sterne"
+                 data-110000="transform: translate3d(100vw,75vw, 1px);"
+                 data-116000="transform:translate3d(0vw,0vw, 1px); opacity: 1;">
+            <div></div>
+        </section>
+
+        <section id="s6_sterne8"
+                 class="sterne"
+                 data-110000="transform: translate3d(-100vw,75vw, 1px);"
+                 data-116000="transform: translate3d(0vw,0vw, 1px);">
+            <div></div>
+        </section>
+
+        <section id="s6_linien"
+                 class="sterne"
                  data-116000="opacity: 0;"
-                 data-117000=" opacity:0.3;">
+                 data-117000="opacity: 0.3;">
             <div></div>
         </section>
 
         <section>
             <h1>S6 ist Heimat</h1>
-            <ul data-0="display:none"
-            data-117000="display:block">
-                <li data-117000="transform:translate3d(100vw, 100vw, 1px)"
-                    data-118000="transform:translate3d(25vw, 30vw, 1px)"
-                    data-119000="transform:translate3d(25vw, 30vw, 1px)"
-                    data-122000="transform:translate3d(0vw, -35vw, 1px)">
+            <ul data-0="display: none;"
+                data-117000="display: block;">
+                <li data-117000="transform: translate3d(100vw, 100vw, 1px);"
+                    data-118000="transform: translate3d(25vw, 30vw, 1px);"
+                    data-119000="transform: translate3d(25vw, 30vw, 1px);"
+                    data-122000="transform: translate3d(0vw, -35vw, 1px);">
                     Alina Otten</li>
-                <li data-117000="transform:translate3d(-100vw, 20vw, 1px)"
-                    data-118000="transform:translate3d(-39vw, 10vw, 1px)"
-                    data-119000="transform:translate3d(-39vw, 10vw, 1px)"
-                    data-122000="transform:translate3d(0vw, -35vw, 1px)">
+                <li data-117000="transform: translate3d(-100vw, 20vw, 1px);"
+                    data-118000="transform: translate3d(-39vw, 10vw, 1px);"
+                    data-119000="transform: translate3d(-39vw, 10vw, 1px);"
+                    data-122000="transform: translate3d(0vw, -35vw, 1px);">
                     Christian Leich</li>
-                <li data-117000="transform:translate3d(-100vw, 100vw, 1px)"
-                    data-118000="transform:translate3d(-25vw, 27vw, 1px)"
-                    data-119000="transform:translate3d(-25vw, 27vw, 1px)"
-                    data-122000="transform:translate3d(0vw, -35vw, 1px)">
+                <li data-117000="transform: translate3d(-100vw, 100vw, 1px);"
+                    data-118000="transform: translate3d(-25vw, 27vw, 1px);"
+                    data-119000="transform: translate3d(-25vw, 27vw, 1px);"
+                    data-122000="transform: translate3d(0vw, -35vw, 1px);">
                     Jana Borchardt</li>
-                <li data-117000="transform:translate3d(120vw, 20vw, 1px)"
-                    data-118000="transform:translate3d(35vw, 3vw, 1px)"
-                    data-119000="transform:translate3d(35vw, 3vw, 1px)"
-                    data-122000="transform:translate3d(0vw, -35vw, 1px)">
+                <li data-117000="transform: translate3d(120vw, 20vw, 1px);"
+                    data-118000="transform: translate3d(35vw, 3vw, 1px);"
+                    data-119000="transform: translate3d(35vw, 3vw, 1px);"
+                    data-122000="transform: translate3d(0vw, -35vw, 1px);">
                     Jan Schürtz</li>
-                <li data-117000="transform:translate3d(45vw, 100vw, 1px)"
-                    data-118000="transform:translate3d(5vw, 23vw, 1px)"
-                    data-119000="transform:translate3d(5vw, 23vw, 1px)"
-                    data-122000="transform:translate3d(0vw, -35vw, 1px)">
+                <li data-117000="transform: translate3d(45vw, 100vw, 1px);"
+                    data-118000="transform: translate3d(5vw, 23vw, 1px);"
+                    data-119000="transform: translate3d(5vw, 23vw, 1px);"
+                    data-122000="transform: translate3d(0vw, -35vw, 1px);">
                     Jens Römer</li>
-                <li data-117000="transform:translate3d(35vw, -100vw, 1px)"
-                    data-118000="transform:translate3d(-5vw, -12vw, 1px)"
-                    data-119000="transform:translate3d(-5vw, -12vw, 1px)"
-                    data-122000="transform:translate3d(0vw, -35vw, 1px)">
+                <li data-117000="transform: translate3d(35vw, -100vw, 1px);"
+                    data-118000="transform: translate3d(-5vw, -12vw, 1px);"
+                    data-119000="transform: translate3d(-5vw, -12vw, 1px);"
+                    data-122000="transform: translate3d(0vw, -35vw, 1px);">
                     Thomas Schlömer</li>
             </ul>
             <ul class="social"
-                data-0="display:none"
-                data-121750="top:38vw; display:block; opacity: 0"
+                data-0="display: none;"
+                data-121750="display: block; top: 38vw; opacity: 0;"
                 data-122000="opacity: 1;">
-
                     <li>
                         <a href="https://www.facebook.com/S6-ist-Heimat-750096865034005/" target="_blank">
-                            <img src="img/facebook.png">
+                            <img src="img/facebook.png"/>
                         </a>
                     </li>
                     <li>
                         <a href="https://twitter.com/s6heimat" target="_blank">
-                            <img src="img/twitter.png">
+                            <img src="img/twitter.png"/>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/s6istheimat/" target="_blank">
-                            <img src="img/instagram_1.png">
+                            <img src="img/instagram_1.png"/>
                         </a>
                     </li>
             </ul>
         </section>
     </div>
+
+    <!-- Media Query Bereich -->
     <div id="mq">
         <div id="schienen">
-            <img src="img/schienen-1.png" data-0="display: block;"
+            <img src="img/schienen-1.png"
+                 data-0="display: block;"
                  data-40500="display: none;"
-                 data-59500 ="display: block;"
+                 data-59500="display: block;"
                  data-98400="display: none;"/>
         </div>
         <div id="logo">
-            <img src="img/graffiti-01.png">
+            <img src="img/graffiti-01.png"/>
         </div>
         <div class="social">
             <ul>
                 <li>
                     <a href="https://www.facebook.com/S6-ist-Heimat-750096865034005/" target="_blank">
-                        <img src="img/facebook.png">
+                        <img src="img/facebook.png"/>
                     </a>
                 </li>
                 <li>
                     <a href="https://twitter.com/s6heimat" target="_blank">
-                        <img src="img/twitter.png">
+                        <img src="img/twitter.png"/>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/s6istheimat/" target="_blank">
-                        <img src="img/instagram_1.png">
+                        <img src="img/instagram_1.png"/>
                     </a>
                 </li>
             </ul>
