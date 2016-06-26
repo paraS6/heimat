@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="language" content="deutsch, de">
+    <meta name="keywords" content="s6, heimat, parallax, onepager, projekt, ">
+    <meta name="description" content="Diese Seite ist eine Projektarbeit von Studenten der HS Duesseldorf und zeigt die
+    Verbundenheit mit der S-Bahnlinie S6.">
     <title>6 ist Heimat</title>
     <link rel="icon" href="img/sbahnlogo.png" type="image/png"/>
     <link rel="stylesheet" href="css/index.css"/>
     <script type="text/javascript">
         function loadingCheck() {
-            console.log(pageYOffset);
             if (document.readyState != "complete") {
                 window.setTimeout(loadingCheck, 10000);
             }
@@ -131,7 +134,7 @@
          data-17000="opacity: 1;"
          data-22000="display: none; opacity: 0;">
 
-        <section id="zug"></section>
+        <section id="s1_zug"></section>
 
         <div id="s1_tim"
              data-0="display: block;"
@@ -147,17 +150,17 @@
              data-10000="display: none;">
         </div>
 
-        <div class="blase"
+        <div class="sprechblase"
              data-4000="display: block; transform: translateX(445vw); opacity: 0;"
              data-5000="opacity: 1;"
              data-7000="opacity: 1;"
              data-8000="display: none; opacity: 0;">
-            <div class="blase_text"
+            <div class="sprechblase_text"
                  data-5000="display: block;"
                  data-6000="display: none;">
                 <p>Hey Leute, ich bin Tim! Als Student der HSD sitze ich mehr in der S6 als im Vorlesungssaal.</p>
             </div>
-            <div class="blase_text"
+            <div class="sprechblase_text"
                  data-5000="display: none;"
                  data-6000="display: block;"
                  data-8000="display: none;">
@@ -165,8 +168,8 @@
             </div>
         </div>
 
-        <section id="left_door"
-                 class="container"
+        <section id="tuer_links"
+                 class="container tuer"
                  data-0="display: block; transform: translateX(404.5vw);"
                  data-2000="transform: translateX(390vw);"
                  data-8000="transform: translateX(390vw);"
@@ -174,8 +177,8 @@
                  data-11000="display: none;">
             <div></div>
         </section>
-        <section id="right_door"
-                 class="container"
+        <section id="tuer_rechts"
+                 class="container tuer"
                  data-0="display: block; transform: translateX(451.5vw);"
                  data-2000="transform: translateX(466vw);"
                  data-8000="transform: translateX(466vw);"
@@ -241,7 +244,7 @@
         </div>
 
         <section id="s2_protagonist_neutral"
-                 class="container"
+                 class="container protagonist"
                  data-0="display: none;"
                  data-31700="display: block; transform: translateX(180vw); opacity: 1;"
                  data-35000="transform: translateX(137vw);"
@@ -251,7 +254,7 @@
         </section>
 
         <section id="s2_protagonist_muede"
-                 class="container"
+                 class="container protagonist"
                  data-0="display: none;"
                  data-35000="display: block; transform: translateX(137vw); opacity: 0;"
                  data-35100="opacity: 0.7;"
@@ -261,19 +264,20 @@
         </section>
 
         <div id="s2_sprechblase"
+             class="sprechblase"
              data-0="display: none;"
              data-33000="display: block; transform: translateX(142vw); opacity: 0;"
              data-33500="transform: translateX(135.25vw); opacity: 1;"
              data-34500="transform: translateX(121.75vw); opacity: 1;"
              data-35000="display: none; transform: translateX(115vw); opacity: 0;">
 
-            <div class="blase_text"
+            <div class="sprechblase_text"
                  data-33000="display: block;"
                  data-34000="display: none;">
                 <p>Die S6 fährt von Essen Hbf nach<br>Köln-Worringen.</p>
             </div>
 
-            <div class="blase_text"
+            <div class="sprechblase_text"
                  data-33000="display: none;"
                  data-34000="display: block;">
                 <p>Entlang dieser Hauptschlagader NRWs mischen sich alle Klischees der verschiedenen Städte.</p>
@@ -545,7 +549,7 @@
                  data-54500="display: none;">
             </div>
 
-            <div id="s3_oma"
+            <div id="s3_frau2"
                  data-0="display: none;"
                  data-40000="display: block;"
                  data-45750="display: block;"
@@ -563,14 +567,14 @@
                  data-45750="display: none;">
             </div>
 
-            <div class="blase"
+            <div class="sprechblase"
                  id="s3_sprechblase"
                  data-0="display: none;"
                  data-52000="display: block; opacity: 0;"
                  data-53000="transform: translateX(50vw); opacity: 1;"
                  data-54000="opacity: 1;"
                  data-54500="display: none; opacity: 0;">
-                <div class="blase_text"
+                <div class="sprechblase_text"
                      data-52000="display: block;">
                     <p>Die S6 lehrt ihren Reisenden viel über das Leben - hauptsächlich Geduld, Demut und Genügsamkeit.</p>
                 </div>
@@ -913,20 +917,20 @@
             </div>
 
             <div id="s4_sprechblase"
-                 class="blase"
+                 class="sprechblase"
                  data-0="display: none;"
                  data-86800="display: block; opacity: 0;"
                  data-87000="transform: translateX(125vw); opacity: 1;"
                  data-98400="display: none; opacity: 0;">
                 <div id="s4_text_1"
-                     class="blase_text"
+                     class="sprechblase_text"
                      data-0="display: none;"
                      data-84000="display: block;"
                      data-90000="display: none;">
                     <p>Jede Tageszeit hat seine speziellen Nervensägen <br>in der S6...</p>
                 </div>
                 <div id="s4_text_2"
-                     class="blase_text"
+                     class="sprechblase_text"
                      data-83001="display: none;"
                      data-90001="display: block;"
                      data-98400="display: none;">
@@ -1248,14 +1252,14 @@
     <!-- Media Query Bereich -->
     <div id="mq">
         <div id="schienen">
-            <img src="img/schienen-1.png"
+            <img src="img/MediaQuery/schienen-1.png"
                  data-0="display: block;"
                  data-40500="display: none;"
                  data-59500="display: block;"
                  data-98400="display: none;"/>
         </div>
         <div id="logo">
-            <img src="img/graffiti-01.png"/>
+            <img src="img/MediaQuery/graffiti-01.png"/>
         </div>
         <div class="social">
             <ul>
