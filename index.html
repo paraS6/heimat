@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/index.css"/>
     <script type="text/javascript">
         function loadingCheck() {
+            console.log(pageYOffset);
             if (document.readyState != "complete") {
                 window.setTimeout(loadingCheck, 10000);
             }
@@ -19,8 +20,7 @@
 <body onload="loadingCheck();">
     <div id="loading">
         <p>"Achtung an Gleis 6! Zug fährt ein."</p>
-        <div id="loading_screen">
-        </div>
+        <div id="loading_screen"></div>
     </div>
 <main>
     <nav>
@@ -56,7 +56,7 @@
                 </div>
             </div>
         </a>
-        <a href="#s2_pendler" data-menu-top="15001">
+        <a href="#s2_pendler" data-menu-top="17001">
             <div id="ring2" class="ring">
                 <div class="nav_name">
                     <div>Pendler</div>
@@ -64,12 +64,12 @@
                 <div class="innen"></div>
                 <div class="innen"
                      data-0="background-color: transparent;"
-                     data-15000="background-color: red;"
+                     data-17000="background-color: red;"
                      data-42000="background-color: transparent;">
                 </div>
             </div>
         </a>
-        <a href="#s3_bahnhof" data-menu-top="42005">
+        <a href="#s3_bahnhof" data-menu-top="42001">
             <div id="ring3" class="ring">
                 <div class="nav_name">
                     <div>Bahnhof</div>
@@ -108,7 +108,7 @@
                 </div>
             </div>
         </a>
-        <a href="#s6_outro" data-menu-top="106001">
+        <a href="#s6_outro" data-menu-top="108001">
             <div id="ring6" class="ring">
                 <div class="nav_name">
                     <div >Sternenhimmel</div>
@@ -127,7 +127,7 @@
     <div id="s1_intro"
          class="viewport"
          data-10000="display: block; transform: translateX(-400vw);"
-         data-12500="transform: translateX(-126.5vw);"
+         data-14500="transform: translateX(-126.2vw);"
          data-17000="opacity: 1;"
          data-22000="display: none; opacity: 0;">
 
@@ -135,22 +135,23 @@
 
         <div id="s1_tim"
              data-0="display: block;"
-             data-2500="transform: translateX(439vw);"
-             data-3900="opacity: 1;"
+             data-2000="transform: translateX(439vw);"
+             data-3000="opacity: 1;"
              data-4000="display: none; opacity: 0;">
         </div>
 
         <div id="s1_tim_winken"
              data-0="display: block;"
-             data-2700="transform: translateX(439vw); opacity: 0;"
-             data-4000="opacity: 1;">
+             data-3000="transform: translateX(439vw); opacity: 0;"
+             data-4000="opacity: 1;"
+             data-10000="display: none;">
         </div>
 
         <div class="blase"
              data-4000="display: block; transform: translateX(445vw); opacity: 0;"
              data-5000="opacity: 1;"
              data-7000="opacity: 1;"
-             data-7500="display: none; opacity: 0;">
+             data-8000="display: none; opacity: 0;">
             <div class="blase_text"
                  data-5000="display: block;"
                  data-6000="display: none;">
@@ -159,30 +160,32 @@
             <div class="blase_text"
                  data-5000="display: none;"
                  data-6000="display: block;"
-                 data-7000="display: none;">
+                 data-8000="display: none;">
                 <p>Hier verdichtet sich ganz NRW in einer einzigen Bahnlinie.<br>Kommt mit!</p>
             </div>
         </div>
 
         <section id="left_door"
                  class="container"
-                 data-0="transform: translateX(404.5vw);"
-                 data-2500="transform: translateX(390vw);"
-                 data-7500="transform: translateX(390vw);"
-                 data-10000="transform: translateX(404.5vw);">
+                 data-0="display: block; transform: translateX(404.5vw);"
+                 data-2000="transform: translateX(390vw);"
+                 data-8000="transform: translateX(390vw);"
+                 data-10000="transform: translateX(404.5vw);"
+                 data-11000="display: none;">
             <div></div>
         </section>
         <section id="right_door"
                  class="container"
-                 data-0="transform: translateX(451.5vw);"
-                 data-2500="transform: translateX(466vw);"
-                 data-7500="transform: translateX(466vw);"
-                 data-10000="transform: translateX(451.5vw);">
+                 data-0="display: block; transform: translateX(451.5vw);"
+                 data-2000="transform: translateX(466vw);"
+                 data-8000="transform: translateX(466vw);"
+                 data-10000="transform: translateX(451.5vw);"
+                 data-10800="display: none;">
             <div></div>
         </section>
     </div>
 
-    <!-- Szene 2 -->
+    <!-- Szene2 -->
     <div id="s2_pendler"
          class="viewport"
          data-0="display: none;"
@@ -196,43 +199,36 @@
              data-15000="display: block; transform: translateX(0vw); opacity: 0.8;"
              data-17000="transform: translateX(0vw); opacity:1;"
              data-35000="transform: translateX(20vw);"
-             data-41300="opacity: 0;">
+             data-41300="display: none; opacity: 0;">
         </div>
 
         <div id="s2_schild_essen"
              class="schilder"
              data-0="display: none;"
-             data-15000="display: block; transform: translateX(0vw); opacity: 0.8;"
-             data-17000="transform: translateX(0vw); opacity: 1;"
-             data-35000="transform: translateX(-150vw);"
-             data-41300="opacity: 0;">
+             data-15000="display: block; opacity: 0.8;"
+             data-17000="transform: translateX(0vw);"
+             data-19100="display: none; transform: translateX(-17.5vw); opacity: 1;">
         </div>
 
         <div id="s2_schild_ddorf"
              class="schilder"
              data-0="display: none;"
-             data-15000="display: block; transform: translateX(0vw); opacity: 0.8;"
-             data-17000="transform: translateX(0vw); opacity: 1;"
-             data-35000="transform: translateX(-150vw);"
-             data-41300="opacity: 0;">
+             data-19250="display: block; transform: translateX(-19vw); opacity: 0.8;"
+             data-27100="display: none; transform: translateX(-84vw); opacity: 1;">
         </div>
 
         <div id="s2_schild_leverkusen"
              class="schilder"
              data-0="display: none;"
-             data-15000="display: block; transform: translateX(0vw); opacity: 0.8;"
-             data-17000="transform: translateX(0vw); opacity: 1;"
-             data-35000="transform: translateX(-150vw);"
-             data-41300="opacity: 0;">
+             data-23000="display: block; transform: translateX(-50vw); opacity: 0.8;"
+             data-26200="display: none; transform: translateX(-76.5vw); opacity: 1;">
         </div>
 
         <div id="s2_schild_koeln"
              class="schilder"
              data-0="display: none;"
-             data-15000="display: block; transform: translateX(0vw); opacity: 0.8;"
-             data-17000="transform: translateX(0vw); opacity: 1;"
-             data-35000="transform: translateX(-150vw);"
-             data-41300="opacity: 0;">
+             data-26000="display: block; transform: translateX(-75.5vw); opacity: 0.8;"
+             data-33700="display: none; transform: translateX(-139vw); opacity: 1;">
         </div>
 
         <div class="container"
@@ -240,36 +236,36 @@
              data-15000=" display: block; transform: translateX(0vw); opacity: 0.8;"
              data-17000="transform: translateX(0vw); opacity: 1;"
              data-35000="transform: translateX(-250vw);"
-             data-41300="opacity: 0;">
+             data-41300="display: none; opacity: 0;">
             <div id = s2_bahn_innen></div>
         </div>
 
         <section id="s2_protagonist_neutral"
                  class="container"
-                 data-17000="transform: translateX(378vw); opacity: 1;"
+                 data-0="display: none;"
+                 data-31700="display: block; transform: translateX(180vw); opacity: 1;"
                  data-35000="transform: translateX(137vw);"
-                 data-35100="transform: translateX(137vw); opacity: 0.5;"
-                 data-35200="opacity: 0;"
-                 data-41300="opacity: 0;">
+                 data-35100="opacity: 0.5;"
+                 data-35200="display: none; opacity: 0;">
             <div></div>
         </section>
 
         <section id="s2_protagonist_muede"
                  class="container"
-                 data-17000="transform: translateX(378vw); opacity: 0;"
-                 data-35000="transform: translateX(137vw); opacity: 0;"
-                 data-35100="transform: translateX(137vw); opacity: 0.7;"
+                 data-0="display: none;"
+                 data-35000="display: block; transform: translateX(137vw); opacity: 0;"
+                 data-35100="opacity: 0.7;"
                  data-35200="opacity: 1;"
-                 data-41300="opacity: 0;">
+                 data-41300="display: none; opacity: 0;">
             <div></div>
         </section>
 
         <div id="s2_sprechblase"
              data-0="display: none;"
-             data-33000="transform: translateX(142vw); display: block; opacity: 0;"
+             data-33000="display: block; transform: translateX(142vw); opacity: 0;"
              data-33500="transform: translateX(135.25vw); opacity: 1;"
              data-34500="transform: translateX(121.75vw); opacity: 1;"
-             data-35000="transform: translateX(115vw); opacity: 0; display: none;">
+             data-35000="display: none; transform: translateX(115vw); opacity: 0;">
 
             <div class="blase_text"
                  data-33000="display: block;"
@@ -287,139 +283,160 @@
 
         <section id="s2_mannZeche1"
                  class="container"
-                 data-17000="transform: translateX(5vw); opacity: 1;"
-                 data-35000="transform: translateX(-260vw);">
+                 data-0="display: none;"
+                 data-15000="display: block;"
+                 data-17000="transform: translateX(5vw);"
+                 data-17850="display: none; transform: translateX(-8vw);">
             <div></div>
         </section>
 
         <section id="s2_mannRuhrpott"
                  class="container"
-                 data-17000="transform: translateX(57vw); opacity: 1;"
-                 data-35000="transform: translateX(-200vw);">
+                 data-0="display: none;"
+                 data-15000="display: block;"
+                 data-17000="transform: translateX(57vw);"
+                 data-20500="display: none; transform: translateX(6.4vw);">
             <div></div>
         </section>
 
         <section id="s2_mannZeche2"
                  class="container"
-                 data-17000="transform: translateX(75vw); opacity: 1;"
-                 data-35000="transform: translateX(-180vw);">
+                 data-0="display: none;"
+                 data-15000="display: block;"
+                 data-17000="transform: translateX(75vw);"
+                 data-21450="display: none; transform: translateX(12vw);">
             <div></div>
         </section>
 
         <section id="s2_mann"
                  class="container"
-                 data-17000="transform: translateX(65vw); opacity: 1;"
-                 data-35000="transform: translateX(-195vw);">
+                 data-0="display: none;"
+                 data-15000="display: block;"
+                 data-17000="transform: translateX(65vw);"
+                 data-21100="display: none; transform: translateX(5.75vw);">
             <div></div>
         </section>
 
         <section id="s2_bierFlasche"
                  class="container"
-                 data-17000="transform: translateX(105vw); opacity: 1; "
-                 data-35000="transform: translateX(-150vw);">
+                 data-0="display: none;"
+                 data-17400="display: block; transform: translateX(99vw);"
+                 data-22550="display: none; transform: translateX(27.5vw);">
             <div></div>
         </section>
 
         <section id="s2_reicheFrau1"
                  class="container"
-                 data-17000="transform: translateX(168vw); opacity: 1;"
-                 data-35000="transform: translateX(-96vw);">
+                 data-0="display: none;"
+                 data-20500="display: block; transform: translateX(116vw);"
+                 data-26000="display: none; transform: translateX(35vw);">
             <div></div>
         </section>
 
         <section id="s2_reicherMann1"
                  class="container"
-                 data-17000="transform: translateX(152vw); opacity: 1;"
-                 data-35000="transform: translateX(-104vw);">
+                 data-0="display: none;"
+                 data-19720="display: block; transform: translateX(113vw);"
+                 data-25520="display: none; transform: translateX(31vw);">
             <div></div>
         </section>
 
         <section id="s2_reicherMann2"
                  class="container"
-                 data-17000="transform: translateX(180vw); opacity: 1;"
-                 data-35000="transform: translateX(-70vw);">
+                 data-0="display: none;"
+                 data-21200="display: block; transform: translateX(121.5vw);"
+                 data-26800="display: none; transform: translateX(44vw);">
             <div></div>
         </section>
 
         <section id="s2_reicheFrau2"
                  class="container"
-                 data-17000="transform: translateX(187vw); opacity: 1;"
-                 data-35000="transform: translateX(-67vw);">
+                 data-0="display: none;"
+                 data-21500="display: block; transform: translateX(123.5vw);"
+                 data-27200="display: none; transform: translateX(43.5vw);">
             <div></div>
         </section>
 
         <section id="s2_becher"
                  class="container"
-                 data-17000="transform: translateX(222vw); opacity: 1;"
-                 data-35000="transform: translateX(-28vw);">
+                 data-0="display: none;"
+                 data-23400="display: block; transform: translateX(133vw);"
+                 data-28550="display: none; transform: translateX(61.5vw);">
             <div></div>
         </section>
 
         <section id="s2_Jeck1"
                  class="container"
-                 data-17000="transform: translateX(280vw); opacity: 1;"
-                 data-35000="transform: translateX(25vw);">
+                 data-0="display: none;"
+                 data-26340="display: block; transform: translateX(147.5vw);"
+                 data-31950="display: none; transform: translateX(68.5vw);">
             <div></div>
         </section>
 
         <section id="s2_Jeck2"
                  class="container"
-                 data-17000="transform: translateX(320vw); opacity: 1;"
-                 data-35000="transform: translateX(70vw);">
+                 data-0="display: none;"
+                 data-28480="display: block; transform: translateX(160.5vw);"
+                 data-34080="display: none; transform: translateX(83vw);">
             <div></div>
         </section>
 
         <section id="s2_Jeck3"
                  class="container"
-                 data-17000="transform: translateX(315vw); opacity: 1;"
-                 data-35000="transform: translateX(60vw);">
+                 data-0="display: none;"
+                 data-27980="display: block; transform: translateX(159.5vw);"
+                 data-33540="display: none; transform: translateX(80.5vw);">
             <div></div>
         </section>
 
         <section id="s2_Jeck4"
                  class="container"
-                 data-17000="transform: translateX(290vw); opacity: 1;"
-                 data-35000="transform: translateX(40vw);">
+                 data-0="display: none;"
+                 data-26980="display: block; transform: translateX(151.5vw);"
+                 data-32780="display: none; transform: translateX(71vw);">
             <div></div>
         </section>
 
         <section id="s2_jeck_duesseldorf_frau"
                  class="container"
-                 data-17000="transform: translateX(330vw); opacity: 1;"
-                 data-35000="transform: translateX(75vw);">
+                 data-0="display: none;"
+                 data-28860="display: block; transform: translateX(162vw);"
+                 data-34520="display: none; transform: translateX(82vw);">
             <div></div>
         </section>
 
         <section id="s2_jeck_duesseldorf_mann"
                  class="container"
-                 data-17000="transform: translateX(318vw); opacity: 1;"
-                 data-35000="transform: translateX(90vw);"
-                 data-35100="transform: translateX(90vw); opacity: 0.5;"
-                 data-35200="opacity:0.3;"
-                 data-41300="opacity: 0;">
+                 data-0="display: none;"
+                 data-29160="display: block; transform: translateX(164vw);"
+                 data-35000="transform: translateX(90vw); opacity: 1;"
+                 data-35200="opacity:0.5;"
+                 data-40500=" display: none; opacity: 0;">
             <div></div>
         </section>
 
         <section id="s2_blase1"
                  class="container"
-                 data-15000="transform: translateX(0vw); opacity: 0;"
-                 data-35000="transform: translateX(-250vw); opacity: 0;"
-                 data-35500="opacity: 1;">
+                 data-0="display: none;"
+                 data-35000="display: block; transform: translateX(-250vw); opacity: 0;"
+                 data-35500="opacity: 1;"
+                 data-39000="display: none;">
             <div></div>
         </section>
 
         <section id="s2_blase2"
                  class="container"
-                 data-15000="transform: translateX(0vw); opacity: 0;"
-                 data-35000="transform: translateX(-250vw); opacity: 0;"
-                 data-36000="opacity: 1;">
+                 data-0="display: none;"
+                 data-35000="display: block; transform: translateX(-250vw); opacity: 0;"
+                 data-36000="opacity: 1;"
+                 data-39000="display: none;">
             <div></div>
         </section>
 
         <section id="s2_blase3"
                  class="container"
-                 data-15000="transform: translateX(0vw); opacity: 0;"
-                 data-35000="transform: translateX(-240vw); opacity: 0;"
+                 data-0="display: none;"
+                 data-35000="display: block; transform: translateX(-240vw); opacity: 0;"
                  data-37000="opacity: 1;"
                  data-38000="width: 100%; height: 100%; right: -40%;"
                  data-39000="width: 200%; height: 200%; right: -50%; top: -20%;"
@@ -427,68 +444,88 @@
                  data-40250="width: 320%; height: 320%; right: -86%; top: -44%;"
                  data-40500="width: 340%; height: 340%; right: -91%; top: -50%;"
                  data-41000="opacity: 0.8;"
-                 data-42000="opacity: 0;">
+                 data-42000="display: none; opacity: 0;">
             <div></div>
         </section>
     </div>
 
-    <!-- Funfact Szene2-->
+    <!-- Funfact Szene2 -->
     <section class="viewport">
         <div class="s2_funfact"
-             data-17000="transform: translateY(130vw) rotate(0deg); display: block;"
+             data-0="display: none;"
+             data-25620="display: block; transform: translateY(45.5vw) rotate(-8deg);"
              data-27500="transform: translateY(27vw) rotate(-10deg);"
              data-29500="transform: translateY(27vw) rotate(-10deg);"
-             data-35500="transform: translateY(130vw) rotate(0deg);"
-             data-42000="display: none;">
+             data-30580="display: none; transform: translateY(45.5vw) rotate(-8deg);">
             <div class="s2_funfact_text">
                 <p>2014 rangierte die S6 auf dem letzten Platz bei der VRR-Kundenzufriedenheits-<br>messung.</p>
             </div>
         </div>
     </section>
 
-    <!-- Szene 3 -->
-    <div id="s3"
-         class="viewport"
+    <!-- Szene3 -->
+    <div class="viewport"
          data-0="display: none;"
          data-40500="display: block; opacity: 0;"
          data-42000="opacity: 1;"
          data-60000="display: none;">
 
         <section id="s3_bahnhof"
-            data-57000="transform: translateX(0vw); display: block;"
-            data-60000="transform: translateX(-100vw); display: none;">
-            <div id="s3_werbung_1"></div>
+                 data-0="display: none;"
+                 data-40000="display: block;"
+                 data-57000="transform: translateX(0vw);"
+                 data-60000="display: none; transform: translateX(-100vw);">
+            <div id="s3_werbung_1"
+                 data-0="display: none;"
+                 data-40000="display: block;"
+                 data-48250="display: none;">
+            </div>
 
             <div id="s3_werbung_2"
-                 data-44000="opacity: 0;"
-                 data-48250="opacity: 1;">
+                 data-0="display: none;"
+                 data-44000="display: block; opacity: 0;"
+                 data-48250="opacity: 1;"
+                 data-49500="display: none;"
+                 data-54500="display: block;"
+                 data-58500="display: none;">
             </div>
 
             <div id="s3_funfact"
-                 data-48250="opacity: 0;"
+                 data-0="display: none;"
+                 data-48250="display: block; opacity: 0;"
                  data-49500="opacity: 1;"
                  data-54500="opacity: 1;"
-                 data-57000="opacity: 0;">
+                 data-57000="opacity: 0;"
+                 data-58500="display: none;">
                  <p>Laut DB wurde die Ankunftszeit zu 96.4% eingehalten<br>Toleranzgrenze 7:29 Min</p>
             </div>
 
             <div id="s3_uhr">
                 <div id="s3_gr_zeiger"
+                     data-0="display: none;"
+                     data-40000="display: block;"
                      data-42000="animation: 2s linear infinite;"
                      data-49500="animation: rev_rotate 2s linear infinite;"
-                     data-57000="animation: 2s linear infinite;">
+                     data-57000="animation: 2s linear infinite;"
+                     data-58500="display: none;">
                 </div>
 
                 <div id="s3_kl_zeiger"
+                     data-0="display: none;"
+                     data-40000="display: block;"
                      data-42000="animation: 4s linear infinite;"
                      data-49500="animation: rotate 4s linear infinite;"
-                     data-57000="animation: 4s linear infinite;">
+                     data-57000="animation: 4s linear infinite;"
+                     data-58500="display: none;">
                 </div>
 
                 <div id="s3_se_zeiger"
+                     data-0="display: none;"
+                     data-40000="display: block;"
                      data-42000="animation: 1s linear infinite;"
                      data-49500="animation: rotate 1s linear infinite;"
-                     data-57000="animation: 1s linear infinite;">
+                     data-57000="animation: 1s linear infinite;"
+                     data-58500="display: none;">
                 </div>
 
                 <div id="s3_uhr_punkt"></div>
@@ -509,7 +546,8 @@
             </div>
 
             <div id="s3_oma"
-                 data-42000="display: block;"
+                 data-0="display: none;"
+                 data-40000="display: block;"
                  data-45750="display: block;"
                  data-58250="display: none;">
             </div>
@@ -520,12 +558,14 @@
             </div>
 
             <div id="s3_frau_1"
-                 data-42000="display: block;"
+                 data-0="display: none;"
+                 data-40000="display: block;"
                  data-45750="display: none;">
             </div>
 
             <div class="blase"
                  id="s3_sprechblase"
+                 data-0="display: none;"
                  data-52000="display: block; opacity: 0;"
                  data-53000="transform: translateX(50vw); opacity: 1;"
                  data-54000="opacity: 1;"
@@ -539,24 +579,25 @@
 
         <section class="s3_zug">
             <div id="s3_zug_vorne"
-                 data-40500="transform: translateX(-300vw); width: 300vw; height: 100vw; top: 5.6vw; left: 0vw;"
+                 data-0="display: none;"
+                 data-40500="display: block; transform: translateX(-300vw); width: 300vw; height: 100vw; top: 5.6vw; left: 0vw;"
                  data-44500="transform: translateX(-200vw);"
                  data-45750="transform: translateX(-200vw);"
                  data-46750="transform: translateX(-180vw);"
                  data-48000="transform: translateX(0vw);"
-                 data-49000="transform: translateX(100vw);"
+                 data-49000="display: none; transform: translateX(100vw);"
                  data-49500="transform: translateX(100vw);"
                  data-49501="transform: translateX(-300vw);"
-                 data-53500="transform: translateX(-300vw);"
+                 data-53500="display: block; transform: translateX(-300vw);"
                  data-56000="transform: translateX(-200vw);"
                  data-58500="transform: translateX(-200vw);"
                  data-59500="width: 650vw; height: 110vw; top: -34vw; left: -115vw; opacity: 1;"
-                 data-63000="opacity: 0; left: 25vw;">
+                 data-63000="display: none; opacity: 0; left: 25vw;">
             </div>
         </section>
     </div>
 
-    <!--Szene 4-->
+    <!-- Szene4 -->
     <div id="s4_nervigefahrgaeste"
          class="viewport"
          data-0="display: none;"
@@ -567,22 +608,28 @@
         <section id="bahn_effekte">
             <div id="s4_bahn_innen"
                  class="container"
-                 data-59500 = "transform: translateX(0vw);"
-                 data-87000 = "transform: translateX(-250vw);">
+                 data-0="display: none;"
+                 data-59500="display: block; transform: translateX(0vw);"
+                 data-87000="transform: translateX(-250vw);"
+                 data-89000="display: none;">
                 <div></div>
             </div>
 
             <div id="s4_hintergrund"
-                 data-60000="transform: translateX(0vw); display: block;"
-                 data-87000="transform: translateX(-25vw);">
+                 data-0="display: none;"
+                 data-59500="display: block;"
+                 data-60000="transform: translateX(0vw);"
+                 data-87000="display: none; transform: translateX(-25vw);">
             </div>
 
             <div id="s4_tunnel_licht"
                  class="container"
-                 data-85500="opacity: 0;"
+                 data-0="display: none;"
+                 data-85500="display: block; opacity: 0;"
                  data-86000="opacity: 0.7;"
                  data-86500="opacity: 0;"
-                 data-89000="z-index: 2000; opacity: 1;">
+                 data-89000="z-index: 2000; opacity: 1;"
+                 data-100000="display: none;">
             </div>
 
             <div id="s4_layer_licht_blitz"
@@ -594,159 +641,171 @@
 
             <div id="s4_tunnel"
                  class="container"
-                 data-60000="display:none;"
-                 data-83000="display: block; transform: translateX(300vw);"
-                 data-87000="transform: translateX(0vw);">
+                 data-0="display:none;"
+                 data-84900="display: block; transform: translateX(157.5vw);"
+                 data-87000="transform: translateX(0vw);"
+                 data-89000="display: none;">
                 <div></div>
             </div>
         </section>
 
         <section id="s4_natur">
             <div class="container s4_baum_1"
-                 data-60000="transform: translateX(300vw);"
-                 data-87000="transform: translateX(-1000vw);">
+                 data-0="display: none;"
+                 data-64020="display: block; transform: translateX(106.5vw);"
+                 data-66460="display: none; transform: translateX(-12vw);">
             </div>
 
             <div class="container s4_baum_1"
-                 data-60000="transform: translateX(500vw);"
-                 data-87000="transform: translateX(-800vw);">
+                 data-0="display: none;"
+                 data-68000="display: block; transform: translateX(115vw);"
+                 data-70360="display: none; transform: translateX(1vw);">
             </div>
 
             <div class="container s4_baum_1"
-                 data-60000="transform: translateX(410vw);"
-                 data-87000="transform: translateX(-890vw);">
+                 data-0="display: none;"
+                 data-66220="display: block; transform: translateX(110.5vw);"
+                 data-68620="display: none; transform: translateX(-5vw);">
             </div>
 
             <div class="container s4_baum_1"
-                 data-60000="transform: translateX(500vw);"
-                 data-87000="transform: translateX(-800vw);">
+                 data-0="display: none;"
+                 data-69180="display: block; transform: translateX(118vw);"
+                 data-71580="display: none; transform: translateX(2.5vw);">
             </div>
 
             <div class="container s4_baum_1"
-                 data-60000="transform: translateX(560vw);"
-                 data-87000="transform: translateX(-740vw);">
+                 data-0="display: none;"
+                 data-69940="display: block; transform: translateX(121.5vw);"
+                 data-72380="display: none; transform: translateX(4vw);">
             </div>
 
             <div class="container s4_baum_1"
-                 data-60000="transform: translateX(600vw);"
-                 data-87000="transform: translateX(-700vw);">
+                 data-0="display: none;"
+                 data-70940="display: block; transform: translateX(123vw);"
+                 data-73380="display: none; transform: translateX(5.5vw);">
             </div>
 
             <div class="container s4_baum_1"
-                 data-60000="transform: translateX(650vw);"
-                 data-87000="transform: translateX(-650vw);">
+                 data-0="display: none;"
+                 data-73920="display: block; transform: translateX(129.5vw);"
+                 data-76320="display: none; transform: translateX(14vw);">
             </div>
 
             <div class="container s4_baum_1"
-                 data-60000="transform: translateX(800vw);"
-                 data-87000="transform: translateX(-500vw);">
-            </div>
-
-            <div class="container 4_baum_1"
-                 data-60000="transform: translateX(840vw);"
-                 data-87000="transform: translateX(-460vw);">
+                 data-0="display: none;"
+                 data-74680="display: block; transform: translateX(133vw);"
+                 data-77120="display: none; transform: translateX(15.5vw);">
             </div>
 
             <div class="container s4_baum_1"
-                 data-60000="transform: translateX(870vw);"
-                 data-87000="transform: translateX(-430vw);">
+                 data-0="display: none;"
+                 data-75280="display: block; transform: translateX(134vw);"
+                 data-77720="display: none; transform: translateX(17vw);">
             </div>
 
             <div class="container s4_baum_1"
-                 data-60000="transform: translateX(900vw);"
-                 data-87000="transform: translateX(-200vw);">
+                 data-0="display: none;"
+                 data-78600="display: block; transform: translateX(142vw);"
+                 data-81440="display: none; transform: translateX(26.5vw);">
             </div>
 
             <div class="container s4_wald"
-                 data-60000="transform: translateX(0vw);"
-                 data-87000="transform: translateX(-700vw);">
+                 data-0="display: none;"
+                 data-59500="display: block; transform: translateX(0vw);"
+                 data-63440="display: none; transform: translateX(-89vw);">
             </div>
 
             <div class="container s4_wald"
-                 data-60000="transform: translateX(100vw);"
-                 data-87000="transform: translateX(-600vw);">
+                 data-0="display: none;"
+                 data-60220="display: block; transform: translateX(94.5vw);"
+                 data-66940="display: none; transform: translateX(-80vw);">
             </div>
 
             <div class="container s4_wald"
-                 data-60000="transform: translateX(300vw);"
-                 data-87000="transform: translateX(-400vw);">
+                 data-0="display: none;"
+                 data-67260="display: block; transform: translateX(112vw);"
+                 data-73980="display: none; transform: translateX(-62.5vw);">
             </div>
 
             <div class="container s4_wald"
-                 data-60000="transform: translateX(600vw);"
-                 data-87000="transform: translateX(-100vw);">
+                 data-0="display: none;"
+                 data-77840="display: block; transform: translateX(137.5vw);"
+                 data-84560="display: none; transform: translateX(-37vw);">
             </div>
 
             <div class="container s4_wald"
-                 data-60000="transform: translateX(700vw);"
-                 data-87000="transform: translateX(0vw);">
-            </div>
-
-            <div class="container s4_wald"
-                 data-60000="transform: translateX(810vw);"
-                 data-87000="transform: translateX(110vw);">
-            </div>
-
-            <div class="container s4_wald"
-                 data-60000="transform: translateX(900vw);"
-                 data-87000="transform: translateX(200vw);">
+                 data-0="display: none;"
+                 data-81320="display: block; transform: translateX(147vw);"
+                 data-86220="display: none; transform: translateX(20vw);">
             </div>
         </section>
 
         <section id="s4_personen">
             <div id="s4_fan_1"
                  class="container"
-                 data-60000="transform: translateX(84vw); display: block;"
-                 data-68000="transform: translateX(6vw); display: none;">
+                 data-0="display: none;"
+                 data-59500="display: block;"
+                 data-60000="transform: translateX(84vw);"
+                 data-67880="display: none; transform: translateX(7vw);">
                 <div></div>
             </div>
 
             <div id="s4_fan_2"
                  class="container"
-                 data-60500="transform: translateX(100vw); display: block;"
-                 data-70100="transform: translateX(8.5vw); display: none;">
+                 data-0="display: none;"
+                 data-60310="display: block; transform: translateX(97vw);"
+                 data-70030="display: none; transform: translateX(5vw);">
                 <div></div>
             </div>
 
             <div id="s4_fan_3"
                  class="container"
-                 data-60000="transform: translateX(75vw); display: block;"
-                 data-67250="transform: translateX(5vw); display: none;">
+                 data-0="display: none;"
+                 data-59500="display: block;"
+                 data-60000="transform: translateX(75vw);"
+                 data-67150="display: none; transform: translateX(6vw);">
                 <div></div>
             </div>
 
             <div id="s4_fan_4"
                  class="container"
-                 data-60000="transform: translateX(95vw); display: block;"
-                 data-69000="transform: translateX(8vw); display: none;">
+                 data-0="display: none;"
+                 data-59500="display: block;"
+                 data-60000="transform: translateX(95vw);"
+                 data-69050="display: none; transform: translateX(8vw);">
                 <div></div>
             </div>
 
             <div id="s4_fan_5"
                  class="container"
-                 data-61750="transform: translateX(103vw); display: block;"
-                 data-71000="transform: translateX(14vw); display: none;">
+                 data-0="display: none;"
+                 data-61790="display: block; transform: translateX(102.5vw);"
+                 data-70970="display: none; transform: translateX(14.5vw);">
                 <div></div>
             </div>
 
             <div id="s4_fan_6"
                  class="container"
-                 data-60000="transform: translateX(132vw); display: block;"
-                 data-72100="transform: translateX(15vw); display: none;">
+                 data-0="display: none;"
+                 data-62790="display: block; transform: translateX(105vw);"
+                 data-72150="display: none; transform: translateX(15vw);">
                 <div></div>
             </div>
 
             <div id="s4_fan_7"
                  class="container"
-                 data-60000="transform: translateX(148vw); display: block;"
-                 data-73400="transform: translateX(19vw); display: none;">
+                 data-0="display: none;"
+                 data-64110="display: block; transform: translateX(108.5vw);"
+                 data-73390="display: none; transform: translateX(19vw);">
                 <div></div>
             </div>
 
             <div id="s4_band_1"
                  class="container"
-                 data-60000="transform: translateX(310vw); display: block;"
-                 data-86750="transform: translateX(52vw); display: none;">
+                 data-0="display: none;"
+                 data-77510="display: block; transform: translateX(141.5vw);"
+                 data-86590="display: none; transform: translateX(54vw);">
                 <div id="s4_band_1_arm_l"
                      data-60000="animation: rassel_1 1s linear infinite; transform-origin: 0vw 0%;">
                 </div>
@@ -757,9 +816,10 @@
 
             <div id="s4_band_2"
                  class="container"
-                 data-60000="display: block; transform: translateX(312vw);"
+                 data-0="display: none;"
+                 data-78230="display: block; transform: translateX(136.5vw);"
                  data-87000="transform: translateX(52vw);"
-                 data-90000="display: none;">
+                 data-89000="display: none;">
                 <div id="s4_band_2_arm"
                      data-60000="animation: gitar_1 2s linear infinite; transform-origin: 10vw 20%;">
                 </div>
@@ -767,9 +827,10 @@
 
             <div id="s4_band_3"
                  class="container"
-                 data-60000="display: block; transform: translateX(315vw);"
+                 data-0="display: none;"
+                 data-79450="display: block; transform: translateX(127.5vw);"
                  data-87000="transform: translateX(55vw);"
-                 data-90000="display: none;">
+                 data-89000="display: none;">
                 <div id="s4_band_3_arm"
                      data-60000="animation: tromp_1 3s linear infinite; transform-origin: 10vw 20%;">
                 </div>
@@ -777,79 +838,89 @@
 
             <div id="s4_jan"
                  class="container"
-                 data-60000="transform: translateX(255vw);"
-                 data-87000="transform: translateX(-5vw);">
+                 data-0="display: none;"
+                 data-72940="display: block; transform: translateX(130.5vw);"
+                 data-82060="display: none; transform: translateX(42.5vw);">
                 <div></div>
             </div>
 
             <div id="s4_mann_1"
                  class="container"
-                 data-60000="transform: translateX(180vw);"
-                 data-87000="transform: translateX(-80vw);">
+                 data-0="display: none;"
+                 data-66760="display: block; transform: translateX(115vw);"
+                 data-75720="display: none; transform: translateX(28.5vw);">
                 <div></div>
             </div>
 
             <div id="s4_mann_2"
                  class="container"
-                 data-60000="transform: translateX(190vw);"
-                 data-87000="transform: translateX(-70vw);">
+                 data-0="display: none;"
+                 data-67560="display: block; transform: translateX(117vw);"
+                 data-76600="display: none; transform: translateX(30vw);">
                 <div></div>
             </div>
 
             <div id="s4_mann_3"
                  class="container"
-                 data-60000="display: block; transform: translateX(400vw);"
+                 data-0="display: none;"
+                 data-84880="display: block; transform: translateX(160vw);"
                  data-87000="transform: translateX(140vw);"
-                 data-90000="display: none;">
+                 data-89000="display: none;">
                 <div></div>
             </div>
 
             <div id="s4_frau_3"
                  class="container"
-                 data-60000="transform: translateX(272vw);"
-                 data-87000="transform: translateX(11vw);">
+                 data-0="display: none;"
+                 data-74300="display: block; transform: translateX(134vw);"
+                 data-83380="display: none; transform: translateX(46vw);">
                 <div></div>
             </div>
 
             <div id="s4_frau_1"
                  class="container"
-                 data-60000="transform: translateX(290vw);"
-                 data-87000="transform: translateX(30vw);">
+                 data-0="display: none;"
+                 data-75840="display: block; transform: translateX(137.5vw);"
+                 data-84640="display: none; transform: translateX(52.5vw);">
                 <div></div>
             </div>
 
             <div id="s4_frau_2"
                  class="container"
-                 data-60000="transform: translateX(228vw);"
-                 data-87000="transform: translateX(-32vw);">
+                 data-0="display: none;"
+                 data-70720="display: block; transform: translateX(125vw);"
+                 data-79520="display: none; transform: translateX(40vw);">
                 <div></div>
             </div>
 
             <div id="s4_tim"
                  class="container"
-                 data-60000="transform: translateX(380vw);"
-                 data-87000="transform: translateX(120vw);">
+                 data-0="display: none;"
+                 data-83240="display: block; transform: translateX(156vw);"
+                 data-87000="transform: translateX(120vw);"
+                 data-89000="display: none;">
                 <div></div>
             </div>
 
             <div id="s4_tim_tunnel"
                  class="container"
-                 data-60000="display:none; transform: translateX(380vw);"
-                 data-87000="display:none; transform: translateX(120vw);"
-                 data-88700="display:block; transform: translateX(120vw); opacity:0;"
-                 data-88900="opacity:1;"
+                 data-0="display: none;"
+                 data-88700="display: block; transform: translateX(120vw); opacity: 0;"
+                 data-88900="opacity: 1;"
                  data-95000="transform: translateX(120vw);"
-                 data-100000="transform: translateX(70vw);">
+                 data-100000="display: none; transform: translateX(70vw);">
                 <div></div>
             </div>
 
             <div id="s4_sprechblase"
                  class="blase"
-                 data-86800="display: block; opacity:0;"
-                 data-87000="transform: translateX(125vw); opacity:1;"
-                 data-99000="opacity:0;">
+                 data-0="display: none;"
+                 data-86800="display: block; opacity: 0;"
+                 data-87000="transform: translateX(125vw); opacity: 1;"
+                 data-98400="display: none; opacity: 0;">
                 <div id="s4_text_1"
                      class="blase_text"
+                     data-0="display: none;"
                      data-84000="display: block;"
                      data-90000="display: none;">
                     <p>Jede Tageszeit hat seine speziellen Nervensägen <br>in der S6...</p>
@@ -857,30 +928,29 @@
                 <div id="s4_text_2"
                      class="blase_text"
                      data-83001="display: none;"
-                     data-90001="display: block;">
+                     data-90001="display: block;"
+                     data-98400="display: none;">
                     <p>Och nööö, jetzt auch <br>noch ein Stromausfall!</p>
                 </div>
             </div>
         </section>
     </div>
 
-    <!--Funfact Szene4 -->
+    <!-- Funfact Szene4 -->
     <section class="viewport">
         <div class="funfact"
-             data-72000 = "display: block; transform: translateY(130vw) rotate(0deg);"
-             data-75000 = "transform: translateY(50vw) rotate(0deg);"
-             data-77000 = "transform: translateY(27vw) rotate(-10deg);"
-             data-80000 = "transform: translateY(27vw) rotate(-10deg);"
-             data-82000 = "transform: translateY(27vw) rotate(-10deg);"
-             data-84000 = "transform: translateY(50vw) rotate(0deg);"
-             data-84001 = "display:none;">
+             data-0="display: none;"
+             data-73600="display: block; transform: translateY(51vw) rotate(-8deg);"
+             data-76800="transform: translateY(32.25vw) rotate(-10deg);"
+             data-80000="transform: translateY(32.25vw) rotate(-10deg);"
+             data-81840="display: none; transform: translateY(51vw) rotate(-8deg);">
             <div class="funfact_text">
                 <p>Durch die Erneuerung der Züge hat die S6 seit 2015 eine Klimaanlage – die Toiletten wurden jedoch vergessen.</p>
             </div>
         </div>
     </section>
 
-    <!-- Szene 5 -->
+    <!-- Szene5 -->
     <div id="s5_nachtfahrt"
          class="viewport"
          data-0="display: none;"
@@ -919,56 +989,60 @@
                  data-98400="display: block;"
                  data-110000="display: none;">
             <div id="s5_hintergrund_du"
+                 data-0="display: none;"
+                 data-98000="display: block;"
                  data-100000="transform: translateX(20vw);"
                  data-100800="transform: translateX(20vw);"
-                 data-105000="transform: translateX(-170vw);">
+                 data-101720="display: none; transform: translateX(-21.5vw);">
             </div>
 
             <div id="s5_hintergrund_zeche_zoll"
-                 data-100000="transform: translateX(35vw);"
+                 data-0="display: none;"
+                 data-99000="display: block;"
                  data-100800="transform: translateX(35vw);"
-                 data-105000="transform: translateX(-140vw);">
+                 data-102100="display: none; transform: translateX(-19vw);">
             </div>
 
             <div id="s5_hintergrund_skyline_ddorf"
-                 data-100000="transform: translateX(60vw);"
+                 data-0="display: none;"
+                 data-99360="display: block;"
                  data-100800="transform: translateX(60vw);"
-                 data-105000="transform: translateX(-110vw);">
+                 data-104040="display: none; transform: translateX(-71vw);">
             </div>
 
             <div id="s5_hintergrund_skyline_lev"
-                 data-100000="transform: translateX(125vw);"
-                 data-100800="transform: translateX(125vw);"
-                 data-105000="transform: translateX(-45vw);">
+                 data-0="display: none;"
+                 data-101440="display: block; transform: translateX(99vw);"
+                 data-104280="display: none; transform: translateX(-16vw);">
             </div>
 
             <div id="s5_hintergrund_skyline_koeln"
-                 data-100000="display:block; transform: translateX(140vw);"
-                 data-100800="transform: translateX(140vw);"
-                 data-104000="display:none; transform: translateX(8vw);">
+                 data-0="display: none;"
+                 data-101820="display: block; transform: translateX(98vw);"
+                 data-104000="display: none; transform: translateX(8vw);">
             </div>
 
             <div id="s5_hintergrund_skyline_koeln_licht"
-                 data-100000="display:none; transform: translateX(8vw);"
+                 data-0="display:none;"
                  data-104000="display:block; transform: translateX(8vw);"
-                 data-105000="transform: translateX(-35vw);">
+                 data-105000="transform: translateX(-35vw);"
+                 data-108540="display: none;">
             </div>
         </section>
 
         <section id="s5_bahn"
-             data-98400="display: none;"
-             data-100000="display: block; transform: translateX(-150vw);"
+             data-0="display: none;"
+             data-101860="display: block; transform: translateX(-103.5vw);"
              data-104000="transform: translateX(-50vw);"
-             data-108000="transform: translateX(100vw);"
-             data-110000="display: none;">
+             data-108000="display: none; transform: translateX(100vw);">
             <div></div>
         </section>
 
         <section id="s5_tunnel"
+                 data-0="display: none;"
                  data-98400="display: block;"
                  data-100800="transform: translateX(-1vw);"
-                 data-105000="transform: translateX(-170vw);"
-                 data-110000="display: none;">
+                 data-102380="display: none; transform: translateX(-64.5vw);">
             <div></div>
         </section>
 
@@ -976,56 +1050,61 @@
                  data-98400="display: block;"
                  data-110000="display: none;">
             <div id="s5_sonne"
+                 data-0="display: none;"
                  data-100000="display: block; transform: translateX(0vw); margin-top: 0vh;"
                  data-100600="transform: translateX(10vw); margin-top: 10vh"
                  data-104000="display: none; transform: translateX(40vw); margin-top: 70vh;">
             </div>
 
             <div id="s5_flugzeug"
+                 data-0="display: none;"
+                 data-99950="display: block;"
                  data-100000="transform: translateX(95vw); margin-top: 20vh;"
-                 data-105000="transform: translateX(-50vw); margin-top: -30vh;">
+                 data-105000="display: none; transform: translateX(-50vw); margin-top: -30vh;">
             </div>
 
             <div id="s5_ballon"
+                 data-0="display: none;"
+                 data-98900="display: block;"
                  data-100000="transform: translateX(30vw);"
                  data-105000="transform: translateX(40vw);"
-                 data-108000="transform: translateX(45vw);">
+                 data-108000="transform: translateX(45vw);"
+                 data-108640="display: none;">
             </div>
 
             <div id="s5_wolken"
+                 data-0="display: none;"
+                 data-98640="display: block;"
                  data-98400="transform: translateX(15vw);"
                  data-100000="transform: translateX(10vw);"
                  data-102500="transform: translateX(-20vw); opacity: 1;"
-                 data-105000="transform: translateX(-70vw); opacity: 0.2;">
+                 data-105000="transform: translateX(-70vw); opacity: 0.2;"
+                 data-108720="display: none;">
             </div>
         </section>
 
         <div id="s5_bruecke"
-             data-98400="display :block;"
-             data-100000="transform: translateX(190vw);"
-             data-100800="transform: translateX(190vw);"
+             data-0="display: none;"
+             data-102900="display: block; transform: translateX(101.5vw);"
              data-105000="transform: translateX(13vw);"
-             data-110000="display: none;">
+             data-108260="display: none;">
         </div>
 
         <div id="s5_koeln_rechts"
-             data-98400="display: block;"
-             data-100000="transform: translateX(246vw);"
-             data-100800="transform: translateX(246vw);"
+             data-0="display: none;"
+             data-104460="display: block; transform: translateX(98vw);"
              data-105000="transform: translateX(76vw);"
-             data-110000="display: none;">
+             data-108420="display: none;">
         </div>
 
         <!-- Funfact Szene5 -->
         <section class="viewport">
             <div class="funfact"
-                 data-100000="display: block; transform: translateY(130vw) rotate(0deg);"
-                 data-102000="transform: translateY(50vw) rotate(0deg);"
-                 data-104000="transform: translateY(27vw) rotate(-10deg);"
-                 data-105000="transform: translateY(27vw) rotate(-10deg);"
-                 data-106000="transform: translateY(27vw) rotate(-10deg);"
-                 data-107000="transform: translateY(50vw) rotate(0deg);"
-                 data-107500="display: none;">
+                 data-0="display: none;"
+                 data-100940="display: block; transform: translateY(50vw) rotate(-2.5deg);"
+                 data-104200="transform: translateY(32vw) rotate(-10deg);"
+                 data-105000="transform: translateY(32vw) rotate(-10deg);"
+                 data-106860="display: none; transform: translateY(50vw) rotate(-2.5deg);">
                 <div class="funfact_text">
                     <p>Die S6 hat sogar ihre eigene Facebook Fanseite. Liken!</p>
                     <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FS6-ist-Heimat-750096865034005%2F&width=300&layout=button&action=like&show_faces=false&share=false&height=65&appId"
@@ -1036,7 +1115,7 @@
         </section>
     </div>
 
-    <!--Outro-->
+    <!-- Outro -->
     <div id="s6_outro"
          class="viewport"
          data-0="display: none;"
