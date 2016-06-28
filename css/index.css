@@ -70,11 +70,11 @@ body {
     margin: 0.375vw 0.375vw 0.375vw 2vw;
 }
 #unMuteButton input{
-    background-image: url("../img/Navigation/soundan-01.svg");
+    background-image: url("../img/Navigation/soundaus.png");
 
 }
 #muteButton input{
-    background-image: url("../img/Navigation/soundaus-01.svg");
+    background-image: url("../img/Navigation/soundan.png");
 }
 
 /**

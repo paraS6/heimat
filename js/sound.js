@@ -9,7 +9,7 @@ var un_Mute_Audio = document.getElementById("unMuteButton");
 var mute = "on";
 
 //Funktion zum Stumm schalten
-document.getElementsByTagName("input")[0].onclick = function(){
+document.getElementsByTagName("input")[1].onclick = function(){
     //Falls Ton gerade abgespielt wird muss dieser gestoptt werden.
     document.getElementById("durchsageAudio").pause();
     document.getElementById("mariachiAudio").pause();
@@ -21,7 +21,7 @@ document.getElementsByTagName("input")[0].onclick = function(){
     mute_Audio.style.display = 'none';
     un_Mute_Audio.style.display = 'block';
 };
-document.getElementsByTagName("input")[1].onclick = function(){
+document.getElementsByTagName("input")[0].onclick = function(){
     //Standart Ton wird eingeschaltet
     mute = "on";
     //buttonStyle
