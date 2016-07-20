@@ -34,10 +34,12 @@ body {
     width: 150vw;
     height: 100vw;
     display: block;
+    -webkit-background-size: 150vw;
     background-size: 150vw;
     top: 10vw;
     position: absolute;
     background-repeat: no-repeat;
+    -webkit-animation: loading 5s linear infinite;
     animation: loading 5s linear infinite;
 }
 @keyframes loading {
@@ -64,6 +66,7 @@ body {
     height: 2.25vw;
     border: 0;
     outline: none;
+    -webkit-background-size: contain;
     background-size: contain;
     background-color: transparent;
     display: block;
@@ -170,6 +173,7 @@ nav .innen{
 }
 
 .nav_name{
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 .nav_name div{
@@ -196,6 +200,7 @@ nav:hover, nav a:hover .nav_name, nav a:hover .nav_name div {
     width: 500vw;
     height: 100vw;
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     background-image: url("../img/intro/bahn_ohne_tuer.png");
@@ -206,6 +211,7 @@ nav:hover, nav a:hover .nav_name, nav a:hover .nav_name div {
     width: 15vw;
     height: 32vw;
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     background-image: url("../img/intro/hauptcharakter_rucksackgriff-01.png");
@@ -216,6 +222,7 @@ nav:hover, nav a:hover .nav_name, nav a:hover .nav_name div {
     width: 15vw;
     height: 32vw;
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     background-image: url("../img/intro/hauptcharakter_winken-01.png");
@@ -234,11 +241,13 @@ nav:hover, nav a:hover .nav_name, nav a:hover .nav_name div {
 
 #tuer_links div{
     background: url(../img/intro/tuer_links_graffiti-01.png) no-repeat right;
+    -webkit-background-size: contain;
     background-size: contain;
 }
 
 #tuer_rechts div{
     background: url(../img/intro/tuer_rechts_graffiti-01.png) no-repeat left;
+    -webkit-background-size: contain;
     background-size: contain;
 }
 
@@ -254,6 +263,7 @@ nav:hover, nav a:hover .nav_name, nav a:hover .nav_name div {
 
 #s2_sprechblase:after {
     left: 30vw;
+    -webtkit-transform: rotate(340deg);
     transform: rotate(340deg);
 }
 
@@ -262,6 +272,7 @@ nav:hover, nav a:hover .nav_name, nav a:hover .nav_name div {
     height: 50vw;
     background-image: url(../img/Szene2/hintergrund_alina-01.png);
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     margin: 0;
     padding: 0;
@@ -274,6 +285,7 @@ nav:hover, nav a:hover .nav_name, nav a:hover .nav_name div {
     height: 10vw;
     z-Index: -10;
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
 }
@@ -308,6 +320,7 @@ nav:hover, nav a:hover .nav_name, nav a:hover .nav_name div {
     height: 100vw;
     background-image: url(../img/Szene2/bahn_innen_alina-01.png);
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     margin: 0;
     padding: 0;
@@ -325,6 +338,7 @@ nav:hover, nav a:hover .nav_name, nav a:hover .nav_name div {
 
 #s2_protagonist_neutral div{
     background: url(../img/Szene2/Szene2_Tim_neutral.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-index: -7;
 }
@@ -332,6 +346,7 @@ nav:hover, nav a:hover .nav_name, nav a:hover .nav_name div {
 
 #s2_protagonist_muede div{
     background: url(../img/Szene2/Szene2_Tim_muede.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-index: -8;
 }
@@ -354,6 +369,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 38vw;
     background: url(../img/Szene2/zeche1.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -364,6 +380,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 38vw;
     background: url(../img/Szene2/zeche2.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -374,6 +391,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 37vw;
     background: url(../img/Szene2/ruhrpott1.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -384,6 +402,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 50vw;
     background: url(../img/Szene2/Jan.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -394,6 +413,7 @@ mit skrollr auf der x-Achse positioniert
     width: 4vw;
     height: 4vw;
     background: url(../img/Szene2/bier.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -405,6 +425,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 40vw;
     background: url(../img/Szene2/richBitch1.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -415,6 +436,7 @@ mit skrollr auf der x-Achse positioniert
     width: 27vw;
     height: 48vw;
     background: url(../img/Szene2/mann_ddorf_1.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -426,6 +448,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 33vw;
     background: url(../img/Szene2/richGuy.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -436,6 +459,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 35vw;
     background: url(../img/Szene2/richBitch2.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -448,6 +472,7 @@ mit skrollr auf der x-Achse positioniert
     width: 3vw;
     height: 3vw;
     background: url(../img/Szene2/coffee.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -480,6 +505,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 50vw;
     background: url(../img/Szene2/karneval_frau_matrose.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -490,6 +516,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 33vw;
     background: url(../img/Szene2/karneval_mann_koeln.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -501,6 +528,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 33vw;
     background: url(../img/Szene2/karneval_frau_koeln.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -511,6 +539,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 50vw;
     background: url(../img/Szene2/karneval_frau_teufel.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -522,6 +551,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 42vw;
     background: url(../img/Szene2/karneval_frau_duesseldorf.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -532,6 +562,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 50vw;
     background: url(../img/Szene2/karneval_mann_duesseldorf.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -543,6 +574,7 @@ mit skrollr auf der x-Achse positioniert
     width: 5vw;
     height: 3vw;
     background: url(../img/Szene2/kleineBlase.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -7;
     position: absolute;
@@ -554,6 +586,7 @@ mit skrollr auf der x-Achse positioniert
     width: 5vw;
     height: 4vw;
     background: url(../img/Szene2/kleineBlase.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -7;
     position: absolute;
@@ -565,6 +598,7 @@ mit skrollr auf der x-Achse positioniert
     width: 50%;
     height: 50%;
     background: url(../img/Szene2/blase2.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -7;
     position: absolute;
@@ -577,6 +611,7 @@ mit skrollr auf der x-Achse positioniert
 #s3_bahnhof{
     display: flex;
     background: url("../img/Szene3/bahnhof_derendorf-01.png") no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     z-index: -5;
@@ -586,6 +621,7 @@ mit skrollr auf der x-Achse positioniert
 #s3_werbung_1{
     display: flex;
     background: url("../img/Szene3/werbung-01.png") no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     z-index: -4;
@@ -598,6 +634,7 @@ mit skrollr auf der x-Achse positioniert
 #s3_werbung_2{
     display: flex;
     background: url("../img/Szene3/werbung2-01.png") no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     z-index: -3;
@@ -608,6 +645,7 @@ mit skrollr auf der x-Achse positioniert
 }
 #s3_funfact{
     background: url("../img/Szene3/szene_3_fun_fact-01.png") no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     z-index: -2;
@@ -628,6 +666,7 @@ mit skrollr auf der x-Achse positioniert
     width: 20vw;
     height: 15vw;
     background: url(../img/Szene3/hauptcharakter.png) no-repeat center;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     z-index: -1;
@@ -638,6 +677,7 @@ mit skrollr auf der x-Achse positioniert
     width: 20vw;
     height: 15vw;
     background: url(../img/Szene3/hauptcharakter_uhr.png) no-repeat center;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     z-index: -1;
@@ -663,6 +703,7 @@ mit skrollr auf der x-Achse positioniert
     width: 20vw;
     height: 12vw;
     background: url("../img/Szene3/mann_1.png") no-repeat center;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     z-index: -1;
@@ -673,6 +714,7 @@ mit skrollr auf der x-Achse positioniert
     width: 20vw;
     height: 15vw;
     background: url("../img/Szene3/frau1.png") no-repeat center;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     z-index: -1;
@@ -681,6 +723,7 @@ mit skrollr auf der x-Achse positioniert
 }
 #s3_zug_vorne {
     background: url("../img/Szene3/bahn_hinten_vorne-01.png") no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     top: 13vw;
     position: absolute;
@@ -690,6 +733,7 @@ mit skrollr auf der x-Achse positioniert
     background: url("../img/Szene3/bahnhofsuhr-01.svg") no-repeat;
     width: 10vw;
     height: 10vw;
+    -webkit-background-size: contain;
     background-size: contain;
     left: 89.3vw;
     top: 8.8vw;
@@ -699,6 +743,7 @@ mit skrollr auf der x-Achse positioniert
     background: url("../img/Szene3/bahnhofsuhr_punkt-01.svg") no-repeat;
     width: 10vw;
     height: 10vw;
+    -webkit-background-size: contain;
     background-size: contain;
     left: 89.3vw;
     top: 8.8vw;
@@ -709,6 +754,7 @@ mit skrollr auf der x-Achse positioniert
     background: url("../img/Szene3/bahnhofsuhr_sekunde-01.svg") no-repeat;
     width: 10vw;
     height: 10vw;
+    -webkit-background-size: contain;
     background-size: contain;
     left: 89.3vw;
     top: 8.8vw;
@@ -719,6 +765,7 @@ mit skrollr auf der x-Achse positioniert
     background: url("../img/Szene3/bahnhofsuhr_minute-01.svg") no-repeat;
     width: 10vw;
     height: 10vw;
+    -webkit-background-size: contain;
     background-size: contain;
     left: 89.3vw;
     top: 8.8vw;
@@ -729,6 +776,7 @@ mit skrollr auf der x-Achse positioniert
     background: url("../img/Szene3/bahnhofsuhr_stunde-01.svg") no-repeat;
     width: 10vw;
     height: 10vw;
+    -webkit-background-size: contain;
     background-size: contain;
     left: 89.3vw;
     top: 8.8vw;
@@ -737,17 +785,21 @@ mit skrollr auf der x-Achse positioniert
 }
 @keyframes rotate {
     0%{
+        -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
     100%{
+        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
 @keyframes rev_rotate {
     0%{
+        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
     100%{
+        -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
 }
@@ -765,6 +817,7 @@ mit skrollr auf der x-Achse positioniert
     height: 50vw;
     background: url(../img/Szene4/hintergrund_jan_lang.png) no-repeat;
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     margin: 0;
     padding: 0;
@@ -777,6 +830,7 @@ mit skrollr auf der x-Achse positioniert
     height: 100vw;
     background-image: url(../img/Szene4/bahn_innen_jan-01.png);
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     margin: 0;
     padding: 0;
@@ -789,6 +843,7 @@ mit skrollr auf der x-Achse positioniert
     top: -30vw;
     background-image: url(../img/Szene4/Bahn_mitte.png);
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     margin: 0;
     padding: 0;
@@ -802,6 +857,7 @@ mit skrollr auf der x-Achse positioniert
     top: 5vw;
     background-image: url(../img/Szene4/baum-01.png);
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     z-index: -50;
@@ -813,6 +869,7 @@ mit skrollr auf der x-Achse positioniert
     top: 6vw;
     background-image: url(../img/Szene4/wald-01.png);
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     z-index: -51;
@@ -835,7 +892,9 @@ mit skrollr auf der x-Achse positioniert
     z-index: -16;
     background-image: url(../img/Szene4/tunnel-01.png);
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
+
 }
 
 #s4_layer_licht_blitz {
@@ -867,6 +926,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 38vw;
     background: url(../img/Szene4/fussballfan_fc_1.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -6;
     position: absolute;
@@ -877,6 +937,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 39vw;
     background: url(../img/Szene4/fussballfan_fc_2.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -9;
     position: absolute;
@@ -887,6 +948,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 35vw;
     background: url(../img/Szene4/fussballfan_bvb_1.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -897,6 +959,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 39vw;
     background: url(../img/Szene4/fussballfan_f95_1.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -4;
     position: absolute;
@@ -907,6 +970,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 41vw;
     background: url(../img/Szene4/fussballfan_b04_1.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -917,6 +981,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 41vw;
     background: url(../img/Szene4/fussballfan_bvb_2.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -2;
     position: absolute;
@@ -927,6 +992,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 38vw;
     background: url(../img/Szene4/fussballfan_f95_2.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -937,6 +1003,7 @@ mit skrollr auf der x-Achse positioniert
     width: 45vw;
     height: 50vw;
     background: url(../img/Szene4/band_rasseln1.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -947,6 +1014,7 @@ mit skrollr auf der x-Achse positioniert
     width: 10vw;
     height: 10vw;
     background: url(../img/Szene4/band_rasseln_l.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -5;
     top:9.6vw;
@@ -957,6 +1025,7 @@ mit skrollr auf der x-Achse positioniert
 @keyframes rassel_1 {
     0% {
 
+        -webtkit-transform: rotate(-3deg);
         transform: rotate(-3deg);
     }
     25% {
@@ -964,15 +1033,16 @@ mit skrollr auf der x-Achse positioniert
     }
 
     50% {
-
+        -webtkit-transform: rotate(-3deg);
         transform: rotate(-3deg);
     }
     75% {
+        -webkit-transform: rotate(3deg);
         transform: rotate(3deg);
     }
 
     100% {
-
+        -webkit-transform: rotate(-3deg);
         transform: rotate(-3deg);
     }
 }
@@ -981,6 +1051,7 @@ mit skrollr auf der x-Achse positioniert
     width: 10vw;
     height: 10vw;
     background: url(../img/Szene4/band_rasseln_r.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -5;
     top:9.5vw;
@@ -990,23 +1061,25 @@ mit skrollr auf der x-Achse positioniert
 
 @keyframes rassel_2 {
     0% {
-
+        -webkit-transform: rotate(-7deg);
         transform: rotate(-7deg);
     }
     25% {
+        -webkit-transform: rotate(7deg);
         transform: rotate(7deg);
     }
 
     50% {
-
+        -webkit-transform: rotate(-7deg);
         transform: rotate(-7deg);
     }
     75% {
+        -webkit-transform: rotate(7deg);
         transform: rotate(7deg);
     }
 
     100% {
-
+        -webkit-transform: rotate(-7deg);
         transform: rotate(-7deg);
     }
 }
@@ -1016,6 +1089,7 @@ mit skrollr auf der x-Achse positioniert
     width: 45vw;
     height: 53vw;
     background: url(../img/Szene4/band_gitarre.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -6;
     position: absolute;
@@ -1026,6 +1100,7 @@ mit skrollr auf der x-Achse positioniert
     width: 10vw;
     height: 10vw;
     background: url(../img/Szene4/band_gitarre_arm.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -5;
     top:21.3vw;
@@ -1035,23 +1110,25 @@ mit skrollr auf der x-Achse positioniert
 
 @keyframes gitar_1 {
     0% {
-
+        -webkit-transform: rotate(-8deg);
         transform: rotate(-8deg);
     }
     25% {
+        -webkit-transform: rotate(8deg);
         transform: rotate(8deg);
     }
 
     50% {
-
+        -webkit-transform: rotate(-8deg);
         transform: rotate(-8deg);
     }
     75% {
+        -webkit-transform: rotate(8deg);
         transform: rotate(8deg);
     }
 
     100% {
-
+        -webkit-transform: rotate(-8deg);
         transform: rotate(-8deg);
     }
 }
@@ -1060,6 +1137,7 @@ mit skrollr auf der x-Achse positioniert
     width: 45vw;
     height: 50vw;
     background: url(../img/Szene4/band_trompete1.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -9;
     position: absolute;
@@ -1070,6 +1148,7 @@ mit skrollr auf der x-Achse positioniert
     width: 12vw;
     height: 12vw;
     background: url(../img/Szene4/trompete.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -5;
     top:9vw;
@@ -1079,23 +1158,25 @@ mit skrollr auf der x-Achse positioniert
 
 @keyframes tromp_1 {
     0% {
-
+        -webkit-transform: rotate(-4deg);
         transform: rotate(-4deg);
     }
     25% {
+        -webkit-transform: rotate(4deg);
         transform: rotate(4deg);
     }
 
     50% {
-
+        -webkit-transform: rotate(-4deg);
         transform: rotate(-4deg);
     }
     75% {
+        -webkit-transform: rotate(4deg);
         transform: rotate(4deg);
     }
 
     100% {
-
+        -webkit-transform: rotate(-4deg);
         transform: rotate(-4deg);
     }
 }
@@ -1104,6 +1185,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 36vw;
     background: url(../img/Szene4/Jan.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -1114,6 +1196,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 31vw;
     background: url(../img/Szene4/mann_ddorf_1.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -8;
     position: absolute;
@@ -1124,6 +1207,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 33vw;
     background: url(../img/Szene4/ruhrpott1.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -7;
     position: absolute;
@@ -1134,6 +1218,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 39vw;
     background: url(../img/Szene4/mann_1.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -3;
     position: absolute;
@@ -1144,6 +1229,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 33vw;
     background: url(../img/Szene4/richBitch1.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -9;
     position: absolute;
@@ -1154,6 +1240,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 32vw;
     background: url(../img/Szene4/frau1.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -3;
     position: absolute;
@@ -1164,6 +1251,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 32vw;
     background: url(../img/Szene4/frau3.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -3;
     position: absolute;
@@ -1174,6 +1262,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 44vw;
     background: url(../img/Szene4/Szene4_Tim_genervt.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: -3;
     position: absolute;
@@ -1184,6 +1273,7 @@ mit skrollr auf der x-Achse positioniert
     width: 25vw;
     height: 44vw;
     background: url(../img/Szene4/Szene4_Tim_Tummel.png) no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: 5000;
     position: absolute;
@@ -1212,6 +1302,7 @@ mit skrollr auf der x-Achse positioniert
     margin-left: -5vw;
     bottom: -3vw;
     left: 10vw;
+    -webkit-transform: rotate(25deg);
     transform: rotate(25deg);
 }
 
@@ -1236,6 +1327,7 @@ mit skrollr auf der x-Achse positioniert
 }
 
 #s5_hintergrund_himmel_hell {
+    -webkit-background-size: contain;
     background-size: contain;
     width: 200vw;
     height: 100vw;
@@ -1245,6 +1337,7 @@ mit skrollr auf der x-Achse positioniert
 }
 
 #s5_hintergrund_daemmerung {
+    -webkit-background-size: cover;
     background-size: cover;
     width: 100vw;
     height: 300vw;
@@ -1255,7 +1348,7 @@ mit skrollr auf der x-Achse positioniert
 
 
 #s5_hintergrund_himmel_dunkel {
-
+    -webkit-background-size: cover;
     background-size: cover;
     width: 100vw;
     height: 300vh;
@@ -1270,6 +1363,7 @@ mit skrollr auf der x-Achse positioniert
     width: 350vw;
     height: 52vw;
     background-image: url(../img/Szene5/hintergrund-01.png);
+    -webkit-background-size: contain;
     background-size: contain;
     z-index: -2;
     position: absolute;
@@ -1281,6 +1375,7 @@ mit skrollr auf der x-Achse positioniert
     height: 20vw;
     background-image: url(../img/Szene5/zeche_zollverein-01.png);
     position: absolute;
+    -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
     z-index:-2;
@@ -1292,6 +1387,7 @@ mit skrollr auf der x-Achse positioniert
     height: 20vw;
     background-image: url(../img/Szene5/dortmunder_u-01.png);
     position: absolute;
+    -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
     z-index:-1;
@@ -1303,6 +1399,7 @@ mit skrollr auf der x-Achse positioniert
     height: 100vw;
     background-image: url(../img/Szene5/skyline_ddorf-01.png);
     position: absolute;
+    -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
     z-index:-2;
@@ -1313,6 +1410,7 @@ mit skrollr auf der x-Achse positioniert
     width: 16vw;
     height: 17vw;
     background-image: url(../img/Szene5/bayer_kreuz-01.gif);
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     background-repeat: no-repeat;
@@ -1323,6 +1421,7 @@ mit skrollr auf der x-Achse positioniert
     margin-top:8.1vw;
     width: 71vw;
     height: 30vw;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     background-repeat: no-repeat;
@@ -1334,6 +1433,7 @@ mit skrollr auf der x-Achse positioniert
     margin-top:8.1vw;
     width: 71vw;
     height: 30vw;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     background-repeat: no-repeat;
@@ -1346,6 +1446,7 @@ mit skrollr auf der x-Achse positioniert
     height: 15vw;
     background-image: url(../img/Szene5/Bahn_komplett.png);
     position: absolute;
+    -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
     z-index:1;
@@ -1356,6 +1457,7 @@ mit skrollr auf der x-Achse positioniert
     height: 10vw;
     background-image: url(../img/Szene5/sonne-01.png);
     position: absolute;
+    -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
     z-index:-4;
@@ -1365,6 +1467,7 @@ mit skrollr auf der x-Achse positioniert
     height: 50vw;
     background-image: url(../img/Szene5/tunnel-01.png);
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     z-index: 2;
@@ -1376,6 +1479,7 @@ mit skrollr auf der x-Achse positioniert
     height: 4vw;
     background-image: url(../img/Szene5/ballon.png);
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     z-index: 2;
@@ -1387,6 +1491,7 @@ mit skrollr auf der x-Achse positioniert
     height: 30vw;
     background-image: url(../img/Szene5/flugzeug.png);
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     z-index: 2;
@@ -1397,6 +1502,7 @@ mit skrollr auf der x-Achse positioniert
     width:200vw;
     height: 15vw;
     background-image: url(../img/Szene5/hintergrund_wolken-01.png);
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     z-index: 2;
@@ -1408,6 +1514,7 @@ mit skrollr auf der x-Achse positioniert
     height: 50vw;
     background-image: url(../img/Szene5/hohenzollernbruecke-01.png);
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     z-index: 0;
@@ -1419,6 +1526,7 @@ mit skrollr auf der x-Achse positioniert
     height: 40vw;
     background-image: url(../img/Szene5/skyline_koeln-01_rechts-01.png);
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     position: absolute;
     z-index: -3;
@@ -1429,6 +1537,7 @@ mit skrollr auf der x-Achse positioniert
     height: 30vw;
     background-image: url(../img/Szene4/fun_fact2-01.png);
     background-repeat: no-repeat;
+    -webkit-background-size: contain;
     background-size: contain;
     z-Index: 5000;
     position: absolute;
@@ -1492,6 +1601,7 @@ mit skrollr auf der x-Achse positioniert
     position: absolute;
     width: 100vw;
     height: 100vw;
+    -webkit-background-size: contain;
     background-size: contain;
     background-repeat:no-repeat;
     top:50vh;
